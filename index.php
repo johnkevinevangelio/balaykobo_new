@@ -1,37 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Creative - Start Bootstrap Theme</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap Icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-        <!-- SimpleLightbox plugin CSS-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <!-- Custom CSS -->
-        <link href="css/sideBarStyle.css" rel="stylesheet" />
-        <link href="css/landing_page.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <div class="nav fixed-top pe-6 align-items-center sidebar-section" id="mainNav">
-            <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                <li class="nav-link my-3" id="home-item"><a href="#home"><img class="nav-home-icon" src="assets/home-icon.svg" width="24" height="42"></a></li>
-                <li class="nav-link my-3" id="studio-item"><a href="#studio"><img  class="nav-studio-icon" src="assets/studio-icon.svg" width="24" height="42"/></a></li>
-                <li class="nav-link my-3" id="reservation-item"><a href="#reservation"><img class="nav-reservation-icon" src="assets/reservation-icon.svg" width="24" height="42"/></a></li>
-                <li class="nav-link my-3" id="services-item"><a href="#services"><img class="nav-services-icon" src="assets/services-icon.svg" width="24" height="42"/></a></li>
-                <li class="nav-link my-3" id="about-item"><a href="#services"><img class="nav-about-icon" src="assets/about-icon.svg" width="24" height="42"/></a></li>
-            </ul>
-        </div>
+<?php get_header(); ?>
         <!-- Masthead-->
         <header class="masthead">
             <div>
@@ -52,7 +19,7 @@
                 </div>
             </div>
             <div>
-                <img class="landing-title" src="./assets/title.png"/>
+                <img class="landing-title" src="<?php bloginfo('template_url'); ?>/assets/title.png"/>
             </div>
         </header>
         <!-- About-->
@@ -110,8 +77,8 @@
             <div class="container-fluid p-0">
                 <div class="row g-0">
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
+                        <a class="portfolio-box" href="<?php bloginfo('template_url'); ?>/assets/img/portfolio/fullsize/1.jpg" title="Project Name">
+                            <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/portfolio/thumbnails/1.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Category</div>
                                 <div class="project-name">Project Name</div>
@@ -119,8 +86,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
+                        <a class="portfolio-box" href="<?php bloginfo('template_url'); ?>/assets/img/portfolio/fullsize/2.jpg" title="Project Name">
+                            <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/portfolio/thumbnails/2.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Category</div>
                                 <div class="project-name">Project Name</div>
@@ -128,8 +95,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="..." />
+                        <a class="portfolio-box" href="<?php bloginfo('template_url'); ?>/assets/img/portfolio/fullsize/3.jpg" title="Project Name">
+                            <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/portfolio/thumbnails/3.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Category</div>
                                 <div class="project-name">Project Name</div>
@@ -137,8 +104,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="..." />
+                        <a class="portfolio-box" href="<?php bloginfo('template_url'); ?>/assets/img/portfolio/fullsize/4.jpg" title="Project Name">
+                            <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/portfolio/thumbnails/4.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Category</div>
                                 <div class="project-name">Project Name</div>
@@ -146,8 +113,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="..." />
+                        <a class="portfolio-box" href="<?php bloginfo('template_url'); ?>/assets/img/portfolio/fullsize/5.jpg" title="Project Name">
+                            <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/portfolio/thumbnails/5.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Category</div>
                                 <div class="project-name">Project Name</div>
@@ -155,8 +122,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="..." />
+                        <a class="portfolio-box" href="<?php bloginfo('template_url'); ?>/assets/img/portfolio/fullsize/6.jpg" title="Project Name">
+                            <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/portfolio/thumbnails/6.jpg" alt="..." />
                             <div class="portfolio-box-caption p-3">
                                 <div class="project-category text-white-50">Category</div>
                                 <div class="project-name">Project Name</div>
@@ -248,22 +215,4 @@
                 </div>
             </div>
         </section>
-        <!-- Footer-->
-        <footer class="bg-light py-5">
-            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2023 - Company Name</div></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- SimpleLightbox plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- Custom Scripts -->
-        <script src="js/navBarScripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
-</html>
+<?php get_footer(); ?>
