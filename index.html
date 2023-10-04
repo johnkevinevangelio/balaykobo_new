@@ -23,13 +23,13 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <div class="nav fixed-top pe-6 align-items-center sidebar-section">
+        <div class="nav fixed-top pe-6 align-items-center sidebar-section" id="mainNav">
             <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                <li class="nav-link"><a class="nav-link" href="#about"><img class="home" src="assets/home-icon.svg" width="32" height="48"></a></li>
-                <li class="nav-link"><a class="nav-link" href="#services"><img src="assets/studio-icon.svg" width="32" height="48"/></a></li>
-                <li class="nav-link"><a class="nav-link" href="#portfolio"><img src="assets/reservation-icon.svg" width="32" height="48"/></a></li>
-                <li class="nav-link"><a class="nav-link" href="#contact"><img src="assets/services-icon.svg" width="32" height="48"/></a></li>
-                <li class="nav-link"><a class="nav-link" href="#contact"><img src="assets/about-icon.svg" width="32" height="48"/></a></li>
+                <li class="nav-link my-3" id="home-item"><a href="#home"><img class="nav-home-icon" src="assets/home-icon.svg" width="24" height="42"></a></li>
+                <li class="nav-link my-3" id="studio-item"><a href="#studio"><img  class="nav-studio-icon" src="assets/studio-icon.svg" width="24" height="42"/></a></li>
+                <li class="nav-link my-3" id="reservation-item"><a href="#reservation"><img class="nav-reservation-icon" src="assets/reservation-icon.svg" width="24" height="42"/></a></li>
+                <li class="nav-link my-3" id="services-item"><a href="#services"><img class="nav-services-icon" src="assets/services-icon.svg" width="24" height="42"/></a></li>
+                <li class="nav-link my-3" id="about-item"><a href="#services"><img class="nav-about-icon" src="assets/about-icon.svg" width="24" height="42"/></a></li>
             </ul>
         </div>
         <!-- Masthead-->
@@ -56,7 +56,7 @@
             </div>
         </header>
         <!-- About-->
-        <section class="page-section bg-primary" id="about">
+        <section class="page-section bg-primary" id="home">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
@@ -69,7 +69,7 @@
             </div>
         </section>
         <!-- Services-->
-        <section class="page-section" id="services">
+        <section class="page-section" id="studio">
             <div class="container px-4 px-lg-5">
                 <h2 class="text-center mt-0">At Your Service</h2>
                 <hr class="divider" />
@@ -106,7 +106,7 @@
             </div>
         </section>
         <!-- Portfolio-->
-        <div id="portfolio">
+        <div id="reservation">
             <div class="container-fluid p-0">
                 <div class="row g-0">
                     <div class="col-lg-4 col-sm-6">
@@ -174,7 +174,7 @@
             </div>
         </section>
         <!-- Contact-->
-        <section class="page-section" id="contact">
+        <section class="page-section" id="services">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6 text-center">
@@ -258,6 +258,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- Custom Scripts -->
+        <script src="js/navBarScripts.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
