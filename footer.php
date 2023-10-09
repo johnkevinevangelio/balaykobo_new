@@ -10,7 +10,7 @@
         <!-- Core theme JS-->
         <script src="<?php bloginfo('template_url'); ?>/js/scripts.js"></script>
         <!-- Custom Scripts -->
-        <script src="<?php bloginfo('template_url'); ?>/js/navBarScripts.js"></script>
+        <?php include 'nav-script.php';?>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
