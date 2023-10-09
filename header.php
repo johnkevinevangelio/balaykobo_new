@@ -27,16 +27,16 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <!-- <div class="nav fixed-top pe-6 align-items-center sidebar-section" id="mainNav">
-            <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                <li class="nav-link my-3" id="home-item"><a href="#home"><img class="nav-home-icon" src="<?php bloginfo('template_url'); ?>/assets/home-icon.svg" width="24" height="42"></a></li>
-                <li class="nav-link my-3" id="studio-item"><a href="#studio"><img  class="nav-studio-icon" src="<?php bloginfo('template_url'); ?>/assets/studio-icon.svg" width="24" height="42"/></a></li>
-                <li class="nav-link my-3" id="reservation-item"><a href="#reservation"><img class="nav-reservation-icon" src="<?php bloginfo('template_url'); ?>/assets/reservation-icon.svg" width="24" height="42"/></a></li>
-                <li class="nav-link my-3" id="services-item"><a href="#services"><img class="nav-services-icon" src="<?php bloginfo('template_url'); ?>/assets/services-icon.svg" width="24" height="42"/></a></li>
-                <li class="nav-link my-3" id="about-item"><a href="#services"><img class="nav-about-icon" src="<?php bloginfo('template_url'); ?>/assets/about-icon.svg" width="24" height="42"/></a></li>
+        <div class="homepage-nav justify-content-center" id="navMain">
+            <ul class="nav my-lg-0 justify-content-center">
+                <li class="home-nav-item" id="home-item"><a href="#home"><img class="nav-home-icon white"/></a></li>
+                <li class="home-nav-item" id="studio-item"><a href="#studio"><img  class="nav-studio-icon white"/></a></li>
+                <li class="home-nav-item" id="reservation-item"><a href="#reservation"><img class="nav-reservation-icon white"/></a></li>
+                <li class="home-nav-item" id="services-item"><a href="#services"><img class="nav-services-icon white"/></a></li>
+                <li class="home-nav-item" id="about-item"><a href="#services"><img class="nav-about-icon white"/></a></li>
             </ul>
-        </div> -->
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
+        </div>
+        <!-- <nav class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,4 +57,4 @@
                     ?>
                 </div>
             </div>
-        </nav>
+        </nav> -->
