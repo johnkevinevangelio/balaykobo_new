@@ -22,56 +22,32 @@
                 <img class="landing-title" src="<?php bloginfo('template_url'); ?>/assets/title.png"/>
             </div>
         </header>
-        <!-- About-->
-        <section class="page-section bg-primary" id="home">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">We've got what you need!</h2>
-                        <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
-                        <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
-                    </div>
+        <!-- Section 2 -->
+        <div class="container-fluid secondPage vh-100 text-center" id="secondPageId">
+            <div class="row" id="home">
+                <div class="col-12 text-center align-self-center">
+                    <h1>home</h1>
+                    <br/>
+                    <p>A multipurpose + studio made for the sun</p>
                 </div>
             </div>
-        </section>
-        <!-- Services-->
-        <section class="page-section" id="studio">
-            <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0">At Your Service</h2>
-                <hr class="divider" />
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Sturdy Themes</h3>
-                            <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Up to Date</h3>
-                            <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Ready to Publish</h3>
-                            <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Made with Love</h3>
-                            <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
-                        </div>
-                    </div>
+            <hr class="hr hr-blurry" />
+            <div class="row" id="studio">
+                <div class="col-12 text-center align-self-center">
+                    <h1>studio</h1>
+                    <br/>
+                    <p>Elevating and holding space for beauty </p>
+                    <p> Paying homage to Filipino and Japanese sensibilities </p>
+                    <p> Balay Kobo takes pride in its rich architecture interiors.</p>
                 </div>
             </div>
-        </section>
+            <hr class="hr hr-blurry" />
+            <div class="row" id="about">
+                <div class="col-12 text-center align-self-center">
+                    <h1>about</h1>
+                </div>
+            </div>
+        </div>
         <!-- Portfolio-->
         <div id="reservation">
             <div class="container-fluid p-0">

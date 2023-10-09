@@ -23,6 +23,7 @@
         <!-- Custom CSS -->
         <link href="<?php bloginfo('template_url'); ?>/css/sideBarStyle.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/landing_page.css" rel="stylesheet" />
+        <link href="<?php bloginfo('template_url'); ?>/css/second_page.css" rel="stylesheet" />
         <?php wp_head(); ?>
     </head>
     <body id="page-top">
