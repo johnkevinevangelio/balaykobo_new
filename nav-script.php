@@ -17,10 +17,17 @@
         const currStickyPos = stickyElem.getBoundingClientRect().top + window.pageYOffset;
 
         function resetActiveNav(e) {
+            const dropdownMenu = document.querySelector('.mobile-nav-menu')
             if (window.scrollY === 0) {
                 if (activeMenu) {
-                    document.querySelector(`.nav-${activeMenu}-icon`).src = `${templateURL}/assets/${activeMenu}-icon.svg`
+                    const activeMenuItem = document.querySelector(`.nav-${section}-icon`)
+                    activeMenu = section
+                    activeMenuItem.classList.remove('black')
+                    activeMenuItem.classList.add('white')
                 }
+                dropdownMenu.classList.remove('drop-down-menu-bg')
+            } else {
+                dropdownMenu.classList.add('drop-down-menu-bg')
             }
 
             // Fixed nav when hit the top of the page
@@ -78,5 +85,22 @@
             });
 
         });
+
+        // Mobile dropdown Menu
+        document.querySelector('.nav-menu-button').addEventListener('click', function () {
+            document.querySelector('.animated-icon').classList.toggle('open');
+        });
+
+        const dropdownItems = [].slice.call(
+            document.querySelectorAll('.dropdown-menu .dropdown-item')
+        );
+
+        dropdownItems.map(function (navItem) {
+            navItem.addEventListener('click', () => {
+                document.querySelector('.animated-icon').classList.toggle('open');
+            });
+
+        });
+
     });
 </script>
