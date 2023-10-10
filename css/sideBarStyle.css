@@ -111,3 +111,11 @@
 .nav-about-icon.black:hover {
     content: url("../assets/navbar_icons/about-active-text.svg");
 }
+.sidebar-section {
+    height: 100%;
+}
+
+.nav .nav-link {
+    --bs-nav-link-color: hsl(0, 0%, 100%);
+    --bs-nav-link-hover-color: var(--bs-link-hover-color);
+}
