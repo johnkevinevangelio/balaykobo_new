@@ -48,6 +48,34 @@
                 </div>
             </div>
         </div>
+        <!-- Gallery -->
+        <div class="container-fluid gallery" id="galleryId">
+            <div class="row py-5">
+                <div class="col-lg-2 col-sm-auto align-self-center text-lg-center">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/about-active-icon.svg"/>
+                </div>
+                <div class="col-lg-2 col-sm-auto align-self-center">
+                    <h1>Kobo</h1>
+                    <h1>Gallery</h1>
+                </div>
+                <div class="col-lg-5 align-self-center">
+                    <p> A multipurpose home + studio to bring people together in a communal space. </p>
+                    <p> Gathering inspiration from her stay in Japan to paying homage to her Filipino heritage. Balay Kobo takes pride in its rich architecture interiors.</p>
+                </div>
+            </div>
+            <div class="row pb-5">
+                <div class="col-lg-11 align-self-center text-lg-center ps-5">
+                    <a class="btn btn-outline-secondary me-4" style="border-radius: 20px">
+                        <span class="ms-2 me-5"> book now </span>
+                        <i class="bi bi-arrow-right ms-4 me-2"></i>
+                    </a>
+                    <a class="btn btn-outline-secondary" style="border-radius: 20px">
+                        <span class="ms-2 me-5"> explore studios </span>
+                        <i class="bi bi-arrow-right ms-4 me-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
         <!-- Portfolio-->
         <div id="reservation">
             <div class="container-fluid p-0">
