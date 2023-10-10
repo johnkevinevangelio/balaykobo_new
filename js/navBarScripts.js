@@ -13,9 +13,8 @@ window.addEventListener('DOMContentLoaded', event => {
     const section = href.split('#')[1];
     if (section) {
         activeMenu = section
-        document.querySelector(`.nav-${section}-icon`).src = `assets/${section}-active-icon.svg`
+        document.querySelector(`.nav-${section}-icon`).src = `./assets/${section}-active-icon.svg`
     }
-
     // Remove active menu on scroll top
     function resetActiveNav() {
         if (window.scrollY === 0) {
