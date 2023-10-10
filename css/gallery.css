@@ -1,0 +1,7 @@
+.gallery {
+    background: url('../assets/second_page/background.jpg');
+}
+.gallery > .row {
+    background-position: center;
+    background-color: rgb(235, 233, 218, 0.7);
+}
