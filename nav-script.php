@@ -16,7 +16,29 @@
         const stickyElem = document.querySelector("#navMain");
         const currStickyPos = stickyElem.getBoundingClientRect().top + window.pageYOffset;
 
-        function resetActiveNav(e) {
+        function navScrollAnimation() {
+            const homeNavItems = [].slice.call(
+                document.querySelectorAll('.nav .home-nav-item')
+            );
+
+            if (window.pageYOffset > currStickyPos) {
+                homeNavItems.map(function (navItem) {
+                    const navItemId = (navItem.id).replace('-item', '')
+                    const icon = document.querySelector(`.nav-${navItemId}-icon`);
+                    icon.style.height = "20.67px"
+                    navItem.style.padding = "var(--bs-nav-link-padding-y) 20px"
+                });
+            } else {
+                homeNavItems.map(function (navItem) {
+                    const navItemId = (navItem.id).replace('-item', '')
+                    const icon = document.querySelector(`.nav-${navItemId}-icon`);
+                    icon.style.height = "30.67px"
+                    navItem.style.padding = "var(--bs-nav-link-padding-y) 50px"
+                });
+            }
+        }
+
+        function scrollFunction(e) {
             const dropdownMenu = document.querySelector('.mobile-nav-menu')
             if (window.scrollY === 0) {
                 if (activeMenu) {
@@ -38,9 +60,12 @@
                 !stickyElem.classList.contains('homepage-nav') && stickyElem.classList.add('homepage-nav')
                 stickyElem.classList.contains('fixed-top') && stickyElem.classList.remove('fixed-top')
             }
+
+            // nav bar animation
+            navScrollAnimation()
         }
 
-        document.addEventListener('scroll', resetActiveNav);
+        document.addEventListener('scroll', scrollFunction);
 
         // Change nav icon when active
         function setNavIconActiveImg(navItemId) {
