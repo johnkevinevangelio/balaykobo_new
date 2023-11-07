@@ -21,6 +21,7 @@
             <div>
                 <img class="landing-title" src="<?php bloginfo('template_url'); ?>/assets/title.png"/>
             </div>
+            <div class="arrow animated bounce"></div>
         </header>
         <!-- Section 2 -->
         <div class="container-fluid secondPage vh-100 text-center" id="secondPageId">
@@ -77,65 +78,45 @@
             </div>
         </div>
         <!-- Portfolio-->
-        <div id="reservation">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="<?php bloginfo('template_url'); ?>/assets/img/portfolio/fullsize/1.jpg" title="Project Name">
-                            <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/portfolio/thumbnails/1.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="<?php bloginfo('template_url'); ?>/assets/img/portfolio/fullsize/2.jpg" title="Project Name">
-                            <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/portfolio/thumbnails/2.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="<?php bloginfo('template_url'); ?>/assets/img/portfolio/fullsize/3.jpg" title="Project Name">
-                            <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/portfolio/thumbnails/3.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="<?php bloginfo('template_url'); ?>/assets/img/portfolio/fullsize/4.jpg" title="Project Name">
-                            <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/portfolio/thumbnails/4.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="<?php bloginfo('template_url'); ?>/assets/img/portfolio/fullsize/5.jpg" title="Project Name">
-                            <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/portfolio/thumbnails/5.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="<?php bloginfo('template_url'); ?>/assets/img/portfolio/fullsize/6.jpg" title="Project Name">
-                            <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/portfolio/thumbnails/6.jpg" alt="..." />
-                            <div class="portfolio-box-caption p-3">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
+        <div class="container-fluid portfolio g-0" id="portfolioId">
+            <div class="eye"></div>
+            <?php if(have_posts()) : ?>
+            <div class="row g-0">
+                <?php while(have_posts()) : the_post(); ?>
+                <div class="col-md-6">
+                    <div class="position-relative">
+                        <?php if(has_post_thumbnail()) : ?>
+                            <!-- <img src="<?php bloginfo('template_url'); ?>/assets/landing_page/landing01.jpeg" class="img-fluid clickable-image" alt="Image 1"> -->
+                            <img 
+                                id="img-<?php the_ID(); ?>"
+                                src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full') ?>"
+                                class="img-fluid clickable-image"
+                                alt="Image 1"
+                            >
+                        <?php endif; ?>
+                        <div 
+                            class="overlay-portfolio"
+                            onclick="<?php if(has_excerpt()) : ?>changeImage('<?php echo get_the_excerpt(); ?>', 'img-<?php the_ID(); ?>')<?php endif; ?>"
+                        >
+                            <a>
+                                <h3><?php the_title(); ?></h3>
+                            </a>
+                        </div>
                     </div>
                 </div>
+                <?php endwhile; ?>
+                <!-- <div class="col-md-6 custom-border">
+                    <div class="position-relative">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/landing_page/landing02.jpeg" class="img-fluid clickable-image" alt="Image 2">
+                        <div class="overlay-portfolio">
+                            <h2>Column 2 Heading</h2>
+                        </div>
+                    </div>
+                </div> -->
             </div>
+            <?php else : ?>
+                <p><?php __('No Posts Found'); ?></p>
+            <?php endif; ?>
         </div>
         <!-- Contact Us -->
         <div class="container-fluid contact" id="contact-section-1">
