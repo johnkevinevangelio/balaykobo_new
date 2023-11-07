@@ -25,6 +25,8 @@
         <link href="<?php bloginfo('template_url'); ?>/css/landing_page.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/second_page.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/gallery.css" rel="stylesheet" />
+        <link href="<?php bloginfo('template_url'); ?>/css/contact.css" rel="stylesheet" />
+        <link href="<?php bloginfo('template_url'); ?>/css/portfolio.css" rel="stylesheet" />
         <?php wp_head(); ?>
     </head>
     <body id="page-top">
