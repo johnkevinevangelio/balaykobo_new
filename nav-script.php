@@ -16,11 +16,40 @@
         const stickyElem = document.querySelector("#navMain");
         const currStickyPos = stickyElem.getBoundingClientRect().top + window.pageYOffset;
 
-        function resetActiveNav(e) {
+        function navScrollAnimation() {
+            const homeNavItems = [].slice.call(
+                document.querySelectorAll('.nav .home-nav-item')
+            );
+
+            if (window.pageYOffset > currStickyPos) {
+                homeNavItems.map(function (navItem) {
+                    const navItemId = (navItem.id).replace('-item', '')
+                    const icon = document.querySelector(`.nav-${navItemId}-icon`);
+                    icon.style.height = "20.67px"
+                    navItem.style.padding = "var(--bs-nav-link-padding-y) 20px"
+                });
+            } else {
+                homeNavItems.map(function (navItem) {
+                    const navItemId = (navItem.id).replace('-item', '')
+                    const icon = document.querySelector(`.nav-${navItemId}-icon`);
+                    icon.style.height = "30.67px"
+                    navItem.style.padding = "var(--bs-nav-link-padding-y) 50px"
+                });
+            }
+        }
+
+        function scrollFunction(e) {
+            const dropdownMenu = document.querySelector('.mobile-nav-menu')
             if (window.scrollY === 0) {
                 if (activeMenu) {
-                    document.querySelector(`.nav-${activeMenu}-icon`).src = `${templateURL}/assets/${activeMenu}-icon.svg`
+                    const activeMenuItem = document.querySelector(`.nav-${section}-icon`)
+                    activeMenu = section
+                    activeMenuItem.classList.remove('black')
+                    activeMenuItem.classList.add('white')
                 }
+                dropdownMenu.classList.remove('drop-down-menu-bg')
+            } else {
+                dropdownMenu.classList.add('drop-down-menu-bg')
             }
 
             // Fixed nav when hit the top of the page
@@ -31,9 +60,12 @@
                 !stickyElem.classList.contains('homepage-nav') && stickyElem.classList.add('homepage-nav')
                 stickyElem.classList.contains('fixed-top') && stickyElem.classList.remove('fixed-top')
             }
+
+            // nav bar animation
+            navScrollAnimation()
         }
 
-        document.addEventListener('scroll', resetActiveNav);
+        document.addEventListener('scroll', scrollFunction);
 
         // Change nav icon when active
         function setNavIconActiveImg(navItemId) {
@@ -78,5 +110,22 @@
             });
 
         });
+
+        // Mobile dropdown Menu
+        document.querySelector('.nav-menu-button').addEventListener('click', function () {
+            document.querySelector('.animated-icon').classList.toggle('open');
+        });
+
+        const dropdownItems = [].slice.call(
+            document.querySelectorAll('.dropdown-menu .dropdown-item')
+        );
+
+        dropdownItems.map(function (navItem) {
+            navItem.addEventListener('click', () => {
+                document.querySelector('.animated-icon').classList.toggle('open');
+            });
+
+        });
+
     });
 </script>
