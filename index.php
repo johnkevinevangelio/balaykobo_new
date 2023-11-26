@@ -5,15 +5,15 @@
                 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">
-                        <div class="carousel-item carousel-image landing-img-1" data-bs-interval="5000">
+                        <div class="carousel-item carousel-image landing-img-1" data-bs-interval="2000">
                         </div>
-                        <div class="carousel-item carousel-image landing-img-2" data-bs-interval="5000">
+                        <div class="carousel-item carousel-image landing-img-2" data-bs-interval="2000">
                         </div>
-                        <div class="carousel-item carousel-image landing-img-3 active" data-bs-interval="5000">
+                        <div class="carousel-item carousel-image landing-img-3 active" data-bs-interval="2000">
                         </div>     
-                        <div class="carousel-item carousel-image landing-img-4" data-bs-interval="5000">
+                        <div class="carousel-item carousel-image landing-img-4" data-bs-interval="2000">
                         </div>
-                        <div class="carousel-item carousel-image landing-img-5" data-bs-interval="5000">
+                        <div class="carousel-item carousel-image landing-img-5" data-bs-interval="2000">
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                             class="overlay-portfolio"
                             onclick="<?php if(has_excerpt()) : ?>changeImage('<?php echo get_the_excerpt(); ?>', 'img-<?php the_ID(); ?>')<?php endif; ?>"
                         >
-                            <a>
+                            <a href="<?php the_permalink(); ?>">
                                 <h3><?php the_title(); ?></h3>
                             </a>
                         </div>
