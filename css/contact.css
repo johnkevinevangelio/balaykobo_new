@@ -12,7 +12,7 @@
     background-repeat: no-repeat;
     background-size: 100% 1572px;
     background-position: 0;
-    height: 800px;
+    height: 100vh;
 }
 
 .contact > .background-film {
@@ -37,13 +37,22 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: 0;
-    height: 1080px;
+    height: 100vh;
     padding: 0%;
 }
 
 .contact > .row.desc {
     background-position: center;
+    padding-left: 80px;
     background-color: rgb(235, 233, 218, 0.7);
+}
+
+.contact > .row.desc.icon {
+    padding-top: 120px
+}
+
+.contact > .row.desc.text {
+    padding-top: 40px
 }
 
 .contact#contact-section-2 > .row.desc {
@@ -53,14 +62,16 @@
 
 .contact > .row.pt-book-now-container {
     position: absolute;
-    padding-top: 100px !important;
-    width: 60%;
-    bottom: 0;
-    right: 0;
+    width: 70%;
+    bottom: 0px;
+    right: 12px;
 }
 
 .contact#contact-section-2 > .row.pt-book-now-container {
-    padding-top: 100px !important;
+    position: absolute;
+    width: 75%;
+    bottom: 0px;
+    right: 12px;
 }
 
 .book-now-container {
@@ -117,9 +128,8 @@
 
 .book-now-main-container {
     position: absolute;
-    width: 60%;
-    bottom: 0;
-    left: 0;
+    width: 65%;
+    bottom: 0px;
 }
 
 .contact-section-3 > .book-now-main-container > .book-now-cont {

@@ -120,19 +120,19 @@
         </div>
         <!-- Contact Us -->
         <div class="container-fluid contact" id="contact-section-1">
-            <div class="row desc pt-5 px-4">
-                <div class="align-start"><img src="<?php bloginfo('template_url'); ?>/assets/about-active-icon.svg" width="20" height="20"/></div>
+            <div class="row desc icon">
+                <div class="align-start"><img src="<?php bloginfo('template_url'); ?>/assets/about-active-icon.svg" width="25" height="25"/></div>
             </div>
-            <div class="row desc pt-3 pb-5 px-4">
-                <h3 class="text-black">Everyone is Welcome at BALAY KО̄BО̄</h3>
+            <div class="row desc text">
+                <h2 class="text-black">Everyone is Welcome at BALAY KО̄BО̄</h2>
             </div>
             <div class="background-film"></div>
             <div class="row pt-book-now-container">
                 <div class="book-now-container ms-auto py-5 px-5">
-                    <div class="pt-3 pb-2">
+                    <div class="pt-4 pb-4">
                         <h5 class="text-white">Looking for a space to shoot in?</h5>
                     </div>
-                    <a class="btn btn-white">
+                    <a class="btn btn-white mb-3">
                         <span class="ms-2 me-5"> book now </span>
                         <i class="bi bi-arrow-right ms-4 me-2"></i>
                     </a>
@@ -140,19 +140,19 @@
             </div>
         </div>
         <div class="container-fluid contact" id="contact-section-2">
-            <div class="row desc pt-5 px-4">
-                <div class="align-start"><img src="<?php bloginfo('template_url'); ?>/assets/about-active-icon.svg" width="20" height="20"/></div>
+            <div class="row desc icon">
+                <div class="align-start"><img src="<?php bloginfo('template_url'); ?>/assets/about-active-icon.svg" width="25" height="25"/></div>
             </div>
-            <div class="row desc pt-3 pb-5 px-4">
-                <h3>coming soon</h3>
+            <div class="row desc text">
+                <h2>coming soon</h2>
             </div>
             <div class="background-film"></div>
             <div class="row pt-book-now-container">
                 <div class="book-now-container ms-auto py-5 px-5">
-                    <div class="pt-3 pb-2">
+                    <div class="pt-4 pb-4">
                         <h5 class="text-white">coming soon</h5>
                     </div>
-                    <a class="btn btn-white">
+                    <a class="btn btn-white mb-3">
                         <span class="ms-2 me-5"> book now </span>
                         <i class="bi bi-arrow-right ms-4 me-2"></i>
                     </a>
