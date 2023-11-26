@@ -31,7 +31,7 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <div class="homepage-nav justify-content-center" id="navMain">
+        <div class="justify-content-center fixed-top" id="navMain">
             <ul class="nav my-lg-0 justify-content-center">
                 <li class="home-nav-item" id="home-item"><a href="#home"><img class="nav-home-icon white"/></a></li>
                 <li class="home-nav-item" id="studio-item"><a href="#studio"><img  class="nav-studio-icon white"/></a></li>

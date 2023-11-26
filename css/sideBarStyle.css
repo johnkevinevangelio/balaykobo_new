@@ -1,4 +1,8 @@
-#navMain.fixed-top {
+/* #navMain.fixed-top {
+    background-color: rgba(242, 242, 230, 0.1);
+} */
+
+#navMain.menu-bg {
     background-color: rgba(242, 242, 230, 0.1);
 }
 
@@ -15,7 +19,7 @@
 
 .home-nav-item {
     display: block;
-    padding: var(--bs-nav-link-padding-y) 40px;
+    padding: var(--bs-nav-link-padding-y) 20.67px;
     transition: 2s;
 }
 
