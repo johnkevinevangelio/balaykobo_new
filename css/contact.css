@@ -1,0 +1,129 @@
+.align-start {
+    float: left !important;
+}
+
+.align-end {
+    float: right !important;
+}
+
+.contact {
+    position: relative;
+    background: url('../assets/landing_page/contact-section-1-2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 1572px;
+    background-position: 0;
+    height: 800px;
+}
+
+.contact > .background-film {
+    position: absolute;
+    background-color: rgb(235, 233, 218, 0.7);
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.contact#contact-section-2 > .background-film {
+    position: absolute;
+    background-color: rgba(217, 190, 137, 0.7);
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.contact-section-3 {
+    position: relative;
+    background: url('../assets/landing_page/contact-section-3.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0;
+    height: 1080px;
+    padding: 0%;
+}
+
+.contact > .row.desc {
+    background-position: center;
+    background-color: rgb(235, 233, 218, 0.7);
+}
+
+.contact#contact-section-2 > .row.desc {
+    background-position: center;
+    background-color: rgba(217, 190, 137, 0.7) !important;
+}
+
+.contact > .row.pt-book-now-container {
+    position: absolute;
+    padding-top: 100px !important;
+    width: 60%;
+    bottom: 0;
+    right: 0;
+}
+
+.contact#contact-section-2 > .row.pt-book-now-container {
+    padding-top: 100px !important;
+}
+
+.book-now-container {
+    width: 65%;
+    background-color: rgba(85, 118, 137, 0.8);
+}
+
+.btn-white {
+    font-size: .8rem;
+    border-color: #fff !important;
+    border-radius: 20px;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: #6c757d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #5c636a;
+    --bs-btn-hover-border-color: #565e64;
+    --bs-btn-focus-shadow-rgb: 130, 138, 145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #565e64;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #6c757d;
+    --bs-btn-disabled-border-color: #6c757d;
+}
+
+.btn-black {
+    font-size: .8rem;
+    border-color: #000 !important;
+    border-radius: 20px;
+    --bs-btn-color: #000;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: #6c757d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #5c636a;
+    --bs-btn-hover-border-color: #565e64;
+    --bs-btn-focus-shadow-rgb: 130, 138, 145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #565e64;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #6c757d;
+    --bs-btn-disabled-border-color: #6c757d;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+
+.book-now-main-container {
+    position: absolute;
+    width: 60%;
+    bottom: 0;
+    left: 0;
+}
+
+.contact-section-3 > .book-now-main-container > .book-now-cont {
+    width: 65%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 20px 20px 70px;
+}

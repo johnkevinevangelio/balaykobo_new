@@ -24,6 +24,9 @@
         <link href="<?php bloginfo('template_url'); ?>/css/sideBarStyle.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/landing_page.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/second_page.css" rel="stylesheet" />
+        <link href="<?php bloginfo('template_url'); ?>/css/gallery.css" rel="stylesheet" />
+        <link href="<?php bloginfo('template_url'); ?>/css/contact.css" rel="stylesheet" />
+        <link href="<?php bloginfo('template_url'); ?>/css/portfolio.css" rel="stylesheet" />
         <?php wp_head(); ?>
     </head>
     <body id="page-top">
@@ -37,6 +40,21 @@
                 <li class="home-nav-item" id="about-item"><a href="#services"><img class="nav-about-icon white"/></a></li>
             </ul>
         </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="btn-group dropstart mobile-nav-menu justify-content-end fixed-top px-4 px-lg-5 py-3">
+            <button class="navbar-toggler nav-menu-button" role="button" id="mobileDropDownMenuBtn" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+                <div class="animated-icon"><span></span><span></span><span></span></div>
+            </button>
+            <div class="dropdown-menu mobile" aria-labelledby="mobileDropDownMenuBtn">
+                <a class="dropdown-item" href="#home">Home</a>
+                <a class="dropdown-item" href="#studio">Studio</a>
+                <a class="dropdown-item" href="#reservation">Reservation</a>
+                <a class="dropdown-item" href="#services">Services</a>
+                <a class="dropdown-item" href="#services">About</a>
+            </div>
+        </div>
+
         <!-- <nav class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>

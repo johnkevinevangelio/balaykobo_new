@@ -16,5 +16,31 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+            let currentIndex = 0
+            function changeImage (excerpt, id) {
+                if (excerpt.length) {
+                    const imgSources = excerpt.split(",")
+                    const galleryImage = document.getElementById(id);
+                    galleryImage.src = imgSources[currentIndex];
+                    currentIndex = (currentIndex + 1) % imgSources.length;
+                }
+            }
+            document.addEventListener("DOMContentLoaded", function() {
+                window.addEventListener("scroll", function() {
+                    var scroll = window.scrollY;
+                    var arrowElement = document.querySelector('.arrow');
+                    
+                    if (scroll >= 1) {
+                        arrowElement.classList.add('fade');
+                        arrowElement.classList.remove('bounce');
+                    } else {
+                        arrowElement.classList.remove('fade');
+                        arrowElement.classList.add('bounce');
+                        arrowElement.style.animationPlayState = 'running';
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
