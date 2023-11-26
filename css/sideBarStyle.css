@@ -15,7 +15,7 @@
 
 .home-nav-item {
     display: block;
-    padding: var(--bs-nav-link-padding-y) 50px;
+    padding: var(--bs-nav-link-padding-y) 40px;
     transition: 2s;
 }
 
@@ -28,31 +28,31 @@
 .nav-home-icon.white {
     content: url("../assets/navbar_icons/home-icon.svg");
     width: 48px;
-    height: 30.67px;
+    height: 20.67px;
     transition: 2s;
 }
 .nav-studio-icon.white {
     content: url("../assets/navbar_icons/studio-icon.svg");
     width: 43px;
-    height: 30.67px;
+    height: 20.67px;
     transition: 2s;
 }
 .nav-reservation-icon.white {
     content: url("../assets/navbar_icons/reservation-icon.svg");
     width: auto;
-    height: 30.67px;
+    height: 20.67px;
     transition: 2s;
 }
 .nav-services-icon.white {
     content: url("../assets/navbar_icons/services-icon.svg");
     width: 43px;
-    height: 30.67px;
+    height: 20.67px;
     transition: 2s;
 }
 .nav-about-icon.white {
     content: url("../assets/navbar_icons/about-icon.svg");
     width: 40px;
-    height: 30.67px;
+    height: 20.67px;
     transition: 2s;
 }
 
@@ -60,31 +60,31 @@
 .nav-home-icon.black {
     content: url("../assets/navbar_icons/home-active-icon.svg");
     width: 48px;
-    height: 30.67px;
+    height: 20.67px;
     transition: 2s;
 }
 .nav-studio-icon.black {
     content: url("../assets/navbar_icons/studio-active-icon.svg");
     width: 43px;
-    height: 30.67px;
+    height: 20.67px;
     transition: 2s;
 }
 .nav-reservation-icon.black {
     content: url("../assets/navbar_icons/reservation-active-icon.svg");
     width: auto;
-    height: 30.67px;
+    height: 20.67px;
     transition: 2s;
 }
 .nav-services-icon.black {
     content: url("../assets/navbar_icons/services-active-icon.svg");
     width: 43px;
-    height: 30.67px;
+    height: 20.67px;
     transition: 2s;
 }
 .nav-about-icon.black {
     content: url("../assets/navbar_icons/about-active-icon.svg");
     width: 40px;
-    height: 30.67px;
+    height: 20.67px;
     transition: 2s;
 }
 

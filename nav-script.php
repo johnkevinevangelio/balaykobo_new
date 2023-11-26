@@ -24,16 +24,16 @@
             if (window.pageYOffset > currStickyPos) {
                 homeNavItems.map(function (navItem) {
                     const navItemId = (navItem.id).replace('-item', '')
-                    const icon = document.querySelector(`.nav-${navItemId}-icon`);
-                    icon.style.height = "20.67px"
+                    // const icon = document.querySelector(`.nav-${navItemId}-icon`);
+                    // icon.style.height = "20.67px"
                     navItem.style.padding = "var(--bs-nav-link-padding-y) 20px"
                 });
             } else {
                 homeNavItems.map(function (navItem) {
                     const navItemId = (navItem.id).replace('-item', '')
-                    const icon = document.querySelector(`.nav-${navItemId}-icon`);
-                    icon.style.height = "30.67px"
-                    navItem.style.padding = "var(--bs-nav-link-padding-y) 50px"
+                    // const icon = document.querySelector(`.nav-${navItemId}-icon`);
+                    // icon.style.height = "30.67px"
+                    navItem.style.padding = "var(--bs-nav-link-padding-y) 40px"
                 });
             }
         }
