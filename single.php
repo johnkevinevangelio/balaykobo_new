@@ -34,7 +34,7 @@
             } */
             .slider {
                 /* overflow-x: hidden; */
-                width: 98%;
+                width: calc(100% - 30px);
                 margin-top: 30px;
             }
             .slick-track {
