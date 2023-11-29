@@ -17,40 +17,38 @@
         <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/slick/slick.css">
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/slick/slick-theme.css">
-        <style>
-            body {
+        <style type="text/css">
+            html, body {
                 background: #EBE9DA;
                 margin: 0;
-                padding: 0
+                padding: 0;
+                width: 100%;
+                -webkit-text-size-adjust: 100%;
             }
             * {
                 box-sizing: border-box;
             }
-            .add-ons {
+            /* .add-ons {
                 padding-right: 5px;
                 padding-left: 10px;
-            }
+            } */
             .slider {
-                width: 100%;
+                /* overflow-x: hidden; */
+                width: calc(100% - 30px);
                 margin-top: 30px;
             }
             .slick-track {
                 display: flex !important;
             }
-
             .slick-slide {
                 max-height: 300px !important;
                 margin: 0px 10px;
             }
-
             .slick-slide img {
-                max-width: 100%;
+                width: 100%;
             }
-            /* .slick-slide img:hover {
-                width: 103%;
-            } */
-            .slick-prev:before {
-                display: none;
+            .slick-slide img:hover {
+                opacity: 0.7;
             }
             .slick-prev:before,
             .slick-next:before {
@@ -69,6 +67,8 @@
                 opacity: 1;
             }, */
             .featured-works {
+                /* width: 99%; */
+                overflow-x: hidden;
                 margin-top: 30px;
             }
             .featured-works > .row {
@@ -85,6 +85,8 @@
                 flex: 20%;
                 max-width: 20%;
                 padding: 0 2px;
+                margin-left: 0;
+                margin-right: 0;
             }
 
             .featured-works .column img {
@@ -114,7 +116,7 @@
                 object-fit: cover !important;
                 width: 100%;
                 height: 500px;
-                margin-top: 30px
+                margin-top: 30px;
             }
             .post-title {
                 padding: 0;
@@ -145,6 +147,7 @@
                 line-height: 103.2%;
                 margin-bottom: 10px;
                 margin-top: 50px;
+                width: 100%
             },
             .subheader {
                 color: #000;
@@ -157,13 +160,16 @@
         </style>
     </head>
     <body>
-        <?php if(have_posts()) : ?>
-            <?php while(have_posts()) : the_post(); ?>
-                <?php the_content() ?>
-            <?php endwhile; ?>
-        <?php else : ?>
-            <p><?php __('No Posts Found'); ?></p>
-        <?php endif; ?>
+        
+            <?php if(have_posts()) : ?>
+                <?php while(have_posts()) : the_post(); ?>
+                    <div class="container-fluid text-center g-0">
+                        <?php echo get_the_content() ?>
+                    </div>
+                <?php endwhile; ?>
+            <?php else : ?>
+                <p><?php __('No Posts Found'); ?></p>
+            <?php endif; ?>
         <?php wp_footer() ?>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -181,45 +187,46 @@
         <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
         <script src="<?php bloginfo('template_url'); ?>/css/slick/slick.js" type="text/javascript" charset="utf-8"></script>
         <script type="text/javascript">
-            $(".regular").slick({
-                dots: false,
-                infinite: true,
-                slidesToShow: 5,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                swipeToSlide: true,
-                // adaptiveHeight: true,
-                responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 1,
-                            infinite: true,
-                            autoplay: true,
-                            autoplaySpeed: 2000
+            $(document).on('ready', function() {
+                $(".regular").slick({
+                    dots: false,
+                    infinite: true,
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    swipeToSlide: true,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 1,
+                                infinite: true,
+                                autoplay: true,
+                                autoplaySpeed: 2000
+                            }
+                        },
+                        {
+                            breakpoint: 600,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1,
+                                autoplay: true,
+                                autoplaySpeed: 2000
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1,
+                                autoplay: true,
+                                autoplaySpeed: 2000
+                            }
                         }
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                            autoplay: true,
-                            autoplaySpeed: 2000
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                            autoplay: true,
-                            autoplaySpeed: 2000
-                        }
-                    }
-                ]
+                    ]
+                });
             });
         </script>
     </body>
