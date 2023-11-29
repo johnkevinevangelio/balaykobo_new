@@ -10,3 +10,15 @@
   }
 
   add_action('after_setup_theme', 'wpb_theme_setup');
+
+  function balaykobo_menus() {
+
+    $locations = array(
+      'primary' => "Desktop Primary Menu",
+      'mobile' => "Mobile Primary Menu"
+    );
+
+    register_nav_menus($locations);
+  }
+
+  add_action('init','balaykobo_menus');

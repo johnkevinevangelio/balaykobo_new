@@ -32,13 +32,23 @@
     <body id="page-top">
         <!-- Navigation-->
         <div class="justify-content-center fixed-top" id="navMain">
-            <ul class="nav my-lg-0 justify-content-center">
+            <?php 
+                wp_nav_menu(
+                    array(
+                        'menu' => 'primary',
+                        'container' => '',
+                        'theme_location' => 'primary',
+                        'items_wrap' => '<ul class="nav my-lg-0 justify-content-center">%3$s</ul>'
+                    )
+                );
+            ?>
+            <!-- <ul class="nav my-lg-0 justify-content-center">
                 <li class="home-nav-item" id="home-item"><a href="#home"><img class="nav-home-icon white"/></a></li>
                 <li class="home-nav-item" id="studio-item"><a href="#studio"><img  class="nav-studio-icon white"/></a></li>
                 <li class="home-nav-item" id="reservation-item"><a href="#reservation"><img class="nav-reservation-icon white"/></a></li>
                 <li class="home-nav-item" id="services-item"><a href="#services"><img class="nav-services-icon white"/></a></li>
                 <li class="home-nav-item" id="about-item"><a href="#services"><img class="nav-about-icon white"/></a></li>
-            </ul>
+            </ul> -->
         </div>
 
         <!-- Mobile Navigation Menu -->

@@ -109,9 +109,8 @@
 
         navItems.map(function (navItem) {
             navItem.addEventListener('click', () => {
-                setNavIconActiveImg(navItem.id)
+                setNavIconActiveImg(navItem.classList[1])
             });
-
         });
 
         // Mobile dropdown Menu
