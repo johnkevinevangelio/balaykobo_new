@@ -8,8 +8,8 @@
             <?php
                 $a = '|'
             ?>
-            <?php bloginfo('name'); ?> |
-            <?php is_front_page() ? bloginfo('description') : wp_title(); ?>
+            <?php bloginfo('name'); ?>
+            <?php is_front_page() ? '|'.''.bloginfo('description') : '|'.''.wp_title(); ?>
         </title>
         <!-- Bootstrap Icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />

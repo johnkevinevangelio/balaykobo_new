@@ -82,13 +82,17 @@
             <div class="eye"></div>
             <?php if(have_posts()) : ?>
             <div class="row g-0">
-                <?php while(have_posts()) : the_post(); ?>
+                <?php 
+                    $the_query = new WP_Query( 'tag=gallery' );
+                ?>
+                <?php while($the_query->have_posts()) : $the_query->the_post(); ?>
                     <?php get_template_part('content'); ?>
                 <?php endwhile; ?>
             </div>
             <?php else : ?>
                 <p><?php __('No Posts Found'); ?></p>
             <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
         </div>
         <!-- Contact Us -->
         <div class="container-fluid contact" id="contact-section-1">
