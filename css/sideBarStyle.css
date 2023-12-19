@@ -4,6 +4,7 @@
 
 #navMain.menu-bg {
     background-color: rgba(242, 242, 230, 0.1);
+    mix-blend-mode: difference;
 }
 
 .homepage-nav {
