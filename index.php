@@ -21,7 +21,7 @@
             <div>
                 <img class="landing-title" src="<?php bloginfo('template_url'); ?>/assets/title.png"/>
             </div>
-            <div class="arrow animated bounce"></div>
+            <a href="#secondPageId"><div class="arrow animated bounce"></div></a>
         </header>
         <!-- Section 2 -->
         <div class="container-fluid secondPage vh-100 text-center" id="secondPageId">
@@ -83,36 +83,8 @@
             <?php if(have_posts()) : ?>
             <div class="row g-0">
                 <?php while(have_posts()) : the_post(); ?>
-                <div class="col-md-6">
-                    <div class="position-relative">
-                        <?php if(has_post_thumbnail()) : ?>
-                            <!-- <img src="<?php bloginfo('template_url'); ?>/assets/landing_page/landing01.jpeg" class="img-fluid clickable-image" alt="Image 1"> -->
-                            <img 
-                                id="img-<?php the_ID(); ?>"
-                                src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full') ?>"
-                                class="img-fluid clickable-image"
-                                alt="Image 1"
-                            >
-                        <?php endif; ?>
-                        <div 
-                            class="overlay-portfolio"
-                            onclick="<?php if(has_excerpt()) : ?>changeImage('<?php echo get_the_excerpt(); ?>', 'img-<?php the_ID(); ?>')<?php endif; ?>"
-                        >
-                            <a href="<?php the_permalink(); ?>">
-                                <h3><?php the_title(); ?></h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                    <?php get_template_part('content'); ?>
                 <?php endwhile; ?>
-                <!-- <div class="col-md-6 custom-border">
-                    <div class="position-relative">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/landing_page/landing02.jpeg" class="img-fluid clickable-image" alt="Image 2">
-                        <div class="overlay-portfolio">
-                            <h2>Column 2 Heading</h2>
-                        </div>
-                    </div>
-                </div> -->
             </div>
             <?php else : ?>
                 <p><?php __('No Posts Found'); ?></p>
