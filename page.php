@@ -67,8 +67,7 @@
                             </div>
                         </div>
                     <?php else :?>
-                        <div> Sample Page</div>
-                        <!-- <?php echo get_the_content() ?> -->
+                        <?php echo get_the_content() ?>
                     <?php endif; ?>
                 <?php endwhile; ?>
             <?php else : ?>
