@@ -109,15 +109,15 @@
             newActiveMenu.classList.add('black')
         }
 
-        const navItems = [].slice.call(
-            document.querySelectorAll('.nav .home-nav-item')
-        );
+        // const navItems = [].slice.call(
+        //     document.querySelectorAll('.nav .home-nav-item')
+        // );
 
-        navItems.map(function (navItem) {
-            navItem.addEventListener('click', () => {
-                setNavIconActiveImg(navItem.classList[1])
-            });
-        });
+        // navItems.map(function (navItem) {
+        //     navItem.addEventListener('click', () => {
+        //         setNavIconActiveImg(navItem.classList[1])
+        //     });
+        // });
 
         // Mobile dropdown Menu
         document.querySelector('.nav-menu-button').addEventListener('click', function () {
