@@ -66,6 +66,7 @@
     left: 50%;
     margin-left: -20px;
     width: 40px;
+    z-index:10;
     height: 40px;
     background-image: url(../assets/arrow-down.png);
     background-size: contain;
@@ -83,19 +84,28 @@
 /* Carousel */
 
 .landing-img-1 {
-    background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.5) 100%), url(../assets/landing_page/landing01.jpeg);
+    /* background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.5) 100%), url(../assets/landing_page/new_landing_1.jpg); */
+    background: url(../assets/landing_page/new_landing_1.jpg);
 }
 .landing-img-2 {
-    background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.5) 100%), url(../assets/landing_page/landing02.jpeg);
+    /* background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.5) 100%), url(../assets/landing_page/new_landing_2.jpg); */
+    background: url(../assets/landing_page/new_landing_2.jpg);
 }
 .landing-img-3 {
-    background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.5) 100%), url(../assets/landing_page/landing03.jpg);
+    /* background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.5) 100%), url(../assets/landing_page/new_landing_3.jpg); */
+    background: url(../assets/landing_page/new_landing_3.jpg);
 }
 .landing-img-4 {
-    background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.5) 100%), url(../assets/landing_page/landing04.jpg);
+    /* background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.5) 100%), url(../assets/landing_page/new_landing_4.jpg); */
+    background: url(../assets/landing_page/new_landing_4.jpg);
 }
 .landing-img-5 {
-    background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.5) 100%), url(../assets/landing_page/landing05.jpeg);
+    /* background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.5) 100%), url(../assets/landing_page/new_landing_5.jpg); */
+    background: url(../assets/landing_page/new_landing_5.jpg);
+}
+.landing-img-6 {
+  /* background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.5) 100%), url(../assets/landing_page/new_landing_5.jpg); */
+  background: url(../assets/landing_page/new_landing_6.jpg);
 }
 .carousel-image {
     height: 100vh;
@@ -104,24 +114,163 @@
     background-position: center;
     padding-bottom: calc(10rem - 4.5rem);
 }
-.carousel-inner {
+/* .carousel-inner {
     > .carousel-item {
      transition: none;
     }
-}
+} */
 
 /* Ken Burns Effect */
 @keyframes kenBurns {
-    0% {
-      transform: scale(1);
-      transform-origin: center;
-    }
-    100% {
-      transform: scale(1.1);
-      transform-origin: center;
-    }
+  0% {
+    transform: scale(1);
+    transform-origin: center;
   }
-  
-  .carousel-image {
-    animation: kenBurns 10s infinite alternate; /* Adjust animation duration and other properties as needed */
+  100% {
+    transform: scale(1.1);
+    transform-origin: center;
   }
+}
+
+/* .carousel-image {
+  animation: kenBurns 10s infinite alternate;
+} */
+
+.carousel-caption {
+  color: #FFF;
+  /* Web/Web 24px/Regular */
+  font-family: Spectral;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 104%; 
+}
+
+
+.caption-1 {
+  position: absolute;
+  top: 50%;
+  left: -20%;
+  transform: translateY(-50%);
+  opacity: 0;
+  animation: fadeInFromLeft 4s ease-out forwards;
+}
+
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-80px, -50%);
+    /* transform: translateY(-50%) translateX(0); */
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, -50%);
+    /* transform: translateY(-50%) translateX(0); */
+  }
+}
+
+.caption-2 {
+  position: absolute;
+  top: 20%; /* Change top to 0 to start from the top */
+  right: 20%;
+  transform: translate(-50%, -100%);
+  opacity: 0;
+  animation: fadeInFromTop 4s ease-out forwards;
+}
+
+@keyframes fadeInFromTop {
+  0% {
+    opacity: 0;
+    transform: translate(50%, -20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(50%, 0);
+  }
+}
+
+.caption-3 {
+  position: absolute;
+  bottom: 20%;
+  left: -10%;
+  transform: translate(-10%, -50%);
+  opacity: 0;
+  animation: fadeInFromBottom 4s ease-out forwards;
+}
+
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translate(-10%, 20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-10%, -50%);
+  }
+}
+
+.caption-4 {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(0, -100%);
+  opacity: 0;
+  animation: fadeInFromTop2 4s ease-out forwards;
+}
+
+@keyframes fadeInFromTop2 {
+  0% {
+    opacity: 0;
+    transform: translate(0, -100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, -70%);
+  }
+}
+
+.caption-5 {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  opacity: 0;
+  animation: fadeIn 4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    /* transform: translate(0, -100%); */
+  }
+  20% {
+    opacity: 0;
+    /* transform: translate(0, -100%); */
+  }
+  30% {
+    opacity: 0.3;
+    /* transform: translate(0, -100%); */
+  }
+  40% {
+    opacity: 0.4;
+    /* transform: translate(0, -100%); */
+  }
+  50% {
+    opacity: 0.5;
+    /* transform: translate(0, -100%); */
+  }
+  100% {
+    opacity: 1;
+    /* transform: translate(0, -70%); */
+  }
+}
+@media (max-width: 767px) {
+  .caption-1  {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 14px;
+  }
+  .caption-2  {
+    font-size: 14px;
+  }
+}
