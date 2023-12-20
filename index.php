@@ -3,14 +3,16 @@
         <header class="masthead">
             <div>
                 <div id="myCarousel" class="carousel slide carousel-fade caption-animate" data-bs-ride="carousel" data-bs-pause="false">
-                <div class="carousel-indicators">
+                <div class="indicator-number" id="indicator">1/6</div>
+                <!-- <div class="carousel-indicators">
+                    <div class="indicator-number">1/6</div>
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                </div>
+                </div> -->
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">
                         <div class="carousel-item carousel-image landing-img-1 active" data-bs-interval="5000">
