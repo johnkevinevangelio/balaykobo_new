@@ -18,9 +18,6 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <img class="landing-title" src="<?php bloginfo('template_url'); ?>/assets/title.png"/>
-            </div>
             <a href="#secondPageId"><div class="arrow animated bounce"></div></a>
         </header>
         <!-- Section 2 -->
