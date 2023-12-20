@@ -82,6 +82,10 @@
                 width: 100%;
             }
 
+            .top-padding {
+                padding-top: 75px !important;
+            }
+
                 /* Responsive layout - makes a two column-layout instead of four columns */
             @media screen and (max-width: 800px) {
                 .featured-works .column {
@@ -161,7 +165,13 @@
     </head>
     <body>
         <!-- Navigation-->
-        <div class="justify-content-center fixed-top" id="navMain">
+        <div class="justify-content-center fixed-top permanent-bg" id="navMain">
+            <div class="menu-title-cont">
+                <img class="landing-title" src="<?php bloginfo('template_url'); ?>/assets/title.png"/>
+            </div>
+            <div class="nav-book-now-btn">
+                <button type="button" class="btn btn-outline-light btn-sm px-4">Book now</button>
+            </div>
             <?php 
                 wp_nav_menu(
                     array(
