@@ -1,16 +1,16 @@
 <script type="text/javascript">
-    var activeMenu = "";
+    // var activeMenu = "";
     var templateURL = "<?php  bloginfo('template_url'); ?>";
     window.addEventListener('DOMContentLoaded', event => {
         // on load set active menu 
         const href = window.location.href
         const section = href.split('#')[1];
-        if (section) {
-            const activeMenuItem = document.querySelector(`.nav-${section}-icon`)
-            activeMenu = section
-            activeMenuItem.classList.add('black')
-            activeMenuItem.classList.remove('white')
-        }
+        // if (section) {
+        //     const activeMenuItem = document.querySelector(`.nav-${section}-icon`)
+        //     activeMenu = section
+        //     activeMenuItem.classList.add('black')
+        //     activeMenuItem.classList.remove('white')
+        // }
 
         // Remove active menu on scroll top
         const stickyElem = document.querySelector("#navMain");
@@ -40,25 +40,19 @@
 
         function scrollFunction(e) {
             const dropdownMenu = document.querySelector('.mobile-nav-menu')
-            const navMenu = document.querySelector('#navMain');
-            const menuTitle = document.querySelector('.menu-title-cont')
-            const nav = document.querySelector('.nav')
+            const navMenu = document.querySelector("#navMain");
             if (window.scrollY === 0) {
-                if (activeMenu) {
-                    const activeMenuItem = document.querySelector(`.nav-${section}-icon`)
-                    activeMenu = section
-                    activeMenuItem.classList.remove('black')
-                    activeMenuItem.classList.add('white')
-                }
+                // if (activeMenu) {
+                //     const activeMenuItem = document.querySelector(`.nav-${section}-icon`)
+                //     activeMenu = section
+                //     activeMenuItem.classList.remove('black')
+                //     activeMenuItem.classList.add('white')
+                // }
                 dropdownMenu.classList.remove('drop-down-menu-bg')
                 navMenu.classList.remove('menu-bg')
-                menuTitle.classList.remove('hidden')
-                nav.style.padding = '52px 0px 10px 0px'
             } else {
                 dropdownMenu.classList.add('drop-down-menu-bg')
                 navMenu.classList.add('menu-bg')
-                menuTitle.classList.add('hidden')
-                nav.style.padding = '10px 0px'
             }
 
             // Fixed nav when hit the top of the page
@@ -77,37 +71,37 @@
         document.addEventListener('scroll', scrollFunction);
 
         // Change nav icon when active
-        function setNavIconActiveImg(navItemId) {
-            let oldActiveMenu = activeMenu
-            switch(navItemId) {
-                case 'home-item':
-                    activeMenu = 'home'
-                    break;
-                case 'studio-item':
-                    activeMenu = 'studio'
-                    break;
-                case 'reservation-item':
-                    activeMenu = 'reservation'
-                    break;
-                case 'services-item':
-                    activeMenu = 'services'
-                    break;
-                case 'about-item':
-                    activeMenu = 'about'
-                    break;
-                default:
-                    // code block
-            }
-            if (oldActiveMenu === activeMenu) return
-            if (oldActiveMenu) {
-                const oldActiveItem = document.querySelector(`.nav-${oldActiveMenu}-icon`)
-                oldActiveItem.classList.remove('black')
-                oldActiveItem.classList.add('white')
-            }
-            const newActiveMenu = document.querySelector(`.nav-${activeMenu}-icon`)
-            newActiveMenu.classList.remove('white')
-            newActiveMenu.classList.add('black')
-        }
+        // function setNavIconActiveImg(navItemId) {
+        //     let oldActiveMenu = activeMenu
+        //     switch(navItemId) {
+        //         case 'home-item':
+        //             activeMenu = 'home'
+        //             break;
+        //         case 'studio-item':
+        //             activeMenu = 'studio'
+        //             break;
+        //         case 'reservation-item':
+        //             activeMenu = 'reservation'
+        //             break;
+        //         case 'services-item':
+        //             activeMenu = 'services'
+        //             break;
+        //         case 'about-item':
+        //             activeMenu = 'about'
+        //             break;
+        //         default:
+        //             // code block
+        //     }
+        //     if (oldActiveMenu === activeMenu) return
+        //     if (oldActiveMenu) {
+        //         const oldActiveItem = document.querySelector(`.nav-${oldActiveMenu}-icon`)
+        //         oldActiveItem.classList.remove('black')
+        //         oldActiveItem.classList.add('white')
+        //     }
+        //     const newActiveMenu = document.querySelector(`.nav-${activeMenu}-icon`)
+        //     newActiveMenu.classList.remove('white')
+        //     newActiveMenu.classList.add('black')
+        // }
 
         // const navItems = [].slice.call(
         //     document.querySelectorAll('.nav .home-nav-item')
