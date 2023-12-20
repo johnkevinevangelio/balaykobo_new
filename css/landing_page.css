@@ -132,9 +132,9 @@
   }
 }
 
-/* .carousel-image {
+.carousel-image {
   animation: kenBurns 10s infinite alternate;
-} */
+}
 
 .carousel-caption {
   color: #FFF;
@@ -273,4 +273,27 @@
   .caption-2  {
     font-size: 14px;
   }
+  .caption-3  {
+    font-size: 14px;
+  }
+  .caption-4  {
+    font-size: 14px;
+  }
+  .caption-5  {
+    font-size: 14px;
+  }
+}
+
+.indicator-number {
+  position: absolute;
+  left: calc(50% - 7px);
+  bottom:2%;
+  z-index:10;
+  color: white;
+  /* Web/Web 24px/Regular */
+  font-family: Spectral;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 104%; 
 }
