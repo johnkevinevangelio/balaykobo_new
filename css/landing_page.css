@@ -132,9 +132,9 @@
   }
 }
 
-/* .carousel-image {
+.carousel-image {
   animation: kenBurns 10s infinite alternate;
-} */
+}
 
 .carousel-caption {
   color: #FFF;
