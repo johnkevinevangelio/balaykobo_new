@@ -2,12 +2,29 @@
     background-color: rgba(242, 242, 230, 0.1);
 } */
 
+.landing-title {
+    top: 20px;
+    position: absolute;
+    left: calc(50% - 133px);
+    width: 266px;
+}
+
+.menu-title-cont.hidden {
+    display: none;
+}
+
+.nav-book-now-btn {
+    position: absolute;
+    right: 50px;
+    top: 22%;
+}
+
 #navMain {
-    mix-blend-mode: difference;
+    mix-blend-mode: exclusion;
 }
 
 #navMain.menu-bg {
-    background-color: rgba(242, 242, 230, 0.1);
+    background-color: rgba(242, 242, 230, 0.15);
 }
 
 .homepage-nav {
@@ -28,7 +45,7 @@
 }
 
 .nav {
-    padding: 10px 0px;
+    padding: 52px 0px 10px 0px;
 }
 
 /* nav icons */
@@ -55,7 +72,7 @@
     content: url("../assets/navbar_icons/services-icon.svg");
     width: 43px;
     height: 20.67px;
-    transition: 2s;
+    /* transition: 2s; */
 }
 .nav-about-icon.white {
     content: url("../assets/navbar_icons/about-icon.svg");
@@ -93,7 +110,7 @@
     content: url("../assets/navbar_icons/about-active-icon.svg");
     width: 40px;
     height: 20.67px;
-    transition: 2s;
+    /* transition: 2s; */
 }
 
 /* Nav icons on hover */

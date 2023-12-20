@@ -32,6 +32,12 @@
     <body id="page-top">
         <!-- Navigation-->
         <div class="justify-content-center fixed-top" id="navMain">
+            <div class="menu-title-cont">
+                <img class="landing-title" src="<?php bloginfo('template_url'); ?>/assets/title.png"/>
+            </div>
+            <div class="nav-book-now-btn">
+                <button type="button" class="btn btn-outline-light btn-sm px-4">Book now</button>
+            </div>
             <?php 
                 wp_nav_menu(
                     array(
@@ -42,6 +48,7 @@
                     )
                 );
             ?>
+
             <!-- Navigation menu for windows -->
             <!-- <ul class="nav my-lg-0 justify-content-center">
                 <li class="home-nav-item" id="home-item"><a href="#home"><img class="nav-home-icon white"/></a></li>
@@ -51,7 +58,6 @@
                 <li class="home-nav-item" id="about-item"><a href="#services"><img class="nav-about-icon white"/></a></li>
             </ul> -->
         </div>
-
         <!-- Mobile Navigation Menu -->
         <div class="btn-group dropstart mobile-nav-menu justify-content-end fixed-top px-4 px-lg-5 py-3">
             <button class="navbar-toggler nav-menu-button" role="button" id="mobileDropDownMenuBtn" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
