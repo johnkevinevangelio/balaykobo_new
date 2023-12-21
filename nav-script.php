@@ -16,27 +16,27 @@
         const stickyElem = document.querySelector("#navMain");
         const currStickyPos = stickyElem.getBoundingClientRect().top + window.pageYOffset;
 
-        function navScrollAnimation() {
-            const homeNavItems = [].slice.call(
-                document.querySelectorAll('.nav .home-nav-item')
-            );
+        // function navScrollAnimation() {
+        //     const homeNavItems = [].slice.call(
+        //         document.querySelectorAll('.nav .home-nav-item')
+        //     );
 
-            if (window.pageYOffset > currStickyPos) {
-                homeNavItems.map(function (navItem) {
-                    const navItemId = (navItem.id).replace('-item', '')
-                    const icon = document.querySelector(`.nav-${navItemId}-icon`);
-                    icon.style.height = "20.67px"
-                    navItem.style.padding = "var(--bs-nav-link-padding-y) 20px"
-                });
-            } else {
-                homeNavItems.map(function (navItem) {
-                    const navItemId = (navItem.id).replace('-item', '')
-                    const icon = document.querySelector(`.nav-${navItemId}-icon`);
-                    icon.style.height = "30.67px"
-                    navItem.style.padding = "var(--bs-nav-link-padding-y) 40px"
-                });
-            }
-        }
+        //     if (window.pageYOffset > currStickyPos) {
+        //         homeNavItems.map(function (navItem) {
+        //             const navItemId = (navItem.id).replace('-item', '')
+        //             const icon = document.querySelector(`.nav-${navItemId}-icon`);
+        //             icon.style.height = "20.67px"
+        //             navItem.style.padding = "var(--bs-nav-link-padding-y) 20px"
+        //         });
+        //     } else {
+        //         homeNavItems.map(function (navItem) {
+        //             const navItemId = (navItem.id).replace('-item', '')
+        //             const icon = document.querySelector(`.nav-${navItemId}-icon`);
+        //             icon.style.height = "30.67px"
+        //             navItem.style.padding = "var(--bs-nav-link-padding-y) 40px"
+        //         });
+        //     }
+        // }
 
         function scrollFunction(e) {
             const dropdownMenu = document.querySelector('.mobile-nav-menu')

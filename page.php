@@ -18,12 +18,19 @@
         <link href="<?php bloginfo('template_url'); ?>/css/portfolio.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/gallery.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/sideBarStyle.css" rel="stylesheet" />
+        <link href="<?php bloginfo('template_url'); ?>/css/services.css" rel="stylesheet" />
         <style type="text/css">
         </style>
     </head>
     <body id="page-top">
             <!-- Navigation-->
-            <div class="justify-content-center fixed-top" id="navMain">
+            <div class="justify-content-center fixed-top permanent-bg" id="navMain">
+                <div class="menu-title-cont">
+                    <img class="landing-title" src="<?php bloginfo('template_url'); ?>/assets/title.png"/>
+                </div>
+                <div class="nav-book-now-btn">
+                    <button type="button" class="btn btn-outline-light btn-sm px-4">Book now</button>
+                </div>
                 <?php 
                     wp_nav_menu(
                         array(
@@ -34,17 +41,23 @@
                         )
                     );
                 ?>
-                <!-- <ul class="nav my-lg-0 justify-content-center">
-                    <li class="home-nav-item" id="home-item"><a href="#home"><img class="nav-home-icon white"/></a></li>
-                    <li class="home-nav-item" id="studio-item"><a href="#studio"><img  class="nav-studio-icon white"/></a></li>
-                    <li class="home-nav-item" id="reservation-item"><a href="#reservation"><img class="nav-reservation-icon white"/></a></li>
-                    <li class="home-nav-item" id="services-item"><a href="#services"><img class="nav-services-icon white"/></a></li>
-                    <li class="home-nav-item" id="about-item"><a href="#services"><img class="nav-about-icon white"/></a></li>
-                </ul> -->
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="btn-group dropstart mobile-nav-menu justify-content-end fixed-top px-4 px-lg-5 py-3">
+                <button class="navbar-toggler nav-menu-button" role="button" id="mobileDropDownMenuBtn" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+                    <div class="animated-icon"><span></span><span></span><span></span></div>
+                </button>
+                <div class="dropdown-menu mobile" aria-labelledby="mobileDropDownMenuBtn">
+                    <a class="dropdown-item" href="#home">Home</a>
+                    <a class="dropdown-item" href="#studio">Studio</a>
+                    <a class="dropdown-item" href="#reservation">Reservation</a>
+                    <a class="dropdown-item" href="#services">Services</a>
+                    <a class="dropdown-item" href="#services">About</a>
+                </div>
             </div>
             <?php if(have_posts()) : ?>
                 <?php while(have_posts()) : the_post(); ?>
-                    <h1><?php the_title() ?></h1>
                     <?php $myTitle = get_the_title() ?>
                     <?php $myTitle ?>
                     <?php if($myTitle == 'Studios') : ?>
@@ -73,16 +86,61 @@
             <?php else : ?>
                 <p><?php __('No Page Found'); ?></p>
             <?php endif; ?>
-        <?php wp_footer() ?>
+        <footer>
+            <style>
+                .footerStyle {
+                    background-color: #557689;
+                    padding-bottom: 10%;
+                }
+                .footerTitle {
+                    color: #EBE9DA;
+                    font-family: 'Spectral';
+                    font-size: 26px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                .footerSub {
+                    color: #F2F2E6;
+                    font-family: 'Oxygen Mono';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 115.2%; /* 18.432px */
+                    text-transform: uppercase;
+                }
+            </style>
+            <div class="footerStyle container-fluid pt-5">
+                <div class="d-flex flex-row-reverse">
+                    <div>
+                        <ul style="list-style-type: none;">
+                            <li class="footerTitle">Information</li>
+                            <li class="footerSub">SPONSOR Kobo</li>
+                            <li class="footerSub">CONTACT US</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul style="list-style-type: none;">
+                            <li class="footerTitle">Follow Us</li>
+                            <li class="footerSub">FACEBOOK</li>
+                            <li class="footerSub">INSTAGRAM</li>
+                            <li class="footerSub">LINKEDIN</li>
+                            <li class="footerSub">TIKTOK</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- SimpleLightbox plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
         <!-- Core theme JS-->
         <script src="<?php bloginfo('template_url'); ?>/js/scripts.js"></script>
-        <script src="<?php bloginfo('template_url'); ?>/js/navBarScripts.js"></script>
+        <!-- <script src="<?php bloginfo('template_url'); ?>/js/navBarScripts.js"></script> -->
         <!-- Custom Scripts -->
         <?php include 'nav-script.php';?>
+        <?php include 'services-script.php';?>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
@@ -104,6 +162,7 @@
                     var scroll = window.scrollY;
                     var arrowElement = document.querySelector('.arrow');
                     
+                    if (!arrowElement) return
                     if (scroll >= 1) {
                         arrowElement.classList.add('fade');
                         arrowElement.classList.remove('bounce');
