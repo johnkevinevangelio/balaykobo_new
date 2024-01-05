@@ -41,9 +41,9 @@
         function scrollFunction(e) {
             const dropdownMenu = document.querySelector('.mobile-nav-menu')
             const navMenu = document.querySelector("#navMain");
-            const menuTitle = document.querySelector('.menu-title-cont')
-            const nav = document.querySelector('.nav')
-            const bookNowBtn = document.querySelector('.nav-book-now-btn')
+            // const menuTitle = document.querySelector('.menu-title-cont')
+            // const nav = document.querySelector('.nav')
+            // const bookNowBtn = document.querySelector('.nav-book-now-btn')
             if (window.scrollY === 0) {
                 // if (activeMenu) {
                 //     const activeMenuItem = document.querySelector(`.nav-${section}-icon`)
@@ -53,15 +53,15 @@
                 // }
                 dropdownMenu.classList.remove('drop-down-menu-bg')
                 navMenu.classList.remove('menu-bg')
-                menuTitle.classList.remove('hidden')
-                nav.style.padding = '52px 0px 10px 0px'
-                bookNowBtn.style.top = '35%'
+                // menuTitle.classList.remove('hidden')
+                // nav.style.padding = '52px 0px 10px 0px'
+                // bookNowBtn.style.top = '35%'
             } else {
                 dropdownMenu.classList.add('drop-down-menu-bg')
                 navMenu.classList.add('menu-bg')
-                menuTitle.classList.add('hidden')
-                nav.style.padding = '10px 0px'
-                bookNowBtn.style.top = '22%'
+                // menuTitle.classList.add('hidden')
+                // nav.style.padding = '10px 0px'
+                // bookNowBtn.style.top = '22%'
             }
 
             // Fixed nav when hit the top of the page
