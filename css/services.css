@@ -2,7 +2,7 @@
     display: flex;
 }
 
-.services {
+.services-parent-cont {
     position: relative;
     background: url('../assets/services_page/services-header.jpeg');
     background-repeat: no-repeat;
@@ -19,7 +19,7 @@
     left: 10%;
     height: auto;
     right: 10%;
-    padding: 70px;
+    padding: 40px;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -51,12 +51,14 @@
 
 .grid-item {
     position: relative;
+    overflow: hidden;
 }
 
 .grid-item img {
     max-width: 100%;
     height: auto;
     display: block;
+    transition: transform 0.3s ease;
 }
 
 .row:first-child {
@@ -66,14 +68,24 @@
 .img-desc {
     left: 0;
     right: 0;
-    padding: 0px, 5px;
+    padding-top: 5px;
     color: black;
     font-size: 12px;
     font-family: Oxygen Mono;
     font-weight: 400;
     line-height: 20.20px;
-    word-wrap: break-word
+    word-wrap: break-word;
+    transition: transform 0.3s ease;
 }
+
+.grid-item:hover img {
+    filter: brightness(60%); /* Adjust brightness percentage as needed */
+}
+
+.grid-item:hover .img-desc {
+    text-decoration: underline; /* Add underline on hover */
+}
+
 
 .hr {
     width: 100%;
