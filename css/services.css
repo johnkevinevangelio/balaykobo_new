@@ -2,7 +2,7 @@
     display: flex;
 }
 
-.services {
+.services-parent-cont.main-page {
     position: relative;
     background: url('../assets/services_page/services-header.jpeg');
     background-repeat: no-repeat;
@@ -11,6 +11,14 @@
     height: 100vh;
 }
 
+.services-parent-cont.view {
+    position: relative;
+    background: url('../assets/services_page/services-view-header.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0;
+    height: 100vh;
+}
 
 .services > .services-container {
     position: absolute;
@@ -19,7 +27,7 @@
     left: 10%;
     height: auto;
     right: 10%;
-    padding: 70px;
+    padding: 40px;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -31,7 +39,7 @@
     left: 0;
 }
 
-.services > .services-container > .header-text {
+.services-parent-cont.main-page > .services > .services-container > .header-text {
     color: #222222;
     font-size: 32px;
     font-family: Spectral;
@@ -40,7 +48,7 @@
     word-wrap: break-word
 }
 
-.services > .services-container > .sub-text {
+.services-parent-cont.main-page > .services > .services-container > .sub-text {
     color: #222222;
     font-size: 18px;
     font-family: Spectral;
@@ -49,14 +57,28 @@
     word-wrap: break-word
 }
 
+.services-parent-cont.view > .services > .services-container > .sub-text {
+    color: var(--primary-gabi-black, #222);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Web/Web 42px/Regular */
+    font-family: Spectral;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 94%;
+}
+
 .grid-item {
     position: relative;
+    overflow: hidden;
 }
 
 .grid-item img {
     max-width: 100%;
     height: auto;
     display: block;
+    border: 1px black solid ; /* Initial border */
+    transition: transform 0.3s ease;
 }
 
 .row:first-child {
@@ -66,14 +88,24 @@
 .img-desc {
     left: 0;
     right: 0;
-    padding: 0px, 5px;
+    padding-top: 5px;
     color: black;
     font-size: 12px;
     font-family: Oxygen Mono;
     font-weight: 400;
     line-height: 20.20px;
-    word-wrap: break-word
+    word-wrap: break-word;
+    transition: transform 0.3s ease;
 }
+
+.grid-item:hover img {
+    filter: brightness(60%); /* Adjust brightness percentage as needed */
+}
+
+.grid-item:hover .img-desc {
+    text-decoration: underline; /* Add underline on hover */
+}
+
 
 .hr {
     width: 100%;
@@ -85,4 +117,17 @@
 .service-content-padding {
     padding-left: 12px !important;
     padding-right: 12px !important;
+}
+
+.back-services {
+    color: black; /* Text color */
+    font-family: Oxygen Mono;
+    font-style: normal;
+    font-size: large; /* Font size */
+    display: flex;
+    align-items: center;
+}
+
+.back-services .bi {
+    padding-right: 8px;
 }
