@@ -11,6 +11,8 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.cdnfonts.com/css/oxygen-mono" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/spectral" rel="stylesheet">
         <!-- SimpleLightbox plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -129,30 +131,28 @@
                     height: 200px;
                 }
             }
-            .title-header {
-                color: #3E352C;
-                font-family: Spectral;
-                font-size: 42px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 103.2%;
-                margin-bottom: 10px;
-                margin-top: 50px;
-                width: 100%
-            },
             .subheader {
-                color: #000;
-                font-family: Oxygen Mono;
+                color: #000 !important;
+                font-family: 'Oxygen Mono';
                 font-size: 16px;
-                font-style: normal;
                 font-weight: 400;
                 line-height: 150.2%;
             }
             .floorPlan img {
-                width: 90%;
+                width: 70%;
             }
-            .floorPlan >> .row >> .col {
-                
+            .singleMainContent {
+                padding-top: 5%;
+            }
+            .title-header {
+                color: #3E352C;
+                font-family: 'Spectral';
+                font-size: 42px;
+                font-style: 'normal';
+                font-weight: 400;
+                line-height: 103.2%;
+                margin-bottom: 10px;
+                margin-top: 50px;
             }
             /* .bookStudio {
                 background: url('/assets/second_page/background.jpg');
@@ -200,37 +200,104 @@
 
         <?php if(have_posts()) : ?>
             <?php while(have_posts()) : the_post(); ?>
-                <div class="container-fluid text-center g-0">
+                <div class="container-fluid text-center g-0 singleMainContent">
                     <?php echo get_the_content() ?>
                 </div>
             <?php endwhile; ?>
         <?php else : ?>
             <p><?php __('No Posts Found'); ?></p>
         <?php endif; ?>
-        <!-- Portfolio-->
-        <div class="container-fluid floorPlan" id="floorPlanId">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="http://localhost/balaykobo/wp-content/uploads/2023/10/landing01.jpeg" />
-                </div>
-                <div class="col-md-6">
-                    <img src="http://localhost/balaykobo/wp-content/uploads/2023/10/landing01.jpeg" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="http://localhost/balaykobo/wp-content/uploads/2023/10/landing01.jpeg" />
-                </div>
-                <div class="col-md-6">
-                    <img src="http://localhost/balaykobo/wp-content/uploads/2023/10/landing01.jpeg" />
-                </div>
-            </div>
-        </div>
         <footer>
+            <style>
+                .bookStudio {
+                    background: url(http://localhost/balaykobo/wp-content/uploads/2024/01/singlebookstudiobackground.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    padding-top: 5%;
+                    padding-bottom: 3%;
+
+                }
+                .bookStudioTitleHeader {
+                    color: #3E352C;
+                    font-family: 'Spectral';
+                    font-size: 42px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 103.2%;
+                }
+                .bookStudioSubheader {
+                    color: #000;
+                    font-family: 'Oxygen Mono';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150.2%; /* 24.032px */
+                }
+                .singleBookBtn1Style {
+                    width: 228px;
+                    height: 35px;
+                    padding: 8px, 33.6px, 8px, 33.6px;
+                    border: 1px;
+                    gap: 83.2px;
+                    border-radius: 6px;
+                    border: 0.8px solid #496575;
+                    background-color: #557689;
+                    text-align: center;
+                    color: white;
+                }
+                .singleBookBtn2Style {
+                    width: 228px;
+                    height: 35px;
+                    padding: 8px, 33.6px, 8px, 33.6px;
+                    border-radius: 6px;
+                    border: 1px solid #DADADA;
+                    gap: 83.2px;
+                    background-color: #F4F4F4;
+                    text-align: center;
+                    color: black;
+                }
+                .btnText {
+                    font-family: Oxygen Mono;
+                    font-size: 14px;
+                }
+            </style>
+            <div class="bookStudio text-center mt-5" id="bookStudioId">
+                <div>
+                    <div class="row">
+                        <div class="col align-self-center bookStudioTitleHeader">
+                            Book studio
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col align-self-center bookStudioSubheader">
+                            You have two options below.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center align-self-center singleBookContent">
+                            <div class="mt-4">
+                                <a class="btn btn-outline-secondary me-2 singleBookBtn1Style" style="">
+                                    <div class="btnText"> Call our booking manager </div>
+                                </a>
+                                <a class="btn btn-outline-secondary singleBookBtn2Style" style="">
+                                    <div class="btnText"> Reserve through form </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </footer>
+        <?php get_footer(); ?>
+        <!-- <footer>
             <style>
                 .footerStyle {
                     background-color: #557689;
                     padding-bottom: 10%;
+                    padding-right: 5%
+                }
+                .footerContent {
+                    margin-top: 5%;
                 }
                 .footerTitle {
                     color: #EBE9DA;
@@ -238,6 +305,7 @@
                     font-size: 26px;
                     font-style: normal;
                     font-weight: 400;
+                    letter-spacing: 2px;
                     line-height: normal;
                 }
                 .footerSub {
@@ -245,9 +313,12 @@
                     font-family: 'Oxygen Mono';
                     font-size: 16px;
                     font-style: normal;
-                    font-weight: 400;
-                    line-height: 115.2%; /* 18.432px */
+                    line-height: 18px;
+                    font-weight: 200;
+                    letter-spacing: 1px;
                     text-transform: uppercase;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
                 }
             </style>
             <div class="bookStudio text-center mt-5" id="bookStudioId" style="background: url('<?php bloginfo('template_url'); ?>/assets/second_page/background.jpg');">
@@ -276,16 +347,16 @@
                     </div>
                 </div>
             </div>
-            <div class="footerStyle container-fluid pt-5">
+            <div class="footerStyle container-fluid">
                 <div class="d-flex flex-row-reverse">
-                    <div>
+                    <div class="footerContent">
                         <ul style="list-style-type: none;">
                             <li class="footerTitle">Information</li>
-                            <li class="footerSub">SPONSOR Kobo</li>
+                            <li class="footerSub">SPONSOR KŌBŌ</li>
                             <li class="footerSub">CONTACT US</li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="footerContent">
                         <ul style="list-style-type: none;">
                             <li class="footerTitle">Follow Us</li>
                             <li class="footerSub">FACEBOOK</li>
@@ -296,7 +367,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- SimpleLightbox plugin JS-->

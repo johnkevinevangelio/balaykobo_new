@@ -25,8 +25,9 @@
 
 .overlay-portfolio > a {
   display: none;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  color: #fafafa;
 }
 .overlay-portfolio:hover > a {
   display: block;
@@ -34,4 +35,12 @@
 
 .overlay-portfolio > a:hover {
   /* cursor: pointer; */
+}
+.postText {
+  font-family: 'Spectral';
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0em;
+  color: #fafafa;
 }

@@ -18,6 +18,8 @@
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
         <!-- SimpleLightbox plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <link href="https://fonts.cdnfonts.com/css/oxygen-mono" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/spectral" rel="stylesheet">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" />
         <!-- Custom CSS -->
@@ -27,6 +29,7 @@
         <link href="<?php bloginfo('template_url'); ?>/css/gallery.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/contact.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/portfolio.css" rel="stylesheet" />
+        
         <?php wp_head(); ?>
     </head>
     <body id="page-top">

@@ -1,9 +1,22 @@
 <?php get_header(); ?>
+        <div class="spinner-wrapper">
+            <div class="d-flex justify-content-center loadingLogo">
+                <div class="loadingLogo1">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/loadingLogo1.png">
+                </div>
+                <div class="loadingLogo2">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/loadingLogo2.png">
+                </div>
+            </div>
+            <div class="spinner-border visually-hidden" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
         <!-- Masthead-->
         <header class="masthead">
             <div>
-                <div id="myCarousel" class="carousel slide carousel-fade caption-animate" data-bs-ride="carousel" data-bs-pause="false">
-                <div class="indicator-number" id="indicator">1/6</div>
+                <div id="myCarousel" class="carousel slide carousel-fade caption-animate" data-bs-touch="true" data-bs-keyboard="true" data-bs-ride="carousel" data-bs-pause="false">
+                <!-- <div class="indicator-number" id="indicator">1/6</div> -->
                 <!-- <div class="carousel-indicators">
                     <div class="indicator-number">1/6</div>
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -15,40 +28,40 @@
                 </div> -->
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">
-                        <div class="carousel-item carousel-image landing-img-1 active" data-bs-interval="5000">
+                        <div class="carousel-item carousel-image landing-img-1 active" data-bs-interval="4500">
                         </div>
-                        <div class="carousel-item carousel-image landing-img-2" data-bs-interval="5000">
+                        <div class="carousel-item carousel-image landing-img-2" data-bs-interval="2000">
                             <div class="carousel-caption caption-1">
                                 A creative and communal stage for artists
                             </div>
                         </div>
-                        <div class="carousel-item carousel-image landing-img-3" data-bs-interval="5000">
+                        <div class="carousel-item carousel-image landing-img-3" data-bs-interval="2000">
                             <div class="carousel-caption caption-2">
                                 Fusing Filipino + Japanese sensibilities
                             </div>
                         </div>     
-                        <div class="carousel-item carousel-image landing-img-4" data-bs-interval="5000">
+                        <div class="carousel-item carousel-image landing-img-4" data-bs-interval="2000">
                             <div class="carousel-caption caption-3">
                                 Made for the sun
                             </div>
                         </div>
-                        <div class="carousel-item carousel-image landing-img-5" data-bs-interval="5000">
+                        <div class="carousel-item carousel-image landing-img-5" data-bs-interval="2000">
                             <div class="carousel-caption caption-4">
                                 Holding Space for beauty
                             </div>
                         </div>
-                        <div class="carousel-item carousel-image landing-img-6" data-bs-interval="5000">
+                        <div class="carousel-item carousel-image landing-img-6" data-bs-interval="2000">
                             <div class="carousel-caption caption-5">
                                Providing comfort and clarity
                             </div>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
@@ -56,19 +69,25 @@
             <!-- <div>
                 <img class="landing-title" src="<?php bloginfo('template_url'); ?>/assets/title.png"/>
             </div> -->
-            <a href="#secondPageId"><div class="arrow animated bounce"></div></a>
+            <!-- <a href="#secondPageId"><div class="arrow animated bounce"></div></a> -->
         </header>
         <!-- Section 2 -->
-        <div class="container-fluid secondPage vh-100 text-center" id="secondPageId">
+        <div class="container-fluid secondPage text-center" id="secondPageId">
             <div class="row" id="home">
-                <div class="col-12 text-center align-self-center">
-                    <h1>home</h1>
-                    <br/>
-                    <p>A multipurpose + studio made for the sun</p>
+                <div class="col-12 text-center align-self-center secondPageContent">
+                    <div class="secondPageTitle">A multipurpose home + studio for photoshoots, workshops, and intimate events</div>
+                    <div class="mt-5">
+                        <a class="btn btn-outline-secondary me-4 button1Style" style="">
+                            <div class="btnText"> Book now </div>
+                        </a>
+                        <a href="http://localhost/balaykobo/studios/" class="btn btn-outline-secondary button2Style" style="">
+                            <div class="btnText"> Explore studios </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <hr class="hr hr-blurry" />
-            <div class="row" id="studio">
+            <!-- <hr class="hr hr-blurry" /> -->
+            <!-- <div class="row" id="studio">
                 <div class="col-12 text-center align-self-center">
                     <h1>studio</h1>
                     <br/>
@@ -82,10 +101,10 @@
                 <div class="col-12 text-center align-self-center">
                     <h1>about</h1>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- Gallery -->
-        <div class="container-fluid gallery" id="galleryId">
+        <!-- <div class="container-fluid gallery" id="galleryId">
             <div class="row py-5">
                 <div class="col-lg-2 col-sm-auto align-self-center text-lg-center">
                     <img src="<?php bloginfo('template_url'); ?>/assets/about-active-icon.svg"/>
@@ -111,7 +130,7 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Portfolio-->
         <div class="container-fluid portfolio g-0" id="portfolioId">
             <div class="eye"></div>
