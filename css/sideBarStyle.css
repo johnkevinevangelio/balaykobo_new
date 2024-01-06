@@ -3,10 +3,12 @@
 } */
 
 .landing-title {
-    top: 20px;
+    top: 38px;
     position: absolute;
-    left: calc(50% - 133px);
-    width: 266px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    width: 240px;
 }
 
 .menu-title-cont.hidden {
@@ -49,7 +51,51 @@
 }
 
 .nav {
-    padding: 52px 0px 10px 0px;
+    padding: 70px 0px 15px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav li {
+    margin: 0px 20px;
+    text-align: center; /* Center the content inside each list item */
+    position: relative;
+    display: flex; /* Use flexbox to align content vertically */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+}
+
+li img {
+    position: absolute;
+    margin-bottom: 5px;
+    top: 0;
+    left: 0;
+}
+
+.nav li span {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 4px;
+    /* text style */
+    color: white;
+    font-size: 14px;
+    font-family: Spectral;
+    font-weight: 300;
+    line-height: 14px;
+}
+
+.nav li:hover img {
+    display: none; /* Hide image/icon on hover */
+}
+
+.nav li:hover span {
+    display: block;
 }
 
 /* nav icons */
@@ -119,7 +165,7 @@
 
 /* Nav icons on hover */
 /* White icons */
-.nav-home-icon.white:hover {
+/* .nav-home-icon.white:hover {
     content: url("../assets/navbar_icons/home-text.svg");
     transition: 0s;
 }
@@ -140,10 +186,10 @@
 .nav-about-icon.white:hover {
     content: url("../assets/navbar_icons/about-text.svg");
     transition: 0s;
-}
+} */
 
 /* Black icons */
-.nav-home-icon.black:hover {
+/* .nav-home-icon.black:hover {
     content: url("../assets/navbar_icons/home-active-text.svg");
     transition: 0s;
 }
@@ -164,7 +210,7 @@
 .nav-about-icon.black:hover {
     content: url("../assets/navbar_icons/about-active-text.svg");
     transition: 0s;
-}
+} */
 
 
 /* Mobile nav menu */
