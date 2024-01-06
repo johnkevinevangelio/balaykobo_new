@@ -138,6 +138,12 @@
                 font-weight: 400;
                 line-height: 150.2%;
             }
+            .floorPlan img {
+                width: 70%;
+            }
+            .singleMainContent {
+                padding-top: 5%;
+            }
             .title-header {
                 color: #3E352C;
                 font-family: 'Spectral';
@@ -147,12 +153,6 @@
                 line-height: 103.2%;
                 margin-bottom: 10px;
                 margin-top: 50px;
-            },
-            .floorPlan img {
-                width: 80%;
-            }
-            .singleMainContent {
-                padding-top: 5%;
             }
             /* .bookStudio {
                 background: url('/assets/second_page/background.jpg');

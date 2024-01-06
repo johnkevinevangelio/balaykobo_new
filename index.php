@@ -1,4 +1,17 @@
 <?php get_header(); ?>
+        <div class="spinner-wrapper">
+            <div class="d-flex justify-content-center loadingLogo">
+                <div class="loadingLogo1">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/loadingLogo1.png">
+                </div>
+                <div class="loadingLogo2">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/loadingLogo2.png">
+                </div>
+            </div>
+            <div class="spinner-border visually-hidden" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
         <!-- Masthead-->
         <header class="masthead">
             <div>
@@ -15,7 +28,7 @@
                 </div> -->
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">
-                        <div class="carousel-item carousel-image landing-img-1 active" data-bs-interval="2000">
+                        <div class="carousel-item carousel-image landing-img-1 active" data-bs-interval="4500">
                         </div>
                         <div class="carousel-item carousel-image landing-img-2" data-bs-interval="2000">
                             <div class="carousel-caption caption-1">

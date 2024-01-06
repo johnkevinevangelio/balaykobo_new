@@ -101,6 +101,12 @@
                     document.getElementById('indicator').innerHTML = currSlide + '/' + totalItems
                 })
             });
+            const spinnerWrapperEl = document.querySelector('.spinner-wrapper');
+            
+            setTimeout(() => {
+                spinnerWrapperEl.style.opacity = '0';
+                spinnerWrapperEl.style.display = 'none';
+            }, 2000)
 
         </script>
     </body>
