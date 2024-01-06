@@ -13,7 +13,7 @@
             onclick="<?php if(has_excerpt()) : ?>changeImage('<?php echo get_the_excerpt(); ?>', 'img-<?php the_ID(); ?>')<?php endif; ?>"
         >
             <a href="<?php the_permalink(); ?>">
-                <h3><?php the_title(); ?></h3>
+                <div class="postText"><?php the_title(); ?></div>
             </a>
         </div>
     </div>
