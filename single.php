@@ -243,7 +243,12 @@
                     border: 0.8px solid #496575;
                     background-color: #557689;
                     text-align: center;
-                    color: white;
+                    color: #FFF;
+                    font-family: 'Oxygen Mono';
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 115.2%; /* 16.128px */
                 }
                 .singleBookBtn2Style {
                     width: 228px;
@@ -254,7 +259,12 @@
                     gap: 83.2px;
                     background-color: #F4F4F4;
                     text-align: center;
-                    color: black;
+                    color: 3E352C;
+                    font-family: 'Oxygen Mono';
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 115.2%; /* 16.128px */
                 }
                 .btnText {
                     font-family: Oxygen Mono;

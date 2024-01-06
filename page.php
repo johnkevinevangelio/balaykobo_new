@@ -18,7 +18,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/portfolio.css" rel="stylesheet" />
-        <link href="<?php bloginfo('template_url'); ?>/css/gallery.css" rel="stylesheet" />
+        <link href="<?php bloginfo('template_url'); ?>/css/about.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/sideBarStyle.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/services.css" rel="stylesheet" />
         <style type="text/css">
