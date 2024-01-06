@@ -11,6 +11,8 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.cdnfonts.com/css/oxygen-mono" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/spectral" rel="stylesheet">
         <!-- SimpleLightbox plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -86,11 +88,17 @@
             <?php else : ?>
                 <p><?php __('No Page Found'); ?></p>
             <?php endif; ?>
-        <footer>
+            <?php wp_reset_postdata();?>
+        <?php get_footer(); ?>
+        <!-- <footer>
             <style>
                 .footerStyle {
                     background-color: #557689;
                     padding-bottom: 10%;
+                    padding-right: 5%
+                }
+                .footerContent {
+                    margin-top: 5%;
                 }
                 .footerTitle {
                     color: #EBE9DA;
@@ -98,6 +106,7 @@
                     font-size: 26px;
                     font-style: normal;
                     font-weight: 400;
+                    letter-spacing: 2px;
                     line-height: normal;
                 }
                 .footerSub {
@@ -105,21 +114,24 @@
                     font-family: 'Oxygen Mono';
                     font-size: 16px;
                     font-style: normal;
-                    font-weight: 400;
-                    line-height: 115.2%; /* 18.432px */
+                    line-height: 18px;
+                    font-weight: 200;
+                    letter-spacing: 1px;
                     text-transform: uppercase;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
                 }
             </style>
-            <div class="footerStyle container-fluid pt-5">
+            <div class="footerStyle container-fluid">
                 <div class="d-flex flex-row-reverse">
-                    <div>
+                    <div class="footerContent">
                         <ul style="list-style-type: none;">
                             <li class="footerTitle">Information</li>
-                            <li class="footerSub">SPONSOR Kobo</li>
+                            <li class="footerSub">SPONSOR KŌBŌ</li>
                             <li class="footerSub">CONTACT US</li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="footerContent">
                         <ul style="list-style-type: none;">
                             <li class="footerTitle">Follow Us</li>
                             <li class="footerSub">FACEBOOK</li>
@@ -130,7 +142,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- SimpleLightbox plugin JS-->

@@ -132,9 +132,9 @@
   }
 }
 
-.carousel-image {
+/* .carousel-image {
   animation: kenBurns 10s infinite alternate;
-}
+} */
 
 .carousel-caption {
   color: #FFF;
@@ -153,7 +153,7 @@
   left: -20%;
   transform: translateY(-50%);
   opacity: 0;
-  animation: fadeInFromLeft 4s ease-out forwards;
+  animation: fadeInFromLeft 0.5s ease-out forwards;
 }
 
 @keyframes fadeInFromLeft {
@@ -175,7 +175,7 @@
   right: 20%;
   transform: translate(-50%, -100%);
   opacity: 0;
-  animation: fadeInFromTop 4s ease-out forwards;
+  animation: fadeInFromTop 0.5s ease-out forwards;
 }
 
 @keyframes fadeInFromTop {
@@ -195,7 +195,7 @@
   left: -10%;
   transform: translate(-10%, -50%);
   opacity: 0;
-  animation: fadeInFromBottom 4s ease-out forwards;
+  animation: fadeInFromBottom 0.5s ease-out forwards;
 }
 
 @keyframes fadeInFromBottom {
@@ -212,10 +212,10 @@
 .caption-4 {
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 15%;
   transform: translate(0, -100%);
   opacity: 0;
-  animation: fadeInFromTop2 4s ease-out forwards;
+  animation: fadeInFromTop2 0.5s ease-out forwards;
 }
 
 @keyframes fadeInFromTop2 {
@@ -232,9 +232,9 @@
 .caption-5 {
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 15%;
   opacity: 0;
-  animation: fadeIn 4s ease-out forwards;
+  animation: fadeIn 0.5s ease-out forwards;
 }
 
 @keyframes fadeIn {

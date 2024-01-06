@@ -1,6 +1,56 @@
         <!-- Footer-->
-        <footer class="bg-light py-5">
-            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; <?php echo Date('Y'); ?> - <?php bloginfo('name') ?></div></div>
+        <footer>
+            <style>
+                .footerStyle {
+                    background-color: #557689;
+                    padding-bottom: 10%;
+                    padding-right: 5%
+                }
+                .footerContent {
+                    margin-top: 5%;
+                }
+                .footerTitle {
+                    color: #EBE9DA;
+                    font-family: 'Spectral';
+                    font-size: 26px;
+                    font-style: normal;
+                    font-weight: 400;
+                    letter-spacing: 2px;
+                    line-height: normal;
+                }
+                .footerSub {
+                    color: #F2F2E6;
+                    font-family: 'Oxygen Mono';
+                    font-size: 16px;
+                    font-style: normal;
+                    line-height: 18px;
+                    font-weight: 200;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+            </style>
+            <div class="footerStyle container-fluid">
+                <div class="d-flex flex-row-reverse">
+                    <div class="footerContent">
+                        <ul style="list-style-type: none;">
+                            <li class="footerTitle">Information</li>
+                            <li class="footerSub">SPONSOR KŌBŌ</li>
+                            <li class="footerSub">CONTACT US</li>
+                        </ul>
+                    </div>
+                    <div class="footerContent">
+                        <ul style="list-style-type: none;">
+                            <li class="footerTitle">Follow Us</li>
+                            <li class="footerSub">FACEBOOK</li>
+                            <li class="footerSub">INSTAGRAM</li>
+                            <li class="footerSub">LINKEDIN</li>
+                            <li class="footerSub">TIKTOK</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </footer>
         <?php wp_footer() ?>
         <!-- Bootstrap core JS-->
