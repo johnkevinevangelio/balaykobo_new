@@ -29,14 +29,17 @@
         <link href="<?php bloginfo('template_url'); ?>/css/gallery.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/contact.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/portfolio.css" rel="stylesheet" />
-        
+        <link href="<?php bloginfo('template_url'); ?>/css/about.css" rel="stylesheet" />
         <?php wp_head(); ?>
     </head>
-    <body id="page-top">
+    <body id="page-top"> 
+        <!-- remove scroll temporarily -->
         <!-- Navigation-->
         <div class="justify-content-center fixed-top" id="navMain">
             <div class="menu-title-cont">
-                <img class="landing-title" src="<?php bloginfo('template_url'); ?>/assets/title.png"/>
+                <a href="<?php echo get_home_url(); ?>">
+                    <img class="landing-title" src="<?php bloginfo('template_url'); ?>/assets/title.png"/>
+                </a>
             </div>
             <div class="nav-book-now-btn">
                 <button type="button" class="btn btn-outline-light btn-sm px-4">Book now</button>

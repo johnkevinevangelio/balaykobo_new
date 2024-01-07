@@ -167,7 +167,9 @@
         <!-- Navigation-->
         <div class="justify-content-center fixed-top permanent-bg" id="navMain">
             <div class="menu-title-cont">
-                <img class="landing-title" src="<?php bloginfo('template_url'); ?>/assets/title.png"/>
+                <a href="<?php echo get_home_url(); ?>">
+                    <img class="landing-title" src="<?php bloginfo('template_url'); ?>/assets/title.png"/>
+                </a>
             </div>
             <div class="nav-book-now-btn">
                 <button type="button" class="btn btn-outline-light btn-sm px-4">Book now</button>
@@ -210,7 +212,7 @@
         <footer>
             <style>
                 .bookStudio {
-                    background: url(http://localhost/balaykobo/wp-content/uploads/2024/01/singlebookstudiobackground.jpg);
+                    background: url(https://balaykobo-dev.me/wp-content/uploads/2024/01/singlebookstudiobackground.jpg);
                     background-size: cover;
                     background-position: center;
                     padding-top: 5%;

@@ -22,6 +22,7 @@
         <link href="<?php bloginfo('template_url'); ?>/css/sideBarStyle.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/services.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/partnership.css" rel="stylesheet" />
+        <link href="<?php bloginfo('template_url'); ?>/css/studios.css" rel="stylesheet" />
         <style type="text/css">
         </style>
     </head>
@@ -29,7 +30,9 @@
             <!-- Navigation-->
             <div class="justify-content-center fixed-top permanent-bg" id="navMain">
                 <div class="menu-title-cont">
-                    <img class="landing-title" src="<?php bloginfo('template_url'); ?>/assets/title.png"/>
+                    <a href="<?php echo get_home_url(); ?>">
+                        <img class="landing-title" src="<?php bloginfo('template_url'); ?>/assets/title.png"/>
+                    </a>
                 </div>
                 <div class="nav-book-now-btn">
                     <button type="button" class="btn btn-outline-light btn-sm px-4">Book now</button>
@@ -65,9 +68,13 @@
                     <?php $myTitle ?>
                     <?php if($myTitle == 'Studios') : ?>
                         <div class="container-fluid g-0">
+                            <div class="studioHeader d-flex justify-content-center">
+                                <div class="align-self-end studioTitle">Our studios</div>
+                            </div>
                             <div class="row g-0">
                                 <?php
                                     $args = array(
+                                        'tag' => 'gallery'
                                     );
                                     $my_post = get_posts($args);
                                     if ( $my_post ) {

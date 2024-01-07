@@ -77,19 +77,19 @@
                 }
             }
             document.addEventListener("DOMContentLoaded", function() {
-                window.addEventListener("scroll", function() {
-                    var scroll = window.scrollY;
-                    var arrowElement = document.querySelector('.arrow');
+                // window.addEventListener("scroll", function() {
+                //     var scroll = window.scrollY;
+                //     var arrowElement = document.querySelector('.arrow');
                     
-                    if (scroll >= 1) {
-                        arrowElement.classList.add('fade');
-                        arrowElement.classList.remove('bounce');
-                    } else {
-                        arrowElement.classList.remove('fade');
-                        arrowElement.classList.add('bounce');
-                        arrowElement.style.animationPlayState = 'running';
-                    }
-                });
+                //     if (scroll >= 1) {
+                //         arrowElement.classList.add('fade');
+                //         arrowElement.classList.remove('bounce');
+                //     } else {
+                //         arrowElement.classList.remove('fade');
+                //         arrowElement.classList.add('bounce');
+                //         arrowElement.style.animationPlayState = 'running';
+                //     }
+                // });
                 var myCarousel = document.getElementById('myCarousel')
 
                 myCarousel.addEventListener('slide.bs.carousel', function (e) {
