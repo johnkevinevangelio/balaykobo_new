@@ -5,31 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="<?php bloginfo('description'); ?>" />
         <title>
-            <?php
-                $a = '|'
-            ?>
-            <?php bloginfo('name'); ?>
-            <?php is_front_page() ? '|'.''.bloginfo('description') : '|'.''.wp_title(); ?>
+            <?php wp_title() ;?>
         </title>
         <!-- Bootstrap Icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.cdnfonts.com/css/oxygen-mono" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Oxygen Mono' rel='stylesheet'>
+        <link href="https://fonts.cdnfonts.com/css/spectral" rel="stylesheet">
         <!-- SimpleLightbox plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-        <link href="https://fonts.cdnfonts.com/css/oxygen-mono" rel="stylesheet">
-        <link href="https://fonts.cdnfonts.com/css/spectral" rel="stylesheet">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" />
         <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/slick/slick-theme.css">
         <link href="<?php bloginfo('template_url'); ?>/css/sideBarStyle.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/landing_page.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/second_page.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/gallery.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/contact.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/portfolio.css" rel="stylesheet" />
+
+        <link href="<?php bloginfo('template_url'); ?>/css/single.css" rel="stylesheet" />
+        
         <link href="<?php bloginfo('template_url'); ?>/css/about.css" rel="stylesheet" />
+        <link href="<?php bloginfo('template_url'); ?>/css/services.css" rel="stylesheet" />
+        <link href="<?php bloginfo('template_url'); ?>/css/partnership.css" rel="stylesheet" />
+        <link href="<?php bloginfo('template_url'); ?>/css/studios.css" rel="stylesheet" />
         <?php wp_head(); ?>
     </head>
     <body id="page-top"> 
