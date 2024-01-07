@@ -12,7 +12,7 @@
                 <span class="visually-hidden">Loading...</span>
             </div>
         </div>
-        <!-- <div class="comingSoon">
+        <div class="comingSoon">
             <div class="aboutLanding"><video class="aboutVideoBackground" autoplay="autoplay" loop="loop" muted="" width="300" height="150">
             <source src="https://balaykobo-dev.me/wp-content/uploads/2024/01/comingSoonVideo.mp4" type="video/mp4" />
             </video>
@@ -108,7 +108,7 @@
             </div>
             </div>
             </div>
-        </div> -->
+        </div>
         <!-- Masthead-->
         <header class="masthead">
             <div>
