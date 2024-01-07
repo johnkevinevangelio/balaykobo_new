@@ -132,19 +132,19 @@ li img {
 }
 
 /* Black icons */
-.nav-home-icon.black {
+.nav-studios-icon.black {
     content: url("../assets/navbar_icons/sun-black.svg");
     width: 48px;
     height: 20.67px;
     transition: 2s;
 }
-.nav-studio-icon.black {
+.nav-gallery-icon.black {
     content: url("../assets/navbar_icons/house-black.svg");
     width: 43px;
     height: 20.67px;
     transition: 2s;
 }
-.nav-reservation-icon.black {
+.nav-partnerships-icon.black {
     content: url("../assets/navbar_icons/diamonds-black.svg");
     width: auto;
     height: 20.67px;
