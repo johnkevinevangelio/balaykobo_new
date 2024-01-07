@@ -21,6 +21,7 @@
         <link href="<?php bloginfo('template_url'); ?>/css/about.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/sideBarStyle.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/services.css" rel="stylesheet" />
+        <link href="<?php bloginfo('template_url'); ?>/css/partnership.css" rel="stylesheet" />
         <style type="text/css">
         </style>
     </head>
@@ -153,6 +154,7 @@
         <!-- Custom Scripts -->
         <?php include 'nav-script.php';?>
         <?php include 'services-script.php';?>
+        <?php include 'partnership-script.php';?>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
