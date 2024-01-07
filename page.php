@@ -5,29 +5,33 @@
             <?php $myTitle ?>
             <?php if($myTitle == 'Studios') : ?>
                 <div class="container-fluid g-0">
-                    <div class="studioHeader d-flex justify-content-center">
+                    <div class="studioHeader1 d-flex justify-content-center">
                         <div class="align-self-end studioTitle">Our studios</div>
                     </div>
-                    <div class="row g-0">
-                        <?php
-                            $args = array(
-                                'tag' => 'gallery'
-                            );
-                            $my_post = get_posts($args);
-                            if ( $my_post ) {
-                                foreach ( $my_post as $post ) : 
-                                    setup_postdata( $post ); 
-                        ?>
-                        <?php get_template_part('content'); ?>
-                        <?php
-                            endforeach;
-                            wp_reset_postdata();
-                            }
-                        ?>
+                    <div class="container-fluid g-0">
+                        <div class="row g-0">
+                            <?php
+                                $args = array(
+                                    'tag' => 'gallery'
+                                );
+                                $my_post = get_posts($args);
+                                if ( $my_post ) {
+                                    foreach ( $my_post as $post ) : 
+                                        setup_postdata( $post ); 
+                            ?>
+                            <?php get_template_part('content'); ?>
+                            <?php
+                                endforeach;
+                                wp_reset_postdata();
+                                }
+                            ?>
+                        </div>
                     </div>
                 </div>
             <?php else :?>
-                <?php echo get_the_content() ?>
+                <div class="container-fluid g-0">
+                    <?php echo get_the_content() ?>
+                </div>
             <?php endif; ?>
         <?php endwhile; ?>
     <?php else : ?>

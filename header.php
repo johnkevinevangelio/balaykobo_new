@@ -30,12 +30,33 @@
         <link href="<?php bloginfo('template_url'); ?>/css/portfolio.css" rel="stylesheet" />
 
         <link href="<?php bloginfo('template_url'); ?>/css/single.css" rel="stylesheet" />
-        
+
         <link href="<?php bloginfo('template_url'); ?>/css/about.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/services.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/partnership.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/studios.css" rel="stylesheet" />
         <?php wp_head(); ?>
+        <style>
+            #page-top::-webkit-scrollbar-track
+            {
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                border-radius: 10px;
+                background-color: #F5F5F5;
+            }
+
+            #page-top::-webkit-scrollbar
+            {
+                width: 12px;
+                background-color: #F5F5F5;
+            }
+
+            #page-top::-webkit-scrollbar-thumb
+            {
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+                background-color: #555;
+            }
+        </style>
     </head>
     <body id="page-top"> 
         <!-- remove scroll temporarily -->
@@ -82,26 +103,3 @@
                 <a class="dropdown-item" href="#services">About</a>
             </div>
         </div>
-
-        <!-- <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="main-menu">
-                    <?php
-                        wp_nav_menu(array(
-                            'theme_location' => 'main-menu',
-                            'container' => false,
-                            'menu_class' => '',
-                            'fallback_cb' => '__return_false',
-                            'items_wrap' => '<ul id="%1$s" class="navbar-nav me-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
-                            'depth' => 2,
-                            'walker' => new bootstrap_5_wp_nav_menu_walker()
-                        ));
-                    ?>
-                </div>
-            </div>
-        </nav> -->
