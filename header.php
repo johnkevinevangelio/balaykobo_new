@@ -37,7 +37,7 @@
         <!-- Navigation-->
         <div class="justify-content-center fixed-top" id="navMain">
             <div class="menu-title-cont">
-                <a href="https://balaykobo-dev.me/">
+                <a href="<?php echo get_home_url(); ?>">
                     <img class="landing-title" src="<?php bloginfo('template_url'); ?>/assets/title.png"/>
                 </a>
             </div>

@@ -80,57 +80,13 @@
                         <a class="btn btn-outline-secondary me-4 button1Style" style="">
                             <div class="btnText"> Book now </div>
                         </a>
-                        <a href="https://balaykobo-dev.me/studios/" class="btn btn-outline-secondary button2Style" style="">
+                        <a href="<?php echo get_permalink( get_page_by_title( 'Studios' ) ); ?>" class="btn btn-outline-secondary button2Style" style="">
                             <div class="btnText"> Explore studios </div>
                         </a>
                     </div>
                 </div>
             </div>
-            <!-- <hr class="hr hr-blurry" /> -->
-            <!-- <div class="row" id="studio">
-                <div class="col-12 text-center align-self-center">
-                    <h1>studio</h1>
-                    <br/>
-                    <p>Elevating and holding space for beauty </p>
-                    <p> Paying homage to Filipino and Japanese sensibilities </p>
-                    <p> Balay Kobo takes pride in its rich architecture interiors.</p>
-                </div>
-            </div>
-            <hr class="hr hr-blurry" />
-            <div class="row" id="about">
-                <div class="col-12 text-center align-self-center">
-                    <h1>about</h1>
-                </div>
-            </div> -->
         </div>
-        <!-- Gallery -->
-        <!-- <div class="container-fluid gallery" id="galleryId">
-            <div class="row py-5">
-                <div class="col-lg-2 col-sm-auto align-self-center text-lg-center">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/about-active-icon.svg"/>
-                </div>
-                <div class="col-lg-2 col-sm-auto align-self-center">
-                    <h1>Kobo</h1>
-                    <h1>Gallery</h1>
-                </div>
-                <div class="col-lg-5 align-self-center">
-                    <p> A multipurpose home + studio to bring people together in a communal space. </p>
-                    <p> Gathering inspiration from her stay in Japan to paying homage to her Filipino heritage. Balay Kobo takes pride in its rich architecture interiors.</p>
-                </div>
-            </div>
-            <div class="row pb-5">
-                <div class="col-lg-11 align-self-center text-lg-center ps-5">
-                    <a class="btn btn-outline-secondary me-4" style="border-radius: 20px">
-                        <span class="ms-2 me-5"> book now </span>
-                        <i class="bi bi-arrow-right ms-4 me-2"></i>
-                    </a>
-                    <a class="btn btn-outline-secondary" style="border-radius: 20px">
-                        <span class="ms-2 me-5"> explore studios </span>
-                        <i class="bi bi-arrow-right ms-4 me-2"></i>
-                    </a>
-                </div>
-            </div>
-        </div> -->
         <!-- Portfolio-->
         <div class="container-fluid portfolio g-0" id="portfolioId">
             <div class="eye"></div>
@@ -198,7 +154,7 @@
                     <div class="pb-3">
                         <h4 class="text-black">We are Balay Kōbō, check us out!</h4>
                     </div>
-                    <a class="btn btn-black">
+                    <a href="<?php echo get_permalink( get_page_by_title( 'About' ) ); ?>" class="btn btn-black">
                         <span class="ms-2 me-5"> Learn more about us </span>
                         <i class="bi bi-arrow-right ms-4 me-2"></i>
                     </a>
