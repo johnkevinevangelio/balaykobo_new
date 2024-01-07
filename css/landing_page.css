@@ -302,12 +302,14 @@
 .loadingLogo1 {
   /* margin-top: 50vh; */
   /* gap: 30%; */
+  width: 115px;
   transform: translate(-15vw, 50vh);
   animation:  loadingAnimation1 2s linear forwards;
 }
 .loadingLogo2 {
   /* margin-top: 50vh; */
   /* gap: 30%; */
+  width: 115px;
   transform: translate(15vw, 50vh);
   animation:  loadingAnimation2 2s linear forwards;
 }
@@ -323,11 +325,11 @@
   }
   90% {
     opacity: 1;
-    transform: translate(-0.8vw, 3vh);
+    transform: translate(-0.8vw, 4vh);
   }
   100% {
     opacity: 1;
-    transform: translate(-0.8vw, 3vh);
+    transform: translate(-0.8vw, 4vh);
   }
 }
 @keyframes loadingAnimation2 {
@@ -341,10 +343,54 @@
   }
   90% {
     opacity: 1;
-    transform: translate(0.8vw, 3vh);
+    transform: translate(0.8vw, 4vh);
   }
   100% {
     opacity: 1;
-    transform: translate(0.8vw, 3vh);
+    transform: translate(0.8vw, 4vh);
   }
+}
+
+.comingSoon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+  overflow-y: scroll;
+}
+.aboutLogoComingSoon {
+  position: absolute;
+  top: 5%;
+  width: 240px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.aboutTextContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.aboutTitleComingSoon {
+  font-family: 'Spectral';
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0em;
+  /* bottom:50%; */
+  color: white;
+  text-align: center;
+  z-index: 10;
+}
+.aboutLogoComingSoon1 {
+  font-family: 'Spectral';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0em;
+  /* bottom:50%; */
+  color: white;
+  z-index: 10;
 }

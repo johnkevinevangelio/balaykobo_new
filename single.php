@@ -210,7 +210,7 @@
         <footer>
             <style>
                 .bookStudio {
-                    background: url(http://localhost/balaykobo/wp-content/uploads/2024/01/singlebookstudiobackground.jpg);
+                    background: url(https://balaykobo-dev.me/wp-content/uploads/2024/01/singlebookstudiobackground.jpg);
                     background-size: cover;
                     background-position: center;
                     padding-top: 5%;

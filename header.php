@@ -29,10 +29,11 @@
         <link href="<?php bloginfo('template_url'); ?>/css/gallery.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/contact.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/portfolio.css" rel="stylesheet" />
-        
+        <link href="<?php bloginfo('template_url'); ?>/css/about.css" rel="stylesheet" />
         <?php wp_head(); ?>
     </head>
-    <body id="page-top">
+    <body id="page-top"> 
+        <!-- remove scroll temporarily -->
         <!-- Navigation-->
         <div class="justify-content-center fixed-top" id="navMain">
             <div class="menu-title-cont">
