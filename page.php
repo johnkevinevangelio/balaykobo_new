@@ -29,7 +29,9 @@
             <!-- Navigation-->
             <div class="justify-content-center fixed-top permanent-bg" id="navMain">
                 <div class="menu-title-cont">
-                    <img class="landing-title" src="<?php bloginfo('template_url'); ?>/assets/title.png"/>
+                    <a href="https://balaykobo-dev.me/">
+                        <img class="landing-title" src="<?php bloginfo('template_url'); ?>/assets/title.png"/>
+                    </a>
                 </div>
                 <div class="nav-book-now-btn">
                     <button type="button" class="btn btn-outline-light btn-sm px-4">Book now</button>
