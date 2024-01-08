@@ -23,6 +23,7 @@
         <link href="<?php bloginfo('template_url'); ?>/css/services.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/partnership.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/studios.css" rel="stylesheet" />
+        <link href="<?php bloginfo('template_url'); ?>/css/gallery.css" rel="stylesheet" />
         <style type="text/css">
         </style>
     </head>
@@ -97,6 +98,21 @@
                 <p><?php __('No Page Found'); ?></p>
             <?php endif; ?>
             <?php wp_reset_postdata();?>
+        
+            <!-- Bootstrap Modal -->
+            <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="text-center">
+                            <img src="" class="img-fluid" id="modalImage" alt="Modal Image">
+                            <div class="modal-desc mt-2">
+                                <span id="imageDescription"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         <?php get_footer(); ?>
         <!-- <footer>
             <style>
@@ -162,6 +178,7 @@
         <?php include 'nav-script.php';?>
         <?php include 'services-script.php';?>
         <?php include 'partnership-script.php';?>
+        <?php include 'gallery-script.php';?>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
