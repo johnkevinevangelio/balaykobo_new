@@ -8,9 +8,10 @@
 			thumbnail.addEventListener('click', () => {
 				const imageUrl = thumbnail.getAttribute('src');
 				const description = thumbnail.getAttribute('data-desc');
+				
 				modalImage.setAttribute('src', imageUrl);
-				if (description)
-					imageDescription.textContent = description;
+				if (!description) return
+				imageDescription.textContent = description;
 			});
     });
 </script>

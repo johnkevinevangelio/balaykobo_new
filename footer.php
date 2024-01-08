@@ -61,11 +61,17 @@
         <script src="<?php bloginfo('template_url'); ?>/js/scripts.js"></script>
         <!-- Custom Scripts -->
         <?php include 'nav-script.php';?>
+        <?php include 'services-script.php';?>
+        <?php include 'partnership-script.php';?>
+        <?php include 'gallery-script.php';?>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="<?php bloginfo('template_url'); ?>/css/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+        <?php include 'singlePage-script.php'; ?>
         <script>
             let currentIndex = 0
             function changeImage (excerpt, id) {
@@ -91,7 +97,8 @@
                 //     }
                 // });
                 var myCarousel = document.getElementById('myCarousel')
-
+                
+                if (!myCarousel) return
                 myCarousel.addEventListener('slide.bs.carousel', function (e) {
                     var totalItems = document.getElementsByClassName('carousel-item').length;
                     var slides = this.querySelectorAll('.carousel-item');
@@ -103,11 +110,13 @@
             });
             const spinnerWrapperEl = document.querySelector('.spinner-wrapper');
             
-            setTimeout(() => {
-                spinnerWrapperEl.style.opacity = '0';
-                spinnerWrapperEl.style.display = 'none';
-            }, 2000)
+            if (spinnerWrapperEl) {
+                setTimeout(() => {
+                    spinnerWrapperEl.style.opacity = '0';
+                    spinnerWrapperEl.style.display = 'none';
+                }, 2000)
 
+            }
         </script>
     </body>
 </html>

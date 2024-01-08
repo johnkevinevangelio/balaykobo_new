@@ -45,7 +45,8 @@
     font-family: Spectral;
     font-weight: 400;
     line-height: 33.68px;
-    word-wrap: break-word
+    word-wrap: break-word;
+    padding-top: 7%;
 }
 
 .services-parent-cont.main-page > .services > .services-container > .sub-text {
