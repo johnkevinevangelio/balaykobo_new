@@ -19,6 +19,7 @@
 }
 
 .left-menu a {
+    display: inline-block;
     margin-right: 90px;
     color: #000;
     text-decoration: none;
@@ -32,7 +33,6 @@
 }
 
 .right-menu {
-    display: flex;
     justify-content: flex-end;
     align-items: center;
 }
@@ -45,6 +45,15 @@
 }
 
 /* css icons */
+.icons-cont {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    gap: 18.69px;
+}
+
 .box-icon {
     width: 18px;
     height: 18px;
@@ -141,4 +150,17 @@
 
 .modalFade {
     transition: opacity 0.15s linear !important;
+}
+
+@media screen and (max-width:406px) {
+    .gallery-header {
+        display: block;
+        padding: 0px 10px;
+    }
+    .gallery-images {
+        padding: 10px 10px;
+    }
+    .icons-cont {
+        padding-top: 15px;
+    }
 }
