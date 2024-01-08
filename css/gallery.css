@@ -152,6 +152,16 @@
     transition: opacity 0.15s linear !important;
 }
 
+/* Hide class */
+.hidden {
+    display: none !important;
+}
+
+/* active class */
+.filter-link.active {
+    color: red;
+}
+
 @media screen and (max-width:406px) {
     .gallery-header {
         display: block;
