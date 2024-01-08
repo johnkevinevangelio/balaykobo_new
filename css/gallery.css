@@ -106,6 +106,8 @@
     background-color: transparent !important;
     border: none !important;
     border-radius: 0px !important;
+    padding-top: 25%;
+    padding-bottom: 20%;
 }
 
 .modal-img-cont img {
