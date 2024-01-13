@@ -28,6 +28,10 @@
                         </div>
                     </div>
                 </div>
+            <?php elseif($myTitle == 'Services') : ?>
+                <div class="container-fluid g-0">
+                    <?php get_template_part('services'); ?>
+                </div>    
             <?php else :?>
                 <div class="container-fluid g-0">
                     <?php echo get_the_content() ?>

@@ -1,19 +1,30 @@
 <?php get_header(); ?>
+<?php
+$postid = $post->ID; 
+$test = get_the_tags($postid);
+?>
+<?php if ($test[0]->name == 'gallery') : ?>
 <style type="text/css">
     body {
         background: #EBE9DA;
     }
 </style>
+<?php endif; ?>
     <?php if(have_posts()) : ?>
         <?php while(have_posts()) : the_post(); ?>
-            <div class="container-fluid text-center g-0 singleMainContent">
+            <?php if ($test[0]->name == 'gallery') : ?>
+                <div class="container-fluid text-center g-0 singleMainContent">
+                    <?php echo get_the_content() ?>
+                </div>
+            <?php else : ?>
                 <?php echo get_the_content() ?>
-            </div>
+            <?php endif ?>
         <?php endwhile; ?>
     <?php else : ?>
         <p><?php __('No Posts Found'); ?></p>
     <?php endif; ?>
     <?php wp_reset_postdata();?>
+    <?php if ($test[0]->name == 'gallery') : ?>
     <footer>
         <style>
             .bookStudio {
@@ -105,4 +116,5 @@
             </div>
         </div> 
     </footer>
+    <?php endif ;?>
 <?php get_footer(); ?>
