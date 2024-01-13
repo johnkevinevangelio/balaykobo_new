@@ -63,6 +63,7 @@
         <?php include 'nav-script.php';?>
         <?php include 'services-script.php';?>
         <?php include 'partnership-script.php';?>
+        <?php include 'gallery-script.php';?>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
@@ -96,7 +97,8 @@
                 //     }
                 // });
                 var myCarousel = document.getElementById('myCarousel')
-
+                
+                if (!myCarousel) return
                 myCarousel.addEventListener('slide.bs.carousel', function (e) {
                     var totalItems = document.getElementsByClassName('carousel-item').length;
                     var slides = this.querySelectorAll('.carousel-item');
@@ -108,11 +110,13 @@
             });
             const spinnerWrapperEl = document.querySelector('.spinner-wrapper');
             
-            setTimeout(() => {
-                spinnerWrapperEl.style.opacity = '0';
-                spinnerWrapperEl.style.display = 'none';
-            }, 2000)
+            if (spinnerWrapperEl) {
+                setTimeout(() => {
+                    spinnerWrapperEl.style.opacity = '0';
+                    spinnerWrapperEl.style.display = 'none';
+                }, 2000)
 
+            }
         </script>
     </body>
 </html>
