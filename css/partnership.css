@@ -84,3 +84,43 @@
     height: 100%;
     transition: transform 0.3s ease;
 }
+
+/* Partnership View */
+.view-partnership-title {
+    color: #222222;
+    font-size: 40px;
+    font-family: Spectral;
+    font-weight: 400;
+    line-height: 43.68px;
+    word-wrap: break-word
+}
+
+.view-partnership-desc {
+    padding-top: 38px;
+    color: black;
+    font-size: 14px;
+    font-family: Oxygen Mono;
+    font-weight: 400;
+    line-height: 22.40px;
+    word-wrap: break-word
+}
+
+.full-width-container {
+    max-width: 100%; /* Set the container width to 100% */
+    margin: 0 auto;  /* Center the container */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.full-width-container .row {
+    padding: 25px 0px;
+}
+
+.full-width-container .row div{
+    padding: 0px !important;
+}
+
+.full-width-container img {
+    width: 100vw; /* Set image width to 100% of the viewport width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+}
