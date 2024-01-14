@@ -323,10 +323,6 @@
     opacity: 1;
     transform: translate(-0.8vw, 50vh);
   }
-  90% {
-    opacity: 1;
-    transform: translate(-0.8vw, 4vh);
-  }
   100% {
     opacity: 1;
     transform: translate(-0.8vw, 4vh);
@@ -340,10 +336,6 @@
   50% {
     opacity: 1;
     transform: translate(0.8vw, 50vh);
-  }
-  90% {
-    opacity: 1;
-    transform: translate(0.8vw, 4vh);
   }
   100% {
     opacity: 1;
