@@ -44,17 +44,17 @@
                             ?>
                                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 py-2">
                                     <div class="grid-item">
-                                        <?php if(has_post_thumbnail()) : ?>
-                                            <a href="<?php the_permalink(); ?>">
+                                        <a href="<?php the_permalink(); ?>">
+                                            <?php if(has_post_thumbnail()) : ?>
                                                 <img
                                                     src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full') ?>"
                                                 />
-                                            </a>
-                                        <?php else :?>
-                                            <img
-                                                src="https://ayacabauatan.com/wp-content/uploads/2022/02/FL-E100-000004-753x1024.jpg"
-                                            />
-                                        <?php endif; ?>
+                                            <?php else :?>
+                                                <img
+                                                    src="https://ayacabauatan.com/wp-content/uploads/2022/02/FL-E100-000004-753x1024.jpg"
+                                                />
+                                            <?php endif; ?>
+                                        </a>
                                         <div class="img-desc"><?php the_title(); ?></div>
                                     </div>
                                 </div>

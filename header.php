@@ -68,7 +68,7 @@
                 </a>
             </div>
             <div class="nav-book-now-btn">
-                <button type="button" class="btn btn-outline-light btn-sm px-4">Book now</button>
+                <a type="button" href="<?php echo get_permalink( get_page_by_title( 'Book a Studio' ) ); ?>" class="btn btn-outline-light btn-sm px-4">Book now</a>
             </div>
             <?php 
                 wp_nav_menu(
@@ -163,15 +163,17 @@
                 </div>
             </div>
         </nav>
-        <!-- <div class="btn-group dropstart mobile-nav-menu justify-content-end fixed-top px-4 px-lg-5 py-3">
-            <button class="navbar-toggler nav-menu-button" role="button" id="mobileDropDownMenuBtn" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
-                <div class="animated-icon"><span></span><span></span><span></span></div>
-            </button>
-            <div class="dropdown-menu mobile" aria-labelledby="mobileDropDownMenuBtn">
-                <a class="dropdown-item" href="#home">Home</a>
-                <a class="dropdown-item" href="#studio">Studio</a>
-                <a class="dropdown-item" href="#reservation">Reservation</a>
-                <a class="dropdown-item" href="#services">Services</a>
-                <a class="dropdown-item" href="#services">About</a>
+
+        <div class="spinner-wrapper">
+            <div class="d-flex justify-content-center loadingLogo">
+                <div class="loadingLogo1">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/loadingLogo1.png">
+                </div>
+                <div class="loadingLogo2">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/loadingLogo2.png">
+                </div>
             </div>
-        </div> -->
+            <div class="spinner-border visually-hidden" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>

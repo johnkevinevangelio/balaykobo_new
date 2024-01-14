@@ -4,15 +4,20 @@
     const thumbnails = document.querySelectorAll('.thumbnail');
 	const imgDescription = document.getElementById('imageDescription')
 	const filterLinks = document.querySelectorAll('.filter-link')
+	const modalDialog = document.getElementById('modalDialog');
 
     thumbnails.forEach(thumbnail => {
 			thumbnail.addEventListener('click', () => {
+				modalDialog.className = 'modal-dialog modal-sm'
 				const imageUrl = thumbnail.getAttribute('src');
 				const description = thumbnail.getAttribute('data-desc');
-				
+				const isLarge = thumbnail.getAttribute('is-large');
+				if (isLarge == 'true') {
+					modalDialog.className = 'modal-dialog modal-lg'
+				}
 				modalImage.setAttribute('src', imageUrl);
 				if (!description) return
-				imageDescription.textContent = description;
+					imageDescription.textContent = description;
 			});
     });
 

@@ -22,11 +22,12 @@
 }
 
 #navMain {
-    mix-blend-mode: exclusion;
+    mix-blend-mode: difference;
 }
+/* filter: grayscale(100%); */
 
 #navMain.menu-bg {
-    background-color: rgba(242, 242, 230, 0.15);
+    background-color: rgba(242, 242, 230, 0.20);
 }
 
 /* #navMain.permanent-bg {
