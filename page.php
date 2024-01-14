@@ -31,6 +31,10 @@
             <?php elseif($myTitle == 'Services') : ?>
                 <div class="container-fluid g-0">
                     <?php get_template_part('services'); ?>
+                </div>
+            <?php elseif($myTitle == 'Partnership') : ?>
+                <div class="container-fluid g-0">
+                    <?php get_template_part('partnership'); ?>
                 </div>    
             <?php else :?>
                 <div class="container-fluid g-0">
