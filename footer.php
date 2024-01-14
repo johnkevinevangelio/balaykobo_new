@@ -4,10 +4,10 @@
                 .footerStyle {
                     background-color: #557689;
                     padding-bottom: 10%;
-                    padding-right: 5%
+                    padding-right: 5%;
                 }
                 .footerContent {
-                    margin-top: 5%;
+                    margin-top: 3%;
                 }
                 .footerTitle {
                     color: #EBE9DA;
@@ -23,7 +23,6 @@
                     font-family: 'Oxygen Mono';
                     font-size: 16px;
                     font-style: normal;
-                    line-height: 18px;
                     font-weight: 200;
                     letter-spacing: 1px;
                     text-transform: uppercase;

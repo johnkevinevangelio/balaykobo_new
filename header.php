@@ -68,7 +68,7 @@
                 </a>
             </div>
             <div class="nav-book-now-btn">
-                <button type="button" class="btn btn-outline-light btn-sm px-4">Book now</button>
+                <a type="button" href="<?php echo get_permalink( get_page_by_title( 'Book a Studio' ) ); ?>" class="btn btn-outline-light btn-sm px-4">Book now</a>
             </div>
             <?php 
                 wp_nav_menu(
