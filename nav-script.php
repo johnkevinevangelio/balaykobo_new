@@ -39,7 +39,7 @@
         // }
 
         function scrollFunction(e) {
-            const dropdownMenu = document.querySelector('.mobile-nav-menu')
+            const mobileNavMenu = document.querySelector('.mobile-nav-menu')
             const navMenu = document.querySelector("#navMain");
             // const menuTitle = document.querySelector('.menu-title-cont')
             // const nav = document.querySelector('.nav')
@@ -51,14 +51,16 @@
                 //     activeMenuItem.classList.remove('black')
                 //     activeMenuItem.classList.add('white')
                 // }
-                dropdownMenu.classList.remove('drop-down-menu-bg')
+                // dropdownMenu.classList.remove('drop-down-menu-bg')
                 navMenu.classList.remove('menu-bg')
+                mobileNavMenu.classList.add('navbar-bg')
                 // menuTitle.classList.remove('hidden')
                 // nav.style.padding = '52px 0px 10px 0px'
                 // bookNowBtn.style.top = '35%'
             } else {
-                dropdownMenu.classList.add('drop-down-menu-bg')
+                // dropdownMenu.classList.add('drop-down-menu-bg')
                 navMenu.classList.add('menu-bg')
+                mobileNavMenu.classList.remove('navbar-bg')
                 // menuTitle.classList.add('hidden')
                 // nav.style.padding = '10px 0px'
                 // bookNowBtn.style.top = '22%'
@@ -123,20 +125,20 @@
         // });
 
         // Mobile dropdown Menu
-        document.querySelector('.nav-menu-button').addEventListener('click', function () {
-            document.querySelector('.animated-icon').classList.toggle('open');
-        });
+        // document.querySelector('.nav-menu-button').addEventListener('click', function () {
+        //     document.querySelector('.animated-icon').classList.toggle('open');
+        // });
 
-        const dropdownItems = [].slice.call(
-            document.querySelectorAll('.dropdown-menu .dropdown-item')
-        );
+        // const dropdownItems = [].slice.call(
+        //     document.querySelectorAll('.dropdown-menu .dropdown-item')
+        // );
 
-        dropdownItems.map(function (navItem) {
-            navItem.addEventListener('click', () => {
-                document.querySelector('.animated-icon').classList.toggle('open');
-            });
+        // dropdownItems.map(function (navItem) {
+        //     navItem.addEventListener('click', () => {
+        //         document.querySelector('.animated-icon').classList.toggle('open');
+        //     });
 
-        });
+        // });
 
     });
 </script>

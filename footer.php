@@ -99,14 +99,14 @@
                 var myCarousel = document.getElementById('myCarousel')
                 
                 if (!myCarousel) return
-                myCarousel.addEventListener('slide.bs.carousel', function (e) {
-                    var totalItems = document.getElementsByClassName('carousel-item').length;
-                    var slides = this.querySelectorAll('.carousel-item');
-                    var slideFrom = Array.from(slides).findIndex(item => item.classList.contains('active'));
-                    var slideTo = e.to;
-                    var currSlide = parseInt(slideTo) + 1;
-                    document.getElementById('indicator').innerHTML = currSlide + '/' + totalItems
-                })
+                // myCarousel.addEventListener('slide.bs.carousel', function (e) {
+                //     var totalItems = document.getElementsByClassName('carousel-item').length;
+                //     var slides = this.querySelectorAll('.carousel-item');
+                //     var slideFrom = Array.from(slides).findIndex(item => item.classList.contains('active'));
+                //     var slideTo = e.to;
+                //     var currSlide = parseInt(slideTo) + 1;
+                //     document.getElementById('indicator').innerHTML = currSlide + '/' + totalItems
+                // })
             });
             const spinnerWrapperEl = document.querySelector('.spinner-wrapper');
             
