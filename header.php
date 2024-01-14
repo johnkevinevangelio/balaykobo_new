@@ -91,16 +91,77 @@
             </ul> -->
         </div>
         <!-- Mobile Navigation Menu -->
-        <div class="btn-group dropstart mobile-nav-menu justify-content-end fixed-top px-4 px-lg-5 py-3">
-            <button class="navbar-toggler nav-menu-button" role="button" id="mobileDropDownMenuBtn" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
-                <div class="animated-icon"><span></span><span></span><span></span></div>
-            </button>
-            <div class="dropdown-menu mobile" aria-labelledby="mobileDropDownMenuBtn">
-                <a class="dropdown-item" href="#home">Home</a>
-                <a class="dropdown-item" href="#studio">Studio</a>
-                <a class="dropdown-item" href="#reservation">Reservation</a>
-                <a class="dropdown-item" href="#services">Services</a>
-                <a class="dropdown-item" href="#services">About</a>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-bg mobile-nav-menu diff-blend">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
+                    <img class="mobile-logo" src="<?php bloginfo('template_url'); ?>/assets/mobile-logo.png"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <img width="35" height="35" src="<?php bloginfo('template_url'); ?>/assets/burger-icon.svg"/>
+                </button>
+            </div>
+        </nav>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="mobileNav offcanvas-body d-flex align-items-end">
+                <?php 
+                    wp_nav_menu(
+                        array(
+                            'menu' => 'mobile',
+                            'container' => '',
+                            'theme_location' => 'mobile',
+                            'items_wrap' => '<ul class="mobileNav navbar-nav">%3$s</ul>'
+                        )
+                    );
+                ?>
+                <!-- <ul class="mobileNav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div class="row">
+                                <div class="col-3"><img class="nav-studios-icon black" /></div>
+                                <div class="col-9 nav-link-text py-1">Studio</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div class="row">
+                                <div class="col-3"><img class="nav-gallery-icon black" /></div>
+                                <div class="col-9 nav-link-text py-1">Gallery</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div class="row">
+                                <div class="col-3"><img class="nav-partnerships-icon black ps-2" /></div>
+                                <div class="col-9 nav-link-text py-1">Partnerships</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div class="row">
+                                <div class="col-3"><img class="nav-services-icon black" /></div>
+                                <div class="col-9 nav-link-text py-1">Services</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div class="row">
+                                <div class="col-3"><img class="nav-about-icon black" /></div>
+                                <div class="col-9 nav-link-text py-1">About</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul> -->
+            </div>
+            <div class="mobileNav offcanvas-footer d-flex justify-content-center align-items-center py-5 mb-4">
+                <button type="button" class="btn btn-dark btn-block">Book now</button>
             </div>
         </div>
 
