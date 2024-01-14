@@ -156,18 +156,4 @@
     <?php endif; ?>
     <?php wp_reset_postdata();?>
 
-    <!-- Bootstrap Modal -->
-    <div class="modal modalFade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-sm">
-            <div class="modal-content custom">
-                <div class="text-center">
-                    <img src="" class="img-fluid" id="modalImage" alt="Modal Image">
-                    <div class="modal-desc mt-2">
-                        <span id="imageDescription"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
 <?php get_footer(); ?>

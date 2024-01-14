@@ -51,6 +51,21 @@
                 </div>
             </div>
         </footer>
+        <!-- Bootstrap Modal -->
+        <div class="modal modalFade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div id="modalDialog" class="modal-dialog modal-sm">
+                <div class="modal-content custom">
+                    <div class="text-center">
+                        <div style="background-color: white">
+                            <img src="" class="img-fluid" id="modalImage" alt="Modal Image">
+                        </div>
+                        <div class="modal-desc mt-2">
+                            <span id="imageDescription"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <?php wp_footer() ?>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -107,14 +122,25 @@
                     document.getElementById('indicator').innerHTML = currSlide + '/' + totalItems
                 })
             });
-            const spinnerWrapperEl = document.querySelector('.spinner-wrapper');
-            
-            if (spinnerWrapperEl) {
-                setTimeout(() => {
-                    spinnerWrapperEl.style.opacity = '0';
-                    spinnerWrapperEl.style.display = 'none';
-                }, 2000)
-
+            window.onload = function() {
+                //check for Navigation Timing API support
+                if (window.performance) {
+                    console.info("window.performance works fine on this browser");
+                }
+                console.info(performance.navigation.type);
+                const spinnerWrapperEl = document.querySelector('.spinner-wrapper');
+                if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+                    if (spinnerWrapperEl) {
+                        setTimeout(() => {
+                            spinnerWrapperEl.style.opacity = '0';
+                            spinnerWrapperEl.style.display = 'none';
+                        }, 2000)
+                    }
+                } else {
+                    if (spinnerWrapperEl) {
+                        spinnerWrapperEl.style.display = 'none';
+                    }
+                }
             }
         </script>
     </body>
