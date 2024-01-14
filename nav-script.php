@@ -125,6 +125,13 @@
         // });
 
         // Mobile dropdown Menu
+        document.querySelector('.navbar-toggler').addEventListener('click', () => {
+            document.querySelector('.mobile-nav-menu').classList.remove('diff-blend');
+        });
+
+        document.querySelector('.offcanvas-header .btn-close').addEventListener('click', () => {
+            document.querySelector('.mobile-nav-menu').classList.add('diff-blend');
+        });
         // document.querySelector('.nav-menu-button').addEventListener('click', function () {
         //     document.querySelector('.animated-icon').classList.toggle('open');
         // });

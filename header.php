@@ -91,12 +91,12 @@
             </ul> -->
         </div>
         <!-- Mobile Navigation Menu -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-bg mobile-nav-menu">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-bg mobile-nav-menu diff-blend">
             <div class="container-fluid">
-                <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
+                <a class="navbar-brand diff-blend" href="<?php echo get_home_url(); ?>">
                     <img class="mobile-logo" src="<?php bloginfo('template_url'); ?>/assets/mobile-logo.png"/>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler diff-blend" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <img width="35" height="35" src="<?php bloginfo('template_url'); ?>/assets/burger-icon.svg"/>
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">

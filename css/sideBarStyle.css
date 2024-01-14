@@ -325,6 +325,10 @@ li img {
     padding-bottom: 5% !important;
 }
 
+.diff-blend {
+    mix-blend-mode: exclusion !important;
+}
+
 .mobile-logo {
     width: 150px;
     padding-left: 10%;
