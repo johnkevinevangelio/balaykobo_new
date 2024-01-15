@@ -38,7 +38,7 @@
 	});
 
 	function hideImages(filter) {
-		document.querySelectorAll('.gallery-images .row .gallery-image').forEach(function (image) {
+		document.querySelectorAll('.gallery-images .gallery-item').forEach(function (image) {
 			const filterGroup = image.getAttribute('image-group');
 			if (!filterGroup) return
 			if (filterGroup !== filter)
@@ -47,7 +47,7 @@
 	}
 
 	function resetFilter() {
-		document.querySelectorAll('.gallery-images .row .gallery-image').forEach(function (image) {
+		document.querySelectorAll('.gallery-images .gallery-item').forEach(function (image) {
 			image.classList.remove('hidden');
 		});
 
@@ -60,5 +60,22 @@
 		filterLinks.forEach(function (link) {
 			link.classList.remove('active')
 		});
+	}
+
+	function setDisplayOption(option) {
+		const gallery = document.querySelector ('.gallery-images');
+
+		if (!gallery) return
+		// Remove existing Bootstrap column classes
+		gallery.classList.remove('cols-3', 'cols-6', 'cols-12');
+
+		// Add Bootstrap column class based on the selected option
+		if (option === 'cols-3') {
+			gallery.classList.add('cols-3');
+		} else if (option === 'cols-6') {
+			gallery.classList.add('cols-6');
+		} else if (option === 'cols-12') {
+			gallery.classList.add('cols-12');
+		}
 	}
 </script>
