@@ -217,6 +217,7 @@
 
 .modalFade {
     transition: opacity 0.15s linear !important;
+    background-color: rgb(0, 0, 0, 0.4);
 }
 
 /* Hide class */
