@@ -3,9 +3,10 @@
     $(document).on('ready', function() {
         $(".regular").slick({
             dots: false,
-            infinite: true,
+            infinite: false,
             slidesToShow: 5,
             slidesToScroll: 1,
+            arrows: true,
             autoplay: true,
             autoplaySpeed: 2000,
             swipeToSlide: true,
@@ -40,5 +41,17 @@
                 }
             ]
         });
+        // $(".slider").on("afterChange", function () {
+        //     if ($(".slick-prev").hasClass("slick-disabled")) {
+        //         $(".prev-btn").addClass("slick-disabled");
+        //     } else {
+        //         $(".prev-btn").removeClass("slick-disabled");
+        //     }
+        //     if ($(".slick-next").hasClass("slick-disabled")) {
+        //         $(".next-btn").addClass("slick-disabled");
+        //     } else {
+        //         $(".next-btn").removeClass("slick-disabled");
+        //     }
+        // });
     });
 </script>

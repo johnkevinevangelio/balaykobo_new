@@ -15,6 +15,7 @@
         <link href="https://fonts.cdnfonts.com/css/oxygen-mono" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Oxygen Mono' rel='stylesheet'>
         <link href="https://fonts.cdnfonts.com/css/spectral" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/fontawesome" rel="stylesheet">
         <!-- SimpleLightbox plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -57,6 +58,32 @@
                 background-color: #555;
             }
         </style>
+        <?php $myTitle = get_the_title() ?>
+        <?php if($myTitle == 'Studios') : ?>
+            <style>
+                #navMain {
+                    filter: invert(0);
+                }
+            </style>
+        <?php elseif(is_front_page()) : ?>
+            <style>
+                #navMain {
+                    filter: invert(0);
+                }
+            </style>
+        <?php elseif($myTitle == 'About') : ?>
+            <style>
+                #navMain {
+                    filter: invert(0);
+                }
+            </style>
+        <?php else : ?>
+            <style>
+                #navMain {
+                    filter: invert(100%);
+                }
+            </style>
+        <?php endif; ?>
     </head>
     <body id="page-top"> 
         <!-- remove scroll temporarily -->

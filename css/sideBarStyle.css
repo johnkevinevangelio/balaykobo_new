@@ -20,11 +20,14 @@
     right: 50px;
     top: 35%;
 }
-
-#navMain {
-    mix-blend-mode: difference;
+.nav-book-now-btn .btn {
+    font-family: Oxygen Mono;
+    font-size: 12px;
 }
-/* filter: grayscale(100%); */
+#navMain {
+    /* mix-blend-mode: difference; */
+    /* filter: invert(50%); */
+}
 
 #navMain.menu-bg {
     background-color: rgba(242, 242, 230, 0.20);

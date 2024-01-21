@@ -6,7 +6,7 @@
             <?php if($myTitle == 'Studios') : ?>
                 <div class="container-fluid g-0">
                     <div class="studioHeader1 d-flex justify-content-center">
-                        <div class="align-self-end studioTitle">Our studios</div>
+                        <div class="align-self-end studioTitle">Our Studios</div>
                     </div>
                     <div class="container-fluid g-0">
                         <div class="row g-0">
