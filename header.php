@@ -77,6 +77,12 @@
                     filter: invert(0);
                 }
             </style>
+        <?php elseif($myTitle == 'Book a Studio') : ?>
+            <style>
+                #navMain {
+                    filter: invert(0);
+                }
+            </style>
         <?php else : ?>
             <style>
                 #navMain {
