@@ -15,30 +15,30 @@
                 </div> -->
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">
-                        <div class="carousel-item carousel-image landing-img-1 active" data-bs-interval="4500">
+                        <div class="carousel-item carousel-image landing-img-1 active" data-bs-interval="2000">
                         </div>
                         <div class="carousel-item carousel-image landing-img-2" data-bs-interval="2000">
-                            <div class="carousel-caption caption-1">
+                            <div class="carouselCaption caption-1">
                                 A creative and communal stage for artists
                             </div>
                         </div>
                         <div class="carousel-item carousel-image landing-img-3" data-bs-interval="2000">
-                            <div class="carousel-caption caption-2">
+                            <div class="carouselCaption caption-2">
                                 Fusing Filipino + Japanese sensibilities
                             </div>
                         </div>     
                         <div class="carousel-item carousel-image landing-img-4" data-bs-interval="2000">
-                            <div class="carousel-caption caption-3">
+                            <div class="carouselCaption caption-3">
                                 Made for the sun
                             </div>
                         </div>
                         <div class="carousel-item carousel-image landing-img-5" data-bs-interval="2000">
-                            <div class="carousel-caption caption-4">
+                            <div class="carouselCaption caption-4">
                                 Holding Space for beauty
                             </div>
                         </div>
                         <div class="carousel-item carousel-image landing-img-6" data-bs-interval="2000">
-                            <div class="carousel-caption caption-5">
+                            <div class="carouselCaption caption-5">
                                Providing comfort and clarity
                             </div>
                         </div>

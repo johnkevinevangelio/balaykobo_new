@@ -136,11 +136,11 @@
   animation: kenBurns 10s infinite alternate;
 } */
 
-.carousel-caption {
+.carouselCaption {
   color: #FFF;
   /* Web/Web 24px/Regular */
   font-family: Spectral;
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 104%; 
@@ -148,103 +148,87 @@
 
 
 .caption-1 {
-  position: absolute;
-  top: 50%;
-  left: -20%;
-  transform: translateY(-50%);
-  opacity: 0;
+  transform: translate(10vw, 40vh);
+  opacity: 1;
   animation: fadeInFromLeft 0.5s ease-out forwards;
 }
 
 @keyframes fadeInFromLeft {
   0% {
-    opacity: 0;
-    transform: translate(-80px, -50%);
-    /* transform: translateY(-50%) translateX(0); */
+    opacity: 1;
+    transform: translate(0, 40vh);
   }
   100% {
     opacity: 1;
-    transform: translate(0, -50%);
-    /* transform: translateY(-50%) translateX(0); */
+    transform: translate(10vw, 40vh);
   }
 }
 
 .caption-2 {
-  position: absolute;
-  top: 20%; /* Change top to 0 to start from the top */
-  right: 20%;
-  transform: translate(-50%, -100%);
-  opacity: 0;
+  transform: translate(60vw, 25vh);
+  opacity: 1;
   animation: fadeInFromTop 0.5s ease-out forwards;
 }
 
 @keyframes fadeInFromTop {
   0% {
-    opacity: 0;
-    transform: translate(50%, -20%);
+    opacity: 1;
+    transform: translate(100vw, 25vh);
   }
   100% {
     opacity: 1;
-    transform: translate(50%, 0);
+    transform: translate(60vw, 25vh);
   }
 }
 
 .caption-3 {
-  position: absolute;
-  bottom: 20%;
-  left: -10%;
-  transform: translate(-10%, -50%);
-  opacity: 0;
+  transform: translate(20vw, 70vh);
+  opacity: 1;
   animation: fadeInFromBottom 0.5s ease-out forwards;
 }
 
 @keyframes fadeInFromBottom {
   0% {
-    opacity: 0;
-    transform: translate(-10%, 20%);
+    opacity: 1;
+    transform: translate(20vw, 100vh);
   }
   100% {
     opacity: 1;
-    transform: translate(-10%, -50%);
+    transform: translate(20vw, 70vh);
   }
 }
 
 .caption-4 {
-  position: absolute;
-  top: 50%;
-  left: 15%;
-  transform: translate(0, -100%);
-  opacity: 0;
+  transform: translate(40vw, 30vh);
+  opacity: 1;
   animation: fadeInFromTop2 0.5s ease-out forwards;
 }
 
 @keyframes fadeInFromTop2 {
   0% {
-    opacity: 0;
-    transform: translate(0, -100%);
+    opacity: 1;
+    transform: translate(40vw, 0vh);
   }
   100% {
     opacity: 1;
-    transform: translate(0, -70%);
+    transform: translate(40vw, 30vh);
   }
 }
 
 .caption-5 {
-  position: absolute;
-  top: 50%;
-  left: 15%;
-  opacity: 0;
+  opacity: 1;
+  transform: translate(30vw, 70vh);
   animation: fadeIn 0.5s ease-out forwards;
 }
 
 @keyframes fadeIn {
   0% {
-    opacity: 0;
-    /* transform: translate(0, -100%); */
+    opacity: 1;
+    transform: translate(0, 70vh);
   }
   100% {
     opacity: 1;
-    /* transform: translate(0, -70%); */
+    transform: translate(30vw, 70vh);
   }
 }
 @media (max-width: 767px) {
@@ -292,8 +276,8 @@
   z-index: 9999;
   justify-content: center;
   align-items: center;
-  transition: all 0.2s;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.875) 0%, rgba(0, 0, 0, 0.875) 100%), url(../assets/loadingBackground.jpg);
+  transition: all 0.5s;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.875) 0%, rgba(0, 0, 0, 1) 100%), url(../assets/loadingBackground.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -303,18 +287,33 @@
   /* margin-top: 50vh; */
   /* gap: 30%; */
   width: 115px;
-  transform: translate(-15vw, 50vh);
-  animation:  loadingAnimation1 2s linear forwards;
+  transform: translate(-0.8vw, 50vh);
+  animation:  loadingAnimation 1.8s ease-out forwards;
 }
 .loadingLogo2 {
   /* margin-top: 50vh; */
   /* gap: 30%; */
   width: 115px;
-  transform: translate(15vw, 50vh);
-  animation:  loadingAnimation2 2s linear forwards;
+  transform: translate(0.8vw, 50vh);
+  animation:  loadingAnimation 1.8s ease-out forwards;
 }
 
-@keyframes loadingAnimation1 {
+@keyframes loadingAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+/* @keyframes loadingAnimation1 {
   0% {
     opacity: 1;
     transform: translate(-15vw, 50vh);
@@ -327,8 +326,8 @@
     opacity: 1;
     transform: translate(-0.8vw, 4vh);
   }
-}
-@keyframes loadingAnimation2 {
+} */
+/* @keyframes loadingAnimation2 {
   0% {
     opacity: 1;
     transform: translate(15vw, 50vh);
@@ -341,7 +340,7 @@
     opacity: 1;
     transform: translate(0.8vw, 4vh);
   }
-}
+} */
 
 .comingSoon {
   position: fixed;

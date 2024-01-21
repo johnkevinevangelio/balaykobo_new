@@ -3,16 +3,16 @@
             <style>
                 .footerStyle {
                     background-color: #557689;
-                    padding-bottom: 10%;
+                    padding-bottom: 8%;
                     padding-right: 5%;
                 }
                 .footerContent {
-                    margin-top: 3%;
+                    margin-top: 5%;
                 }
                 .footerTitle {
                     color: #EBE9DA;
                     font-family: 'Spectral';
-                    font-size: 26px;
+                    font-size: 20px;
                     font-style: normal;
                     font-weight: 400;
                     letter-spacing: 2px;
@@ -21,12 +21,12 @@
                 .footerSub {
                     color: #F2F2E6;
                     font-family: 'Oxygen Mono';
-                    font-size: 16px;
+                    font-size: 12px;
                     font-style: normal;
                     font-weight: 200;
                     letter-spacing: 1px;
                     text-transform: uppercase;
-                    padding-top: 5px;
+                    padding-top: 10px;
                     padding-bottom: 5px;
                 }
             </style>
@@ -134,7 +134,7 @@
                         setTimeout(() => {
                             spinnerWrapperEl.style.opacity = '0';
                             spinnerWrapperEl.style.display = 'none';
-                        }, 2000)
+                        }, 1000)
                     }
                 } else {
                     if (spinnerWrapperEl) {
