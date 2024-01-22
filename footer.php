@@ -18,7 +18,7 @@
                     letter-spacing: 2px;
                     line-height: normal;
                 }
-                .footerSub {
+                .footerSub a {
                     color: #F2F2E6;
                     font-family: 'Oxygen Mono';
                     font-size: 12px;
@@ -28,6 +28,10 @@
                     text-transform: uppercase;
                     padding-top: 10px;
                     padding-bottom: 5px;
+                    text-decoration: none;
+                }
+                .footerSub a:hover {
+                    text-decoration: underline;
                 }
             </style>
             <div class="footerStyle container-fluid">
@@ -35,17 +39,17 @@
                     <div class="footerContent">
                         <ul style="list-style-type: none;">
                             <li class="footerTitle">Information</li>
-                            <li class="footerSub">SPONSOR KŌBŌ</li>
-                            <li class="footerSub">CONTACT US</li>
+                            <li class="footerSub"><a href="<?php echo get_permalink( get_page_by_title( 'Partnership' ) ); ?>">SPONSOR KŌBŌ</a></li>
+                            <li class="footerSub"><a href="<?php echo get_permalink( get_page_by_title( 'Book a Studio' ) ); ?>">CONTACT US</a></li>
                         </ul>
                     </div>
                     <div class="footerContent">
                         <ul style="list-style-type: none;">
                             <li class="footerTitle">Follow Us</li>
-                            <li class="footerSub">FACEBOOK</li>
-                            <li class="footerSub">INSTAGRAM</li>
-                            <li class="footerSub">LINKEDIN</li>
-                            <li class="footerSub">TIKTOK</li>
+                            <li class="footerSub"><a href="https://www.instagram.com/balay.kobo/" target="_blank">FACEBOOK</a></li>
+                            <li class="footerSub"><a href="https://www.instagram.com/balay.kobo/" target="_blank">INSTAGRAM</a></li>
+                            <li class="footerSub"><a href="https://www.instagram.com/balay.kobo/" target="_blank">LINKEDIN</a></li>
+                            <li class="footerSub"><a href="https://www.instagram.com/balay.kobo/" target="_blank">TIKTOK</a></li>
                         </ul>
                     </div>
                 </div>
