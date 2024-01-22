@@ -3,7 +3,7 @@
 } */
 
 .landing-title {
-    top: 38px;
+    top: 45px;
     position: absolute;
     left: 50%;
     right: 50%;
@@ -17,17 +17,19 @@
 
 .nav-book-now-btn {
     position: absolute;
-    right: 50px;
-    top: 35%;
+    right: 40px;
+    top: 40%;
 }
+
 .nav-book-now-btn .btn {
     font-family: Oxygen Mono;
     font-size: 12px;
 }
-#navMain {
-    /* mix-blend-mode: difference; */
-    /* filter: invert(50%); */
-}
+
+/* #navMain {
+    mix-blend-mode: difference;
+    filter: invert(50%);
+} */
 
 #navMain.menu-bg {
     background-color: rgba(242, 242, 230, 0.20);
@@ -55,7 +57,7 @@
 }
 
 .nav {
-    padding: 70px 0px 15px 0px;
+    padding: 84px 0px 22px 0px;
     display: flex;
     justify-content: center;
 }
@@ -94,6 +96,10 @@ li img {
     line-height: 14px;
 }
 
+.nav li span.partnerships {
+    left: -10px !important;
+}
+
 .nav li:hover img {
     display: none; /* Hide image/icon on hover */
 }
@@ -118,7 +124,7 @@ li img {
 }
 .nav-partnerships-icon.white {
     content: url("../assets/navbar_icons/diamons-white.svg");
-    width: auto;
+    width: 43px;
     height: 20.67px;
     transition: 2s;
 }
@@ -150,7 +156,7 @@ li img {
 }
 .nav-partnerships-icon.black {
     content: url("../assets/navbar_icons/diamonds-black.svg");
-    width: auto;
+    width: 43px;
     height: 20.67px;
     transition: 2s;
 }
