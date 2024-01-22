@@ -1,7 +1,7 @@
 <div class="pa-none partnerships-parent-cont main-page">
                             
     <div class="container-fluid partnerships" id="partnerships-header">
-        <div class="container-film"></div>
+        <!-- <div class="container-film"></div> -->
         <div class="partnerships-container">
             <div class="header-text partnership-content-padding">Partnerships</div>
             <div class="service-content-padding"><hr class="hr"></div>
