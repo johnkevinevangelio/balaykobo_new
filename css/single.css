@@ -15,6 +15,7 @@
 .slick-slide {
     max-height: 300px !important;
 	text-align: center;
+    margin: 0 7px;
 }
 .slick-arrow {
 	z-index: 1;
@@ -29,8 +30,6 @@
 }
 .slick-slide img {
     width: 100%;
-    margin: 0 10px;
-
 }
 .slick-slide img:hover {
     filter: brightness(60%);

@@ -227,7 +227,7 @@
 
 /* active class */
 .filter-link.active {
-    color: red;
+    text-decoration: underline;
 }
 
 @media screen and (max-width:406px) {

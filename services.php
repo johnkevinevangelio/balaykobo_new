@@ -26,7 +26,7 @@
                     foreach ( $categoriesList as $class ) : 
                 ?>
                     <?php if ($class == 'Portrait Photography') : ?>
-                        <div class="sub-text mb-1 service-content-padding"><?php echo $class ?></div>
+                        <div class="sub-text mb-1 service-content-padding mt-4"><?php echo $class ?></div>
                     <?php else : ?>
                         <div class="sub-text mb-1 service-content-padding mt-4"><?php echo $class ?></div>
                     <?php endif; ?>
