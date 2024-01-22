@@ -106,7 +106,7 @@
                         <h5 class="text-white">Looking for a space to shoot in?</h5>
                     </div>
                     <a class="btn btn-white mb-3">
-                        <span class="ms-2 me-5"> book now </span>
+                        <span class="ms-2 me-5 btnText"> book now </span>
                         <i class="bi bi-arrow-right ms-4 me-2"></i>
                     </a>
                 </div>
@@ -126,7 +126,7 @@
                         <h5 class="text-white">coming soon</h5>
                     </div>
                     <a class="btn btn-white mb-3">
-                        <span class="ms-2 me-5"> book now </span>
+                        <span class="ms-2 me-5 btnText"> book now </span>
                         <i class="bi bi-arrow-right ms-4 me-2"></i>
                     </a>
                 </div>
@@ -142,7 +142,7 @@
                         <h4 class="text-black">We are Balay Kōbō, check us out!</h4>
                     </div>
                     <a href="<?php echo get_permalink( get_page_by_title( 'About' ) ); ?>" class="btn btn-black">
-                        <span class="ms-2 me-5"> Learn more about us </span>
+                        <span class="ms-2 me-5 btnText"> Learn more about us </span>
                         <i class="bi bi-arrow-right ms-4 me-2"></i>
                     </a>
                 </div>
