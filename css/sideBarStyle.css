@@ -24,6 +24,10 @@
 .nav-book-now-btn .btn {
     font-family: Oxygen Mono;
     font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 /* #navMain {
