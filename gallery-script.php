@@ -8,7 +8,6 @@
 
     thumbnails.forEach(thumbnail => {
 			thumbnail.addEventListener('click', () => {
-				modalDialog.className = 'modal-dialog modal-sm'
 				const imageUrl = thumbnail.getAttribute('src');
 				const description = thumbnail.getAttribute('data-desc');
 				const isLarge = thumbnail.getAttribute('is-large');
