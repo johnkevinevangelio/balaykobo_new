@@ -36,6 +36,7 @@
         <link href="<?php bloginfo('template_url'); ?>/css/services.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/partnership.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/studios.css" rel="stylesheet" />
+        <link href="<?php bloginfo('template_url'); ?>/css/bookForm.css" rel="stylesheet" />
         <?php wp_head(); ?>
         <style>
             #page-top::-webkit-scrollbar-track
