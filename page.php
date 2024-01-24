@@ -147,45 +147,7 @@
                 </div>    
             <?php else :?>
                 <div class="container-fluid g-0">
-                    <div class="pa-none bookForm-parent-cont main-page">
-                        <div class="container-fluid bookForm">
-                            <div class="bookForm-container">
-                                <div class="mb-4 pb-1 px-0 container-fluid">
-                                  <div class="form-title mb-2">Book a studio</div>
-                                  <div class="form-title-desc">Please fill in all the details to ensure a smooth booking process</div>  
-                                </div>
-                                <form>
-                                    <div class="form-group">
-                                        <label for="fullName">
-                                            <span class="form-label">What's your Full Name?*</span><br/>
-                                            <span class="form-sub-label">This will act as your reservation</span>
-                                        </label>
-                                        <input type="text" class="form-control border-0 border-bottom mt-3" id="fullName">
-                                    </div>
-                                    <div class="d-flex align-items-baseline">
-                                        <a class="btn btn-outline-secondary bookFormbtn me-2 mt-3">
-                                            <div class="btnText">OK <i class="bi bi-check2 mt-2"></i></div>
-                                        </a>
-                                        <span class="press-enter-font ms-4 pa-2">Press enter <i class="bi bi-arrow-return-left ms-1 px-1 mb-2 small-icon"></i></span>
-                                    </div>
-
-                                    <div class="form-group pt-5 mt-5">
-                                        <label for="shootDay">
-                                            <span class="form-label">When will your shoot be?*</span><br/>
-                                            <span class="form-sub-label">Please pick from the dates provided</span>
-                                        </label>
-                                        <input type="text" class="form-control border-0 border-bottom mt-3" id="shootDay">
-                                    </div>
-                                    <div class="d-flex align-items-baseline">
-                                        <a class="btn btn-outline-secondary bookFormbtn me-2 mt-3">
-                                            <div class="btnText">OK <i class="bi bi-check2 mt-2"></i></div>
-                                        </a>
-                                        <span class="press-enter-font ms-4 pa-2">Press enter <i class="bi bi-arrow-return-left ms-1 px-1 mb-2 small-icon"></i></span>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                    <?php echo get_the_content() ?>
                 </div>
             <?php endif; ?>
         <?php endwhile; ?>
