@@ -182,17 +182,16 @@
     background-color: transparent !important;
     border: none !important;
     border-radius: 0px !important;
-    padding-top: 25%;
-    padding-bottom: 20%;
 }
 
 .modal-img-cont img {
-    width: 40%;
-    height: 40%;
+    object-fit: fill;
+    width: 87%;
+    background-color: white;
 }
 
 .modal-desc {
-    width: 100%;
+    width: 87%;
     height: 100%;
     padding-left: 12.07px;
     padding-right: 12.07px;
@@ -200,10 +199,10 @@
     padding-bottom: 8.64px;
     background: rgba(255, 255, 255, 0.70);
     backdrop-filter: blur(4.56px);
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 8.86px;
-    display: inline-flex"
+    display: inline-flex;
 }
 
 .modal-desc span {
