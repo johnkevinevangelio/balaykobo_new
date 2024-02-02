@@ -5,7 +5,7 @@
         const partnershipsParentCont = document.querySelector('.partnerships-parent-cont');
         const partnershipsContentCont = document.querySelector('.partnerships-container');
         const partnershipsContentContHeight = partnershipsContentCont.offsetHeight;
-        partnershipsParentCont.style.height = (partnershipsContentContHeight + 120) + 'px';
+        partnershipsParentCont.style.height = (partnershipsContentContHeight + 134) + 'px';
     }
     window.addEventListener('DOMContentLoaded', event => {
         const partnershipsContentCont = document.querySelector('.partnerships-container');

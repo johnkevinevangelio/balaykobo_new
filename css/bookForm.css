@@ -1,0 +1,153 @@
+.bookForm-parent-cont {
+    display: flex;
+}
+
+.bookForm-parent-cont.main-page {
+    position: relative;
+    background: url('../assets/services_page/services-header.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0;
+    min-height: 51.6vh;
+}
+
+.bookForm > .bookForm-container {
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    right: 15%;
+    min-height: 200px;
+    height: auto;
+    padding: 5% 20% 5% 20%;
+    background-color: rgba(255, 255, 255, 0.5);
+    bottom: 0;
+}
+
+.bookForm .bookForm-container form {
+    position: relative;
+    background-color: white;
+    padding: 10%;
+    bottom: 0;   
+}
+
+.bookForm .bookForm-container form .form-group .border-bottom {
+    border-bottom: 1.5px var(--bs-border-style) black !important;
+}
+
+.bookForm .bookForm-container form .form-group .form-control {
+    border-radius: 0 !important;
+}
+
+.bookForm .bookForm-container form .form-group .form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: white; /* You can set the desired border color when not focused */
+}
+
+.bookFormbtn {
+    width: 110px;
+    height: 35px;
+    padding: 8px, 33.6px, 8px, 33.6px;
+    border: 0.8px solid #496575;
+    border-radius: 6px;
+    gap: 83.2px;
+    background-color: #557689;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Oxygen Mono';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.bookFormbtn2 {
+    width: 228px;
+    height: 35px;
+    padding: 8px, 33.6px, 8px, 33.6px;
+    border-radius: 6px;
+    border: 1px solid #DADADA;
+    gap: 83.2px;
+    background-color: #F4F4F4;
+    text-align: center;
+    color: 3E352C;
+    font-family: 'Oxygen Mono';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.form-label {
+    font-family: Spectral;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.form-sub-label {
+    font-family: Oxygen Mono;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.press-enter-font {
+    font-family: Oxygen Mono;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.form-title {
+    font-family: Spectral;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.form-title-desc {
+    font-family: Oxygen Mono;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.small-icon {
+    border: .8px solid black; 
+    font-size: 8px;
+}
+
+
+@media screen and (max-width:1073px) {
+    .bookForm > .bookForm-container {
+        padding: 5% 15% 5% 15%;;
+    }
+    
+    .bookForm .bookForm-container form {
+        padding: 10%;
+    }
+}
+
+@media screen and (max-width:804px) {
+    .bookForm > .bookForm-container {
+        padding: 5% 10% 5% 10%;
+    }
+}
+
+@media screen and (max-width:452px) {
+    .bookForm > .bookForm-container {
+        width: 90%;
+        left: 5%;
+        right: 5%;
+        padding: 5% 10% 5% 10%;
+    }
+}

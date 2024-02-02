@@ -5,7 +5,7 @@
         const servicesParentCont = document.querySelector('.services-parent-cont');
         const servicesContentCont = document.querySelector('.services-container');
         const servicesContentContHeight = servicesContentCont.offsetHeight;
-        servicesParentCont.style.height = (servicesContentContHeight + 120) + 'px';
+        servicesParentCont.style.height = (servicesContentContHeight + 153) + 'px';
     }
     window.addEventListener('DOMContentLoaded', event => {
         const servicesContentCont = document.querySelector('.services-container');
