@@ -23,13 +23,12 @@
 
 .partnerships > .partnerships-container {
     position: absolute;
-    top: 120;
     width: 80%;
     left: 10%;
     height: auto;
     right: 10%;
     padding: 40px;
-    margin-top: 2% !important;
+    margin-top: 4% !important;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -105,6 +104,30 @@
     .partnership-image-container {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
     }
+}
+
+@media screen and (max-width:981px) {
+    .partnerships > .partnerships-container {
+        margin-top: 8% !important;
+    }    
+}
+
+@media screen and (max-width:600px) {
+    .partnerships > .partnerships-container {
+        margin-top: 11% !important;
+    }    
+}
+
+@media screen and (max-width:488px) {
+    .partnerships > .partnerships-container {
+        margin-top: 12% !important;
+    }    
+}
+
+@media screen and (max-width:425px) {
+    .partnerships > .partnerships-container {
+        margin-top: 13% !important;
+    }    
 }
 
 /* .images .img-container {

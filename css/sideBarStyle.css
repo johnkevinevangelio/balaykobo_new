@@ -3,7 +3,7 @@
 } */
 
 .landing-title {
-    top: 48px;
+    top: 45px;
     position: absolute;
     left: 50%;
     right: 50%;
@@ -96,7 +96,7 @@ li img {
     color: white;
     font-size: 14px;
     font-family: Spectral;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 14px;
 }
 
@@ -116,31 +116,31 @@ li img {
 /* White icons */
 .nav-studios-icon.white {
     content: url("../assets/navbar_icons/sun-white.svg");
-    width: 43px;
+    width: 38px;
     height: 20.67px;
     transition: 2s;
 }
 .nav-gallery-icon.white {
     content: url("../assets/navbar_icons/house-white.svg");
-    width: 38px;
+    width: 33px;
     height: 20.67px;
     transition: 2s;
 }
 .nav-partnerships-icon.white {
     content: url("../assets/navbar_icons/diamons-white.svg");
-    width: 38px;
+    width: 33px;
     height: 20.67px;
     transition: 2s;
 }
 .nav-services-icon.white {
     content: url("../assets/navbar_icons/flower1-white.svg");
-    width: 38px;
+    width: 33px;
     height: 20.67px;
     /* transition: 2s; */
 }
 .nav-about-icon.white {
     content: url("../assets/navbar_icons/flower2-white.svg");
-    width: 35px;
+    width: 30px;
     height: 20.67px;
     transition: 2s;
 }
@@ -148,31 +148,31 @@ li img {
 /* Black icons */
 .nav-studios-icon.black {
     content: url("../assets/navbar_icons/sun-black.svg");
-    width: 43px;
+    width: 38px;
     height: 20.67px;
     transition: 2s;
 }
 .nav-gallery-icon.black {
     content: url("../assets/navbar_icons/house-black.svg");
-    width: 38px;
+    width: 33px;
     height: 20.67px;
     transition: 2s;
 }
 .nav-partnerships-icon.black {
     content: url("../assets/navbar_icons/diamonds-black.svg");
-    width: 38px;
+    width: 33px;
     height: 20.67px;
     transition: 2s;
 }
 .nav-services-icon.black {
     content: url("../assets/navbar_icons/flower1-black.svg");
-    width: 38px;
+    width: 33px;
     height: 20.67px;
     transition: 2s;
 }
 .nav-about-icon.black {
     content: url("../assets/navbar_icons/flower2-black.svg");
-    width: 35px;
+    width: 30px;
     height: 20.67px;
     /* transition: 2s; */
 }
@@ -334,8 +334,8 @@ li img {
 
 .mobile-nav-menu {
     display: none;
-    padding-top: 5% !important;
-    padding-bottom: 5% !important;
+    padding-top: 3% !important;
+    padding-bottom: 3% !important;
 }
 
 .diff-blend {
