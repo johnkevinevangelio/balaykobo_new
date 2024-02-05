@@ -6,8 +6,8 @@
             <div class="header-text partnership-content-padding">Partnerships</div>
             <div class="service-content-padding"><hr class="hr"></div>
 
-            <div class="container pt-1">
-                <div class="row images">
+            <div class="d-flex flex-row flex-wrap justify-content-between partnership-content-padding">
+                <div class="partnership-image-container">
 
                     <?php
                         $args = array(
@@ -18,21 +18,19 @@
                             foreach ( $my_post as $post ) : 
                                 setup_postdata( $post ); 
                     ?>
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 py-2">
-                            <div class="grid-item">
-                                <a href="<?php the_permalink(); ?>">
-                                    <?php if(has_post_thumbnail()) : ?>
-                                        <img
-                                            src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full') ?>"
-                                        />
-                                    <?php else :?>
-                                        <img
-                                            src="https://ayacabauatan.com/wp-content/uploads/2022/02/FL-E100-000004-753x1024.jpg"
-                                        />
-                                    <?php endif; ?>
-                                </a>
-                                <div class="img-desc"><?php the_title(); ?></div>
-                            </div>
+                        <div class="grid-item">
+                            <a href="<?php the_permalink(); ?>">
+                                <?php if(has_post_thumbnail()) : ?>
+                                    <img
+                                        src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full') ?>"
+                                    />
+                                <?php else :?>
+                                    <img
+                                        src="https://ayacabauatan.com/wp-content/uploads/2022/02/FL-E100-000004-753x1024.jpg"
+                                    />
+                                <?php endif; ?>
+                            </a>
+                            <div class="img-desc"><?php the_title(); ?></div>
                         </div>
                     <?php
                         endforeach;
