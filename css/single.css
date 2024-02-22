@@ -158,3 +158,15 @@
     margin-bottom: 10px;
     margin-top: 50px;
 }
+
+.floorPlanBullets {
+    color: #000 !important;
+    font-family: 'Oxygen Mono';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150.2%;
+
+    list-style-position: inside;
+    vertical-align:middle;
+    text-align:left
+}
