@@ -4,7 +4,7 @@
         $(".regular").slick({
             dots: false,
             infinite: false,
-            slidesToShow: 5,
+            slidesToShow: 4,
             slidesToScroll: 1,
             arrows: true,
             autoplay: true,

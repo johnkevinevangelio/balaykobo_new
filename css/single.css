@@ -138,12 +138,15 @@
 .subheader {
     color: #000 !important;
     font-family: 'Oxygen Mono';
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 150.2%;
+    margin: 0 auto;
+    width: 60%;
 }
-.floorPlan img {
-    width: 100%;
+
+.floorPlan .floorplan-cont {
+    width: 70%;
 }
 .singleMainContent {
     padding-top: 5%;
@@ -162,11 +165,15 @@
 .floorPlanBullets {
     color: #000 !important;
     font-family: 'Oxygen Mono';
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 150.2%;
 
     list-style-position: inside;
     vertical-align:middle;
     text-align:left
+}
+
+.title-head-cont {
+    text-align: center;
 }
