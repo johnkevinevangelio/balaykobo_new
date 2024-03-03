@@ -67,7 +67,7 @@
                         <a class="btn btn-outline-secondary me-4 button1Style" style="">
                             <div class="btnText"> Book now </div>
                         </a>
-                        <a href="https://balaykobo-dev.me/studios/" class="btn btn-outline-secondary button2Style" style="">
+                        <a href="https://balaykobo.com/studios/" class="btn btn-outline-secondary button2Style" style="">
                             <div class="btnText"> Explore studios </div>
                         </a>
                     </div>

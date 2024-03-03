@@ -39,7 +39,7 @@
             <?php elseif($myTitle == 'Book a Studio') : ?>
                 <style>
                     .bookStudio {
-                        background-image: url('https://balaykobo-dev.me/wp-content/uploads/2024/01/studio_header_bg-scaled.jpg');
+                        background-image: url('https://balaykobo.com/wp-content/uploads/2024/01/studio_header_bg-scaled.jpg');
                         background-position: center;
                         background-size: cover;
                         height: 75vh;
