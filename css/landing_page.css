@@ -252,6 +252,27 @@
   }
 }
 
+@media (max-width: 430px) {
+  .caption-2 {
+    transform: translate(30vw, 25vh);
+    opacity: 1;
+    animation: fadeInFromTop 0.5s ease-out forwards;
+  }
+  
+  @keyframes fadeInFromTop {
+    0% {
+      opacity: 1;
+      transform: translate(80vw, 25vh);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(30vw, 25vh);
+    }
+  }
+  
+}
+
+
 .indicator-number {
   position: absolute;
   left: calc(50% - 7px);

@@ -127,13 +127,58 @@
 
 
 .book-now-main-container {
-    position: absolute;
+    /* position: absolute; */
     width: 65%;
-    bottom: 0px;
+    margin: 0, auto;
 }
 
 .contact-section-3 > .book-now-main-container > .book-now-cont {
     width: 65%;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px 20px 20px 70px;
+}
+
+.contactSection {
+    height: 70%;
+    background: url(https://balaykobo.com/wp-content/uploads/2024/03/contactLandingPageBackground.png);
+    background-position: center 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10%;
+}
+
+.contactSectionCont {
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contactSectionTitle {
+    font-family: Spectral;
+    color: #000;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.contactBtnStyle {
+    width: 228px;
+    height: 35px;
+    padding: 8px, 33.6px, 8px, 33.6px;
+    border: 0.8px solid #496575;
+    border-radius: 6px;
+    gap: 83.2px;
+    background-color: #557689;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Oxygen Mono';
+    font-size: 12px;
+    font-style: normal;
+}
+
+.contactIcon {
+    width: 30px;
 }

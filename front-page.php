@@ -60,16 +60,22 @@
         </header>
         <!-- Section 2 -->
         <div class="container-fluid secondPage text-center" id="secondPageId">
-            <div class="row" id="home">
-                <div class="col-12 text-center align-self-center secondPageContent">
-                    <div class="secondPageTitle">A multipurpose home + studio for photoshoots, workshops, and intimate events</div>
-                    <div class="mt-5">
-                        <a class="btn btn-outline-secondary me-4 button1Style" style="">
-                            <div class="btnText"> Book now </div>
-                        </a>
-                        <a href="<?php echo get_permalink( get_page_by_title( 'Studios' ) ); ?>" class="btn btn-outline-secondary button2Style" style="">
-                            <div class="btnText"> Explore studios </div>
-                        </a>
+            <div class="secondPageCont">
+                <div class="row">
+                    <div class="col-12 text-center align-self-center secondPageContent">
+                        <div class="secondPageTitle">A multipurpose home + studio for photoshoots, workshops, and intimate events</div>
+                        <div class="mt-5 secondPageButtonContainer">
+                            <div>
+                                <a class="btn btn-outline-secondary button1Style">
+                                    <div class="btnText"> Book now </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="<?php echo get_permalink( get_page_by_title( 'Studios' ) ); ?>" class="btn btn-outline-secondary button2Style" style="">
+                                    <div class="btnText"> Explore studios </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -92,7 +98,7 @@
             <?php wp_reset_postdata(); ?>
         </div>
         <!-- Contact Us -->
-        <div class="container-fluid contact" id="contact-section-1">
+        <!-- <div class="container-fluid contact" id="contact-section-1">
             <div class="row desc icon">
                 <div class="align-start"><img src="<?php bloginfo('template_url'); ?>/assets/about-active-icon.svg" width="25" height="25"/></div>
             </div>
@@ -111,8 +117,8 @@
                     </a>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid contact" id="contact-section-2">
+        </div> -->
+        <!-- <div class="container-fluid contact" id="contact-section-2">
             <div class="row desc icon">
                 <div class="align-start"><img src="<?php bloginfo('template_url'); ?>/assets/about-active-icon.svg" width="25" height="25"/></div>
             </div>
@@ -131,8 +137,26 @@
                     </a>
                 </div>
             </div>
+        </div> -->
+        <div class="container-fluid text-center contactSection" id="contactSection">
+            <div class="contactSectionCont">
+                <div class="row" id="home">
+                    <div class="col-12 text-center align-self-center">
+                        <img src="https://balaykobo.com/wp-content/uploads/2024/01/about-active-icon.png" class="contactIcon"></img>
+                        <div class="contactSectionTitle">We are BALAY KŌBŌ</div>
+                        <div class="mt-4">
+                            <a class="btn btn-outline-secondary me-2 contactBtnStyle">
+                                <div class="btnText"> Book now </div>
+                            </a>
+                            <a href="<?php echo get_permalink( get_page_by_title( 'Studios' ) ); ?>" class="btn btn-outline-secondary button2Style" style="">
+                                <div class="btnText"> Explore studios </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="container-fluid contact-section-3" id="contact-section-3">
+        <!-- <div class="container-fluid contact-section-3" id="contact-section-3">
             <div class="book-now-main-container">
                 <div class="book-now-cont py-5">
                     <div class="pt-3">
@@ -147,5 +171,5 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </div> -->
 <?php get_footer(); ?>
