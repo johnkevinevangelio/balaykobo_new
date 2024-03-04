@@ -163,7 +163,11 @@
     font-weight: 400;
     margin-top: 15px;
 }
-
+.contactPageButtonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 .contactBtnStyle {
     width: 228px;
     height: 35px;
@@ -181,4 +185,27 @@
 
 .contactIcon {
     width: 30px;
+}
+
+
+@media (max-width: 430px) {
+    .contactSection {
+        padding-top: 30%;
+    }
+    .contactSectionTitle {
+        font-size: 16px;
+    }
+    .contactSectionCont {
+        width: 80%;
+    }
+    .btnText {
+        font-family: Oxygen Mono;
+        font-size: 12px;
+    }
+    .contactPageButtonContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }

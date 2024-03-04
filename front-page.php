@@ -142,17 +142,21 @@
         </div> -->
         <div class="container-fluid text-center contactSection" id="contactSection">
             <div class="contactSectionCont">
-                <div class="row" id="home">
-                    <div class="col-12 text-center align-self-center">
+                <div class="row">
+                    <div class="col-12 text-center align-self-center contactPageContent">
                         <img src="https://balaykobo.com/wp-content/uploads/2024/01/about-active-icon.png" class="contactIcon"></img>
                         <div class="contactSectionTitle">We are BALAY KŌBŌ</div>
-                        <div class="mt-4">
-                            <a class="btn btn-outline-secondary me-2 contactBtnStyle">
-                                <div class="btnText"> Book now </div>
-                            </a>
-                            <a href="<?php echo get_permalink( get_page_by_title( 'Studios' ) ); ?>" class="btn btn-outline-secondary button2Style" style="">
-                                <div class="btnText"> Explore studios </div>
-                            </a>
+                        <div class="mt-5 contactPageButtonContainer">
+                            <div>
+                                <a class="btn btn-outline-secondary contactBtnStyle">
+                                    <div class="btnText"> Book now </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="<?php echo get_permalink( get_page_by_title( 'Studios' ) ); ?>" class="btn btn-outline-secondary button2Style" style="">
+                                    <div class="btnText"> Explore studios </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
