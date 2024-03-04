@@ -115,8 +115,26 @@
                 //         arrowElement.style.animationPlayState = 'running';
                 //     }
                 // });
+                function clickOnCarouselSlide () {
+                    console.log("test")
+                    // $("#myCarousel").carousel('next');
+                    // document.querySelectorAll('.carousel-item').forEach(item => {
+                    //     item.addEventListener('onclick', event => {
+                    //         console.log('test')
+                    //         document.querySelector('#myCarousel').carousel('next');
+                    //     });
+                    // });
+                }
+                document.querySelectorAll('.carousel-image').forEach(item => {
+                    item.addEventListener('onclick', event => {
+                        console.log('test')
+                        document.querySelector('#myCarousel').carousel('next');
+                    });
+                });
                 var myCarousel = document.getElementById('myCarousel')
-                
+                // myCarousel.addEventListener('slid.bs.carousel', function () {
+                //     console.log('test')
+                // })
                 if (!myCarousel) return
                 // myCarousel.addEventListener('slide.bs.carousel', function (e) {
                 //     var totalItems = document.getElementsByClassName('carousel-item').length;

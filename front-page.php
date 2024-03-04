@@ -17,6 +17,8 @@
                     <div class="carousel-inner">
                         <div class="carousel-item carousel-image landing-img-1 active" data-bs-interval="3000">
                         </div>
+                        <div class="carousel-item carousel-image landing-img-1-5" data-bs-interval="3000">
+                        </div>
                         <div class="carousel-item carousel-image landing-img-2" data-bs-interval="3000">
                             <div class="carouselCaption caption-1">
                                 A creative and communal stage for artists
@@ -37,11 +39,11 @@
                                 Holding Space for beauty
                             </div>
                         </div>
-                        <div class="carousel-item carousel-image landing-img-6" data-bs-interval="3000">
+                        <!-- <div class="carousel-item carousel-image landing-img-6" data-bs-interval="3000">
                             <div class="carouselCaption caption-5">
                                Providing comfort and clarity
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>

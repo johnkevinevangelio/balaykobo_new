@@ -85,7 +85,11 @@
 
 .landing-img-1 {
     /* background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.5) 100%), url(../assets/landing_page/new_landing_1.jpg); */
-    background: url(../assets/landing_page/new_landing_1.jpg);
+    background: url(../assets/landing_page/slide-1.jfif);
+}
+.landing-img-1-5 {
+  /* background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.5) 100%), url(../assets/landing_page/new_landing_1.jpg); */
+  background: url(../assets/landing_page/slide-2.jfif);
 }
 .landing-img-2 {
     /* background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.5) 100%), url(../assets/landing_page/new_landing_2.jpg); */
