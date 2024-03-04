@@ -12,7 +12,8 @@
                         <div class="row g-0">
                             <?php
                                 $args = array(
-                                    'tag' => 'gallery'
+                                    'tag' => 'gallery',
+                                    'nopaging' => true
                                 );
                                 $my_post = get_posts($args);
                                 if ( $my_post ) {
