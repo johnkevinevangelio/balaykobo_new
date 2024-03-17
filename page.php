@@ -147,8 +147,22 @@
                     <?php echo get_the_content() ?>
                 </div>    
             <?php else :?>
-                <div class="container-fluid g-0">
-                    <?php echo get_the_content() ?>
+                <style>
+                    .other-content {
+                        margin-top: 8%;
+                        margin-bottom: 8%;
+                    }
+                </style>
+                <div class="container-fluid g-0 other-content">
+                <?php
+                    function sup($text){
+
+                        $true = preg_replace('#(\d+)(st|th|nd|rd)#', '$1<sup class="super">$2</sup>', $text);
+                        return $true;
+
+                    }
+                    echo sup(the_content());
+                ?>
                 </div>
             <?php endif; ?>
         <?php endwhile; ?>

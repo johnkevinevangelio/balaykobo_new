@@ -68,7 +68,7 @@
                         <div class="secondPageTitle">A multipurpose home + studio for photoshoots, workshops, and intimate events</div>
                         <div class="mt-5 secondPageButtonContainer">
                             <div>
-                                <a class="btn btn-outline-secondary button1Style">
+                                <a href="<?php echo get_permalink( get_page_by_title( 'Book a Studio' ) ); ?>" class="btn btn-outline-secondary button1Style">
                                     <div class="btnText"> Book now </div>
                                 </a>
                             </div>
@@ -149,7 +149,7 @@
                         <div class="mt-5 contactPageButtonContainer">
                             <div>
                                 <a class="btn btn-outline-secondary contactBtnStyle">
-                                    <div class="btnText"> Book now </div>
+                                    <div href="<?php echo get_permalink( get_page_by_title( 'Book a Studio' ) ); ?>" class="btnText"> Book now </div>
                                 </a>
                             </div>
                             <div>
