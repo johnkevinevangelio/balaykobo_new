@@ -27,6 +27,7 @@
 .overlay-portfolio > a {
   display: none;
   color: #fafafa;
+  text-decoration: none;
 }
 .overlay-portfolio:hover > a {
   display: block;
@@ -55,4 +56,7 @@
   line-height: 43px;
   letter-spacing: 0em;
   color: #fafafa;
+}
+.overlay-portfolio > a:hover {
+  text-decoration: underline;
 }
