@@ -12,11 +12,19 @@
 .slick-track {
     display: flex !important;
 }
+.slick-track:first-child {
+    margin-left: 20px;
+}
+
 .slick-slide {
     max-height: 300px !important;
 	text-align: center;
-    margin: 0 7px;
+    margin: 0 5px;
 }
+/* .slick-slide:first-child {
+    margin-left: 10px;
+} */
+
 .slick-arrow {
 	z-index: 1;
 	/* width: 40px;
@@ -41,6 +49,7 @@
     font-size: 28px;
     color: white;
     font-weight: 100;
+    display: none;
 }
 .slick-next::before {
     content: '\f054';
@@ -48,6 +57,7 @@
     font-size: 28px;
     color: white;
     font-weight: 100;
+    display: none;
 }
 .slick-next:hover {
     right: -5px;
