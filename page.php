@@ -33,6 +33,7 @@
                 <div class="container-fluid g-0">
                     <?php get_template_part('services'); ?>
                 </div>
+            
             <?php elseif($myTitle == 'Partnership') : ?>
                 <div class="container-fluid g-0">
                     <?php get_template_part('partnership'); ?>
@@ -148,10 +149,10 @@
                 </div>    
             <?php else :?>
                 <style>
-                    .other-content {
+                    /* .other-content {
                         margin-top: 8%;
                         margin-bottom: 8%;
-                    }
+                    } */
                 </style>
                 <div class="container-fluid g-0 other-content">
                 <?php
@@ -161,7 +162,7 @@
                         return $true;
 
                     }
-                    echo sup(the_content());
+                    echo sup(get_the_content());
                 ?>
                 </div>
             <?php endif; ?>
