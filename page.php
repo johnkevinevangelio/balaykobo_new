@@ -44,11 +44,11 @@
                         background-image: url('https://balaykobo.com/wp-content/uploads/2024/01/studio_header_bg-scaled.jpg');
                         background-position: center;
                         background-size: cover;
-                        height: 75vh;
+                        /* height: 75vh; */
                     } 
                     .bookStudioBox {
                         background-color: rgba(255, 255, 255, 0.80);
-                        height: 85%;
+                        /* height: 85%; */
                         width: 40%;
                         padding: 30px 50px 50px 50px;
                     }
@@ -67,7 +67,7 @@
                         font-weight: 400;
                     }
                     .bookStudioBox2 {
-                        padding: 30px;
+                        /* padding: 30px; */
                         margin-top: 30px;
                         background: #FFF;
                     }
@@ -81,7 +81,7 @@
                             
                         .bookStudioBox {
                             background-color: rgba(255, 255, 255, 0.80);
-                            height: 85%;
+                            height: 90%;
                             width: calc(100% - 30%);
                         }
                         .bookStudioTitle {
@@ -145,7 +145,10 @@
                     }
                 </style>
                 <div class="bookStudio container-fluid g-0 d-flex justify-content-center">
-                    <?php echo get_the_content() ?>
+                    <?php 
+                        // echo get_the_content()
+                        get_template_part('bookStudio');
+                    ?>
                 </div>    
             <?php else :?>
                 <style>
