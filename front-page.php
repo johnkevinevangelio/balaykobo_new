@@ -99,47 +99,6 @@
             <?php endif; ?>
             <?php wp_reset_postdata(); ?>
         </div>
-        <!-- Contact Us -->
-        <!-- <div class="container-fluid contact" id="contact-section-1">
-            <div class="row desc icon">
-                <div class="align-start"><img src="<?php bloginfo('template_url'); ?>/assets/about-active-icon.svg" width="25" height="25"/></div>
-            </div>
-            <div class="row desc text">
-                <h2 class="text-black">Everyone is Welcome at BALAY KО̄BО̄</h2>
-            </div>
-            <div class="background-film"></div>
-            <div class="row pt-book-now-container">
-                <div class="book-now-container ms-auto py-5 px-5">
-                    <div class="pt-4 pb-4">
-                        <h5 class="text-white">Looking for a space to shoot in?</h5>
-                    </div>
-                    <a class="btn btn-white mb-3">
-                        <span class="ms-2 me-5 btnText"> book now </span>
-                        <i class="bi bi-arrow-right ms-4 me-2"></i>
-                    </a>
-                </div>
-            </div>
-        </div> -->
-        <!-- <div class="container-fluid contact" id="contact-section-2">
-            <div class="row desc icon">
-                <div class="align-start"><img src="<?php bloginfo('template_url'); ?>/assets/about-active-icon.svg" width="25" height="25"/></div>
-            </div>
-            <div class="row desc text">
-                <h2>coming soon</h2>
-            </div>
-            <div class="background-film"></div>
-            <div class="row pt-book-now-container">
-                <div class="book-now-container ms-auto py-5 px-5">
-                    <div class="pt-4 pb-4">
-                        <h5 class="text-white">coming soon</h5>
-                    </div>
-                    <a class="btn btn-white mb-3">
-                        <span class="ms-2 me-5 btnText"> book now </span>
-                        <i class="bi bi-arrow-right ms-4 me-2"></i>
-                    </a>
-                </div>
-            </div>
-        </div> -->
         <div class="container-fluid text-center contactSection" id="contactSection">
             <div class="contactSectionCont">
                 <div class="row">
@@ -162,20 +121,4 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="container-fluid contact-section-3" id="contact-section-3">
-            <div class="book-now-main-container">
-                <div class="book-now-cont py-5">
-                    <div class="pt-3">
-                        <h6 class="text-black">ABOUT US</h6>
-                    </div>
-                    <div class="pb-3">
-                        <h4 class="text-black">We are Balay Kōbō, check us out!</h4>
-                    </div>
-                    <a href="<?php echo get_permalink( get_page_by_title( 'About' ) ); ?>" class="btn btn-black">
-                        <span class="ms-2 me-5 btnText"> Learn more about us </span>
-                        <i class="bi bi-arrow-right ms-4 me-2"></i>
-                    </a>
-                </div>
-            </div>
-        </div> -->
 <?php get_footer(); ?>
