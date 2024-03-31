@@ -149,7 +149,7 @@
                         // echo get_the_content()
                         get_template_part('bookStudio');
                     ?>
-                </div>    
+                </div>
             <?php else :?>
                 <style>
                     /* .other-content {

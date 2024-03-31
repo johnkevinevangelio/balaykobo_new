@@ -83,6 +83,7 @@
         <?php include 'partnership-script.php';?>
         <?php include 'gallery-script.php';?>
         <?php include 'book-form-script.php';?>
+        <?php include 'faq-script.php';?>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
