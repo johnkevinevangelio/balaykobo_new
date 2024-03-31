@@ -39,7 +39,7 @@
                     <div class="footerContent">
                         <ul style="list-style-type: none;">
                             <li class="footerTitle">Information</li>
-                            <li class="footerSub"><a href="<?php echo get_permalink( get_page_by_title( 'Partnership' ) ); ?>">SPONSOR KŌBŌ</a></li>
+                            <li class="footerSub"><a href="<?php echo get_permalink( get_page_by_title( 'FAQ' ) ); ?>">FAQ</a></li>
                             <li class="footerSub"><a href="<?php echo get_permalink( get_page_by_title( 'Book a Studio' ) ); ?>">CONTACT US</a></li>
                         </ul>
                     </div>
