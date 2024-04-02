@@ -153,12 +153,13 @@
                 }
                 console.info(performance.navigation.type);
                 const spinnerWrapperEl = document.querySelector('.spinner-wrapper');
-                if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+                // performance.navigation.type == performance.navigation.TYPE_RELOAD && document.querySelector('.masthead')
+                if (document.querySelector('.masthead')) {
                     if (spinnerWrapperEl) {
                         setTimeout(() => {
                             spinnerWrapperEl.style.opacity = '0';
                             spinnerWrapperEl.style.display = 'none';
-                        }, 1000)
+                        }, 3000)
                     }
                 } else {
                     if (spinnerWrapperEl) {
