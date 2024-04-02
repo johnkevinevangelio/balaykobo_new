@@ -57,15 +57,13 @@
         </footer>
         <!-- Bootstrap Modal -->
         <div class="modal modalFade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-            <div id="modalDialog" class="modal-dialog modal-dialog-centered custom-modal-dialog">
+            <div id="modalDialog" class="modal-dialog custom-modal-dialog">
                 <div class="modal-content custom">
-                    <div class="text-center">
-                        <div class="modal-img-cont">
-                            <img src="" id="modalImage" alt="Modal Image">
-                        </div>
-                        <div class="modal-desc mt-2">
-                            <span id="imageDescription"></span>
-                        </div>
+                    <div class="modal-img-cont">
+                        <img src="" id="modalImage" alt="Modal Image">
+                    </div>
+                    <div class="modal-desc mt-2 d-flex">
+                        <span id="imageDescription"></span>
                     </div>
                 </div>
             </div>

@@ -12,7 +12,7 @@
 				const description = thumbnail.getAttribute('data-desc');
 				const isLarge = thumbnail.getAttribute('is-large');
 				if (isLarge == 'true') {
-					modalDialog.className = 'modal-dialog modal-lg'
+					modalDialog.className = 'modal-dialog'
 				}
 				modalImage.setAttribute('src', imageUrl);
 				if (!description) return
