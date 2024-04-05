@@ -158,9 +158,9 @@ li img {
     transition: 2s;
 }
 .nav-gallery-icon.black {
-    content: url("../assets/navbar_icons/new/2.png");
+    content: url("../assets/navbar_icons/house-black.svg");
     width: 33px;
-    height: 12px;
+    height: 20.67px;
     transition: 2s;
 }
 .nav-partnerships-icon.black {
@@ -176,9 +176,9 @@ li img {
     transition: 2s;
 }
 .nav-about-icon.black {
-    content: url("../assets/navbar_icons/new/5.png");
-    width: 18px;
-    height: 15px;
+    content: url("../assets/navbar_icons/flower2-black.svg");
+    width: 30px;
+    height: 20.67px;
     /* transition: 2s; */
 }
 
