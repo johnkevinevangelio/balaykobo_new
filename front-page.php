@@ -15,7 +15,10 @@
                 </div> -->
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">
-                        <div class="carousel-item carousel-image landing-img-1 active" data-bs-interval="3000">
+                        <div class="carousel-item video-wrapper active" data-bs-interval="30000">
+                            <video class="video-size img-fluid" autoplay loop muted>
+                                <source src="https://balaykobo.com/wp-content/uploads/2024/04/FACADE-Daylight.mp4" type="video/mp4" />
+                            </video>
                         </div>
                         <div class="carousel-item carousel-image landing-img-1-5" data-bs-interval="3000">
                         </div>

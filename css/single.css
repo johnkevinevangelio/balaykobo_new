@@ -12,10 +12,19 @@
 .slick-track {
     display: flex !important;
 }
-.slick-track:first-child {
+/* .slick-track:first-child {
     margin-left: 20px;
+} */
+@media screen and (max-width: 1200) {
+    .slick-track:first-child {
+        margin-left: 20px;
+    }
 }
-
+@media screen and (max-width: 600) {
+    .slick-track:first-child {
+        margin-left: 0px;
+    }
+}
 .slick-slide {
     max-height: 300px !important;
 	text-align: center;
