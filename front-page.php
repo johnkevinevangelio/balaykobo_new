@@ -20,6 +20,8 @@
                                 <source src="https://balaykobo.com/wp-content/uploads/2024/04/FACADE-Daylight.mp4" type="video/mp4" />
                             </video>
                         </div>
+                        <div class="carousel-item carousel-image landing-img-1" data-bs-interval="3000">
+                        </div>
                         <div class="carousel-item carousel-image landing-img-1-5" data-bs-interval="3000">
                         </div>
                         <div class="carousel-item carousel-image landing-img-2" data-bs-interval="3000">
