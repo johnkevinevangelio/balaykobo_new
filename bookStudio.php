@@ -42,6 +42,10 @@ body{
     font-style: normal;
     font-weight: 400;
 }
+.custom-checkbox img:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
 @media screen and (max-width:2000px) {
   .booking-subtitle {
     margin-left: 10%;
