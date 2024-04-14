@@ -44,6 +44,7 @@
                         background-image: url('https://balaykobo.com/wp-content/uploads/2024/01/studio_header_bg-scaled.jpg');
                         background-position: center;
                         background-size: cover;
+                        font-family: 'Oxygen Mono';
                         /* height: 75vh; */
                     } 
                     .bookStudioBox {
@@ -82,7 +83,7 @@
                         .bookStudioBox {
                             background-color: rgba(255, 255, 255, 0.80);
                             height: 90%;
-                            width: calc(100% - 30%);
+                            width: calc(100% - 20%);
                         }
                         .bookStudioTitle {
                             color: #222;
@@ -105,7 +106,7 @@
                             background-color: rgba(255, 255, 255, 0.80);
                             height: 90%;
                             padding: 30px;
-                            width: calc(100% - 30%);
+                            width: calc(100% - 20%);
                         }
                         .bookStudioTitle {
                             color: #222;
