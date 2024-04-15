@@ -69,6 +69,7 @@
             </div>
         </div>
         <?php wp_footer() ?>
+        <script src="https://unpkg.com/simplebar@5.3.3/dist/simplebar.min.js"></script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- SimpleLightbox plugin JS-->

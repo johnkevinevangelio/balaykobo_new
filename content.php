@@ -4,7 +4,7 @@
             <img 
                 id="img-<?php the_ID(); ?>"
                 src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full') ?>"
-                class="img-fluid clickable-image"
+                class="img-fluid clickable-image portfolio-image"
                 alt="Image 1"
             >
         <?php endif; ?>

@@ -4,6 +4,12 @@
 .custom-border {
     border: 5px 2px solid black;
 }
+@media screen and (min-width: 800px) {
+  .portfolio-image {
+    height: 50vh;
+    width: 100%;
+  }
+}
 .overlay-portfolio {
     position: absolute;
     top: 0;

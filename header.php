@@ -10,6 +10,7 @@
         <!-- Bootstrap Icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/simplebar@5.3.3/dist/simplebar.min.css">
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
@@ -41,8 +42,12 @@
         <link href="<?php bloginfo('template_url'); ?>/css/faq.css" rel="stylesheet" />
         <?php wp_head(); ?>
         <style>
-            #page-top::-webkit-scrollbar-track
+            #page-top {
+                overflow-y: clip;
+            }
+            /* #page-top::-webkit-scrollbar-track
             {
+                display: none;
                 -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
                 border-radius: 10px;
                 background-color: #F5F5F5;
@@ -50,7 +55,7 @@
 
             #page-top::-webkit-scrollbar
             {
-                width: 12px;
+                width: 10px;
                 background-color: #F5F5F5;
             }
 
@@ -59,7 +64,7 @@
                 border-radius: 10px;
                 -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
                 background-color: #555;
-            }
+            } */
         </style>
         <?php $myTitle = get_the_title() ?>
         <?php if($myTitle == 'Studios') : ?>
@@ -86,6 +91,12 @@
                     filter: invert(0);
                 }
             </style>
+        <?php elseif($myTitle == 'Gallery') : ?>
+            <style>
+                #navMain {
+                    filter: invert(0);
+                }
+            </style>        
         <?php else : ?>
             <style>
                 #navMain {
@@ -94,7 +105,7 @@
             </style>
         <?php endif; ?>
     </head>
-    <body id="page-top"> 
+    <body id="page-top" data-simplebar> 
         <!-- remove scroll temporarily -->
         <!-- Navigation-->
         <div class="justify-content-center fixed-top" id="navMain">
