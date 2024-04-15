@@ -36,6 +36,7 @@
     text-decoration: none;
 }
 .faqAnswer {
+    margin-top: 10px;
     font-style: italic;
     color: #445E6E;
     margin-left: 10px;
