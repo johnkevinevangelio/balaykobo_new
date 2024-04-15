@@ -1,6 +1,6 @@
 .faqcontainer {
     margin: auto;
-    width: 50%;
+    width: 70%;
     margin-top: 10%;
     margin-bottom: 5%;
 }
@@ -37,6 +37,8 @@
 }
 .faqAnswer {
     font-style: italic;
+    color: #445E6E;
+    margin-left: 10px;
 }
 @media screen and (max-width:1200px) {
     .faqcontainer {
