@@ -9,16 +9,16 @@
 }
 .aboutTitle {
     font-family: 'Spectral';
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 42px;
     letter-spacing: 0em;
     position: absolute;
     /* bottom:50%; */
-    color: white;
+    color: #F2F2E6;
     z-index: 10;
-    top: 50%;
-    left: 50%;
+    top: 75%;
+    left: 25%;
     transform: translate(-50%, -50%);
 }
 
@@ -80,9 +80,9 @@
     height: 50vh;
     background-image: url(https://balaykobo.com/wp-content/uploads/2024/01/aboutContent3Background.jpg);
     background-position: center;
-    padding-left: 18%;
-    padding-right: 18%;
-    gap: 10%;
+    /* padding-left: 18%;
+    padding-right: 18%; */
+    /* gap: 10%; */
     background-size: cover;
 }
 
@@ -175,7 +175,7 @@
 }
 .aboutContent10 {
     height: 50vh;
-    background-color: #F0F1C7;
+    background-color: #D9BE89;
     padding-left: 18%;
     padding-right: 18%;
     padding-top: 10%;
