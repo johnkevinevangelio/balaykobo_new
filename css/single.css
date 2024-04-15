@@ -181,6 +181,12 @@
 .singleMainContent {
     /* padding-top: 5%; */
 }
+.title-head-cont {
+    position: absolute;
+    top:90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .title-header {
     color: #3E352C;
     font-family: 'Spectral';
