@@ -31,14 +31,14 @@ $test = get_the_tags($postid);
                 background: url(https://balaykobo.com/wp-content/uploads/2024/01/singlebookstudiobackground.jpg);
                 background-size: cover;
                 background-position: center;
-                padding-top: 5%;
-                padding-bottom: 3%;
+                padding-top: 8%;
+                padding-bottom: 8%;
 
             }
             .bookStudioTitleHeader {
                 color: #3E352C;
                 font-family: 'Spectral';
-                font-size: 42px;
+                font-size: 28px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 103.2%;
@@ -46,7 +46,7 @@ $test = get_the_tags($postid);
             .bookStudioSubheader {
                 color: #000;
                 font-family: 'Oxygen Mono';
-                font-size: 16px;
+                font-size: 12px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 150.2%; /* 24.032px */
