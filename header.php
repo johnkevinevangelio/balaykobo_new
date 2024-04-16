@@ -43,7 +43,7 @@
         <?php wp_head(); ?>
         <style>
             #page-top {
-                overflow-y: clip;
+                overflow-y: scroll;
             }
             /* #page-top::-webkit-scrollbar-track
             {
