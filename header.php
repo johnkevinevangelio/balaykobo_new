@@ -42,9 +42,9 @@
         <link href="<?php bloginfo('template_url'); ?>/css/faq.css" rel="stylesheet" />
         <?php wp_head(); ?>
         <style>
-            #page-top {
+            /* #page-top {
                 overflow-y: scroll;
-            }
+            } */
             /* #page-top::-webkit-scrollbar-track
             {
                 display: none;

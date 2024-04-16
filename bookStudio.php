@@ -1,12 +1,4 @@
 <style>
-body{
-    color: #000;
-    overflow-x: hidden;
-    height: 100%;
-    /* background-image: url("https://i.imgur.com/GMmCQHC.png"); */
-    background-repeat: no-repeat;
-    background-size: 100% 100%
-}
 .booking-title-text {
   font-size: 28px;
 }
