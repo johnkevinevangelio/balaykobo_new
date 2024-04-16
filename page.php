@@ -31,12 +31,21 @@
                 </div>
             <?php elseif($myTitle == 'Services') : ?>
                 <div class="container-fluid g-0">
-                    <?php get_template_part('services'); ?>
+                    <?php
+                        // get_template_part('services');
+                        get_template_part('comingSoon');
+                    
+                    ?>
                 </div>
             
             <?php elseif($myTitle == 'Partnership') : ?>
                 <div class="container-fluid g-0">
-                    <?php get_template_part('partnership'); ?>
+                    
+                    <?php
+                        get_template_part('comingSoon');
+                        // get_template_part('partnership');
+                    
+                    ?>
                 </div>
             <?php elseif($myTitle == 'Gallery') : ?>
                 <div class="container-fluid g-0">
