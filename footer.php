@@ -7,7 +7,7 @@
                     padding-right: 5%;
                 }
                 .footerContent {
-                    margin-top: 5%;
+                    margin-top: 3%;
                 }
                 .footerTitle {
                     color: #EBE9DA;

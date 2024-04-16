@@ -3,10 +3,10 @@
         background-image: url('https://balaykobo.com/wp-content/uploads/2024/04/coming_soon-scaled.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        top: 0;
-        left: 0;
-        position: fixed;
-        height: 100%;
+        /* top: 0;
+        left: 0; */
+        /* position: fixed; */
+        height: 70vh;
         width: 100%;
         overflow: hidden;
     }
