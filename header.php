@@ -8,6 +8,7 @@
             <?php wp_title() ;?>
         </title>
         <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/material-photo-gallery@0.1.1/dist/css/material-photo-gallery.min.css" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/simplebar@5.3.3/dist/simplebar.min.css">
@@ -42,9 +43,13 @@
         <link href="<?php bloginfo('template_url'); ?>/css/faq.css" rel="stylesheet" />
         <?php wp_head(); ?>
         <style>
-            /* #page-top {
-                overflow-y: scroll;
-            } */
+            #page-top {
+                overflow-y: clip;
+                overflow-x: clip;
+            }
+            .simplebar-track.simplebar-horizontal {
+                display: none;
+            }
             /* #page-top::-webkit-scrollbar-track
             {
                 display: none;
@@ -101,6 +106,10 @@
             <style>
                 #navMain {
                     filter: invert(100%);
+                    display: none;
+                }
+                .navbar {
+                    display: none;
                 }
             </style>
         <?php endif; ?>

@@ -10,6 +10,7 @@ $test = get_the_tags($postid);
     }
 </style>
 <?php endif; ?>
+<link href="<?php bloginfo('template_url'); ?>/css/featuredWorks.css" rel="stylesheet" />
     <?php if(have_posts()) : ?>
         <?php while(have_posts()) : the_post(); ?>
             <?php if ($test[0]->name == 'gallery') : ?>
