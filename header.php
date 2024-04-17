@@ -106,11 +106,10 @@
             <style>
                 #navMain {
                     filter: invert(100%);
-                    display: none;
                 }
-                .navbar {
+                /* .navbar {
                     display: none;
-                }
+                } */
             </style>
         <?php endif; ?>
     </head>
