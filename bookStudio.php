@@ -110,9 +110,6 @@ input.invalid {
 }
 
 /*modal */
-.modal {
-  /* display: block !important; */
-}
 .modal#statusSuccessModal .modal-content {
   border-radius: 30px;
 },
