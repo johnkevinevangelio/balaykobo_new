@@ -95,7 +95,7 @@
     /* flex: 20%; */
     /* padding: 0 2px; */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin-left: 0;
     margin-right: 0;
 }
