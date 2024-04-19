@@ -29,17 +29,16 @@
 }
 @media screen and (max-width: 600) {
     .slick-track:first-child {
-        margin-left: 0px;
+        margin-left: 20px;
     }
 } */
-/* .slick-slide {
+.slick-slide {
     max-height: 300px !important;
 	text-align: center;
-    margin: 0 5px;
-} */
+}
 /* .slick-slide:first-child {
     margin-left: 10px;
-} */
+}
 
 .slick-arrow {
 	z-index: 1;
