@@ -90,13 +90,7 @@
                 #navMain {
                     filter: invert(0);
                 }
-            </style>
-        <?php elseif($myTitle == 'Gallery') : ?>
-            <style>
-                #navMain {
-                    filter: invert(0);
-                }
-            </style>        
+            </style>      
         <?php else : ?>
             <style>
                 #navMain {
