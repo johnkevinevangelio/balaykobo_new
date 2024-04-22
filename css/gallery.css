@@ -176,7 +176,23 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
+.gallery-images.abstract {
+    position: relative;
+}
+.gallery-images.abstract .gallery-item img {
+    position: absolute;
+    /* Set random size */
+    width: calc(100px + 100px * rand());
+    height: auto;
+    /* Set random position */
+    top: calc(100px * rand());
+    left: calc(100px * rand());
+    /* Allow images to overlap */
+    z-index: 1;
+}
+@function rand() {
+    @return random();
+}
 /* Image Modal */
 .modal-dialog {
     max-width: fit-content;
