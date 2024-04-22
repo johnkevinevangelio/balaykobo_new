@@ -75,6 +75,14 @@
 			gallery.classList.add('cols-6');
 		} else if (option === 'cols-12') {
 			gallery.classList.add('cols-12');
+		} else if (option === 'abstract') {
+			gallery.classList.add('abstract');
+			const images = document.querySelectorAll('.gallery-images .gallery-item img');
+			images.forEach(function(img) {
+				img.style.width = `calc(100px + ${Math.random() * 100}px)`;
+				img.style.top = `${Math.random() * 100}px`;
+				img.style.left = `${Math.random() * 100}px`;
+			});
 		}
 	}
 </script>
