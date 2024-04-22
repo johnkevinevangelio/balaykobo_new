@@ -47,11 +47,6 @@
                     
                     ?>
                 </div>
-            <?php elseif($myTitle == 'Gallery') : ?>
-                <div class="container-fluid g-0">
-                    <?php get_template_part('comingSoon'); ?>
-                </div>
-            <?
             <?php elseif($myTitle == 'Book a Studio') : ?>
                 <style>
                     .bookStudio {
