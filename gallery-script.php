@@ -60,13 +60,20 @@
 			link.classList.remove('active')
 		});
 	}
-
+	document.addEventListener("DOMContentLoaded", function() {
+		const images = document.querySelectorAll('.gallery-images .gallery-item');
+		images.forEach(function(img) {
+			img.style.setProperty('--random-width', `${65 + Math.random() * 35}%`);
+			img.style.setProperty('--random-top', `${Math.random() * 40}%`);
+			img.style.setProperty('--random-left', `${Math.random() * 35}%`);
+		});
+	});
 	function setDisplayOption(option) {
 		const gallery = document.querySelector ('.gallery-images');
 
 		if (!gallery) return
 		// Remove existing Bootstrap column classes
-		gallery.classList.remove('cols-3', 'cols-6', 'cols-12');
+		gallery.classList.remove('cols-3', 'cols-6', 'cols-12', 'abstract');
 
 		// Add Bootstrap column class based on the selected option
 		if (option === 'cols-3') {
@@ -77,12 +84,6 @@
 			gallery.classList.add('cols-12');
 		} else if (option === 'abstract') {
 			gallery.classList.add('abstract');
-			const images = document.querySelectorAll('.gallery-images.abstract.gallery-item img');
-			images.forEach(function(img) {
-				img.style.width = `calc(100px + ${Math.random() * 100}px)`;
-				img.style.top = `${Math.random() * 100}px`;
-				img.style.left = `${Math.random() * 100}px`;
-			});
 		}
 	}
 </script>

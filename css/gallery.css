@@ -148,7 +148,17 @@
 .gallery-item:hover img {
     filter: brightness(60%);
 }
-
+.gallery-images.abstract {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+  }
+.gallery-images.abstract .gallery-item img {
+    position: relative;
+    width: var(--random-width);
+    top: var(--random-top);
+    left: var(--random-left);
+}
 @media (max-width: 768px) {
     .gallery-images.cols-3 {
         grid-template-columns: repeat(2, 1fr); /* Two items per row on smaller screens */
@@ -176,9 +186,6 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
-/* .gallery-images.abstract {
-    position: relative;
-} */
 
 /* Image Modal */
 .modal-dialog {
