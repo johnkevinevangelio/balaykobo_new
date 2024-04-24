@@ -153,7 +153,7 @@
     grid-template-columns: repeat(3, 1fr);
     position: relative;
   }
-.gallery-images.abstract .gallery-item img {
+.gallery-images.abstract .gallery-item {
     position: relative;
     width: var(--random-width);
     top: var(--random-top);
