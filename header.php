@@ -8,7 +8,6 @@
             <?php wp_title() ;?>
         </title>
         <!-- Bootstrap Icons-->
-        <link href="https://cdn.jsdelivr.net/npm/material-photo-gallery@0.1.1/dist/css/material-photo-gallery.min.css" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Google fonts-->

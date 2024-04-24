@@ -16,7 +16,7 @@
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">
                         <div class="carousel-item video-wrapper active" data-bs-interval="30000">
-                            <video class="video-size img-fluid" autoplay loop muted>
+                            <video class="video-size img-fluid" autoplay loop muted playsinline>
                                 <source src="https://balaykobo.com/wp-content/uploads/2024/04/FACADE-Daylight.mp4" type="video/mp4" />
                             </video>
                         </div>
