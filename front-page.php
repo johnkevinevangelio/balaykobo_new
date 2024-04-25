@@ -16,6 +16,15 @@
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">
                         <div class="carousel-item video-wrapper active" data-bs-interval="30000">
+                            <div class="carouselCaption video-caption">
+                                A brutalist-Japanese inspired home studio; to where light comes home
+                                <br/>
+                                ___
+                                <br/>
+                                To those who seek the sun- <br/>
+                                let ideas take form with the spaces they make ; <br/>
+                                let stories speak volumes with the shapes they create.
+                            </div>
                             <video class="video-size img-fluid" autoplay loop muted playsinline>
                                 <source src="https://balaykobo.com/wp-content/uploads/2024/04/FACADE-Daylight.mp4" type="video/mp4" />
                             </video>
@@ -104,8 +113,11 @@
             <?php endif; ?>
             <?php wp_reset_postdata(); ?>
         </div>
-        <div class="container-fluid text-center contactSection" id="contactSection">
-            <div class="contactSectionCont">
+        <div class="container-fluid contactSection g-0" id="contactSection">
+            <video class="contactVideoBackground" autoplay="autoplay" loop="loop" muted="" playsinline>
+                <source src="https://balaykobo.com/wp-content/uploads/2024/04/Facade-Night.mp4" type="video/mp4" />
+            </video>
+            <!-- <div class="contactSectionCont">
                 <div class="row">
                     <div class="col-12 text-center align-self-center contactPageContent">
                         <img src="https://balaykobo.com/wp-content/uploads/2024/01/about-active-icon.png" class="contactIcon"></img>
@@ -124,6 +136,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 <?php get_footer(); ?>

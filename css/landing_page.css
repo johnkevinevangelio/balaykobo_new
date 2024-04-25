@@ -154,12 +154,24 @@
   /* Web/Web 24px/Regular */
   font-family: Spectral;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 104%; 
+  font-style: italic;
+  font-weight: 200;
+  line-height: 30px; 
+  text-wrap: wrap;
 }
 
-
+.video-caption {
+  position: absolute;
+  transform: translate(10vw, 70vh);
+  z-index: 9999;
+}
+@media screen and (max-width:600px) {
+  .video-caption {
+    transform: translate(3vw, 70vh);
+    margin-right: 3px;
+    font-size: 14px;
+  }
+}
 .caption-1 {
   transform: translate(10vw, 40vh);
   opacity: 1;
@@ -247,7 +259,7 @@
 @media (max-width: 767px) {
   .caption-1  {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 0;
     font-size: 14px;
   }

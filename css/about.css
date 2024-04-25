@@ -16,10 +16,16 @@
     position: absolute;
     /* bottom:50%; */
     color: #F2F2E6;
-    z-index: 10;
-    top: 75%;
-    left: 25%;
-    transform: translate(-50%, -50%);
+    font-style: italic;
+    z-index: 999;
+    transform: translate(10vw, 70vh);
+}
+@media screen and (max-width: 767px) {
+    .aboutTitle {
+        font-size: 18px;
+        margin-right: 3px;
+        transform: translate(3vw, 70vh);
+    }
 }
 
 .aboutContent1 {
@@ -29,6 +35,14 @@
     padding-left: 18%;
     padding-right: 18%;
     gap: 10%;
+}
+@media screen and (max-width: 767px) {
+    .aboutContent1 {
+        padding-top: 20%;
+    }
+    .aboutContent1Subheader {
+        margin-top: 20px;
+    }
 }
 .aboutContent1Header {
     position: flex;
@@ -58,6 +72,14 @@
     padding-left: 18%;
     padding-right: 18%;
     gap: 10%;
+}
+@media screen and (max-width: 767px) {
+    .aboutContent2 {
+        padding-top: 20%;
+    }
+    .aboutContent2Subheader {
+        margin-top: 20px;
+    }
 }
 .aboutContent2Header {
     color: #3E352C;
@@ -126,7 +148,14 @@
     font-style: normal;
     font-weight: 400;
 }
-
+@media screen and (max-width: 767px) {
+    .aboutContent4 {
+        padding-top: 30%;
+    }
+    .aboutContentButton1Style {
+        margin-bottom: 20px;
+    }
+}
 .aboutContentButton2Style {
     width: 228px;
     height: 35px;
@@ -160,7 +189,11 @@
     padding-right: 18%;
     padding-top: 10%;
 }
-
+@media screen and (max-width: 767px) {
+    .aboutContent7 {
+        padding-top: 30%;
+    }
+}
 .aboutContent8 {
     height: 50vh;
     background-image: url(https://balaykobo.com/wp-content/uploads/2024/01/aboutContent8.jpg);
@@ -180,7 +213,11 @@
     padding-right: 18%;
     padding-top: 10%;
 }
-
+@media screen and (max-width: 767px) {
+    .aboutContent10 {
+        height: 60vh;
+    }
+}
 .aboutContentWrapper {
     gap: 10%;
 }
