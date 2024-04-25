@@ -215,15 +215,16 @@
 }
 @media screen and (max-width: 767px) {
     .aboutContent10 {
-        height: 60vh;
+        height: 100%;
+        padding-bottom: 40px;
     }
 }
 .aboutContentWrapper {
     gap: 10%;
 }
 
-@media only screen and (max-width: 400px) {
+/* @media only screen and (max-width: 400px) {
     .aboutContentWrapper {
        padding-top: 50%;
     }
- }
+ } */
