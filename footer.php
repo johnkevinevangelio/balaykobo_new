@@ -66,6 +66,11 @@
                     padding-bottom: 5px;
                     text-decoration: none;
                 }
+                @media screen and (max-width: 787px) {
+                    .footerStyle {
+                        padding-left: 20px;
+                    }
+                }
             </style>
             <div class="footerStyle container-fluid">
                 <div class="d-flex footerContentContainer">

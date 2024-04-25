@@ -257,6 +257,7 @@
     text-decoration: underline;
 }
 
+
 @media screen and (max-width:406px) {
     .gallery-header {
         display: block;
@@ -267,5 +268,30 @@
     }
     .icons-cont {
         padding-top: 15px;
+    }
+}
+.vertical-divider {
+    display: none;
+}
+@media screen and (max-width: 787px) {
+    .vertical-divider {
+        display:block;
+    }
+    .gallery-header {
+        display: block;
+        padding-left: 1px;
+    }
+    .left-menu {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid;
+    }
+    .left-menu a {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .gallery-images {
+        padding: 30px 0;
+        padding-right: 20px;
     }
 }
