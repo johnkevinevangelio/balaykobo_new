@@ -101,8 +101,17 @@ li img {
 }
 
 .nav li span.partnerships {
-    left: -14px !important;
+    left: -7px !important;
 }
+
+.nav li span.services {
+    left: -9px !important;
+}
+
+.nav li span.about {
+    left: -7px !important;
+}
+
 
 .nav li:hover img {
     display: none; /* Hide image/icon on hover */
@@ -130,21 +139,21 @@ li img {
 }
 .nav-partnerships-icon.white {
     content: url("../assets/navbar_icons/new/3.png");
-    width: 25px;
+    width: 28px;
     height: 15px;
     margin-top: 5px;
     transition: 2s;
 }
 .nav-services-icon.white {
     content: url("../assets/navbar_icons/new/4.png");
-    width: 25px;
+    width: 22px;
     height: 15px;
     margin-top: 3px;
     /* transition: 2s; */
 }
 .nav-about-icon.white {
     content: url("../assets/navbar_icons/new/5.png");
-    width: 18px;
+    width: 16px;
     height: 15px;
     margin-top: 3px;
     transition: 2s;
