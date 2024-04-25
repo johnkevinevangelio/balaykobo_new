@@ -270,11 +270,11 @@
         padding-top: 15px;
     }
 }
-.vertical-divider {
+.left-menu .vertical-divider {
     display: none;
 }
 @media screen and (max-width: 787px) {
-    .vertical-divider {
+    .left-menu .vertical-divider{
         display:block;
     }
     .gallery-header {
