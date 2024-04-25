@@ -146,15 +146,15 @@ li img {
 }
 .nav-services-icon.white {
     content: url("../assets/navbar_icons/new/4.png");
-    width: 22px;
-    height: 15px;
+    width: 18px;
+    height: 20px;
     margin-top: 3px;
     /* transition: 2s; */
 }
 .nav-about-icon.white {
     content: url("../assets/navbar_icons/new/5.png");
-    width: 16px;
-    height: 15px;
+    width: 14px;
+    height: 18px;
     margin-top: 3px;
     transition: 2s;
 }
