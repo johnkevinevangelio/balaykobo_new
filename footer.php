@@ -3,8 +3,12 @@
             <style>
                 .footerStyle {
                     background-color: #557689;
-                    padding-bottom: 8%;
-                    padding-right: 5%;
+                    padding-right: 2%;
+                    padding-left: 2%;
+                    padding-bottom: 20px;
+                }
+                .footerContentContainer {
+                    padding-bottom: 3%;
                 }
                 .footerContent {
                     margin-top: 3%;
@@ -30,28 +34,70 @@
                     padding-bottom: 5px;
                     text-decoration: none;
                 }
+                .footerSub i {
+                    color: #F2F2E6;
+                    font-family: 'Oxygen Mono';
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 200;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    padding-top: 10px;
+                    padding-bottom: 5px;
+                    text-decoration: none;
+                }
                 .footerSub a:hover {
                     text-decoration: underline;
                 }
+                .footerContent i {
+                    color: #F2F2E6;
+                    font-size: 24px;
+                    font-weight: 200;
+                    margin-right: 12px;
+                }
+                .footerCopyright {
+                    color: #F2F2E6;
+                    font-family: 'Oxygen Mono';
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 200;
+                    letter-spacing: 1px;
+                    padding-top: 10px;
+                    padding-bottom: 5px;
+                    text-decoration: none;
+                }
             </style>
             <div class="footerStyle container-fluid">
-                <div class="d-flex flex-row-reverse">
+                <div class="d-flex footerContentContainer">
                     <div class="footerContent">
-                        <ul style="list-style-type: none;">
-                            <li class="footerTitle">Information</li>
-                            <li class="footerSub"><a href="<?php echo get_permalink( get_page_by_title( 'FAQ' ) ); ?>">FAQ</a></li>
-                            <li class="footerSub"><a href="<?php echo get_permalink( get_page_by_title( 'Book a Studio' ) ); ?>">CONTACT US</a></li>
-                        </ul>
-                    </div>
-                    <div class="footerContent">
-                        <ul style="list-style-type: none;">
+                        <div class="footerTitle mb-2">Follow Us</div>
+                        <div class="d-flex">
+                            <a href="https://www.instagram.com/balay.kobo/" target="_blank"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com/balay.kobo/" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.instagram.com/balay.kobo/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.instagram.com/balay.kobo/" target="_blank"><i class="bi bi-tiktok"></i></a>
+                        </div>
+                        <!-- <ul style="list-style-type: none;">
                             <li class="footerTitle">Follow Us</li>
                             <li class="footerSub"><a href="https://www.instagram.com/balay.kobo/" target="_blank">FACEBOOK</a></li>
                             <li class="footerSub"><a href="https://www.instagram.com/balay.kobo/" target="_blank">INSTAGRAM</a></li>
                             <li class="footerSub"><a href="https://www.instagram.com/balay.kobo/" target="_blank">LINKEDIN</a></li>
                             <li class="footerSub"><a href="https://www.instagram.com/balay.kobo/" target="_blank">TIKTOK</a></li>
+                        </ul> -->
+                    </div>
+                    <div class="footerContent">
+                        <ul style="list-style-type: none;">
+                            <li class="footerTitle mb-2">Information</li>
+                            <li class="footerSub"><a href="<?php echo get_permalink( get_page_by_title( 'About' ) ); ?>">ABOUT US</a></li>
+                            <li class="footerSub"><a href="<?php echo get_permalink( get_page_by_title( 'About' ) ); ?>">CONTACT US</a></li>
+                            <li class="footerSub"><a href="<?php echo get_permalink( get_page_by_title( 'Studios' ) ); ?>">EXPLORE STUDIOS</a></li>
+                            <li class="footerSub"><a href="<?php echo get_permalink( get_page_by_title( 'Book a Studio' ) ); ?>">BOOK NOW</a></li>
+                            <li class="footerSub"><a href="<?php echo get_permalink( get_page_by_title( 'FAQ' ) ); ?>">FAQ</a></li>
                         </ul>
                     </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <div class="footerCopyright align-self-end">© Balay Kōbō 2024</div>
                 </div>
             </div>
         </footer>
