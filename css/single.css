@@ -94,12 +94,12 @@
     -moz-column-count: 5;
     -moz-column-gap: 0px;
      column-count: 5;
-     column-gap: 5px;
+     column-gap: 2px;
 }
 .featured-works img {
     width: 100% !important;    
     height: auto !important;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
 }
 
 .featured-works > .row {

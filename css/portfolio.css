@@ -4,10 +4,16 @@
 .custom-border {
     border: 5px 2px solid black;
 }
+
+.portfolio-image-cont {
+  height: 50vh;
+}
+
 @media screen and (min-width: 800px) {
   .portfolio-image {
-    height: 50vh;
+    height: 100%;
     width: 100%;
+    object-fit: cover;
   }
 }
 .overlay-portfolio {
