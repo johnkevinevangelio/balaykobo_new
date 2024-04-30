@@ -246,7 +246,7 @@
                 </ul> -->
             </div>
             <div class="mobileNav offcanvas-footer d-flex justify-content-center align-items-center py-5 mb-4">
-                <button type="button" class="btn btn-dark btn-block">Book now</button>
+                <a type="button" class="btn btn-dark btn-block" href="<?php echo get_permalink( get_page_by_title( 'Book a Studio' ) ); ?>">Book now</a>
             </div>
         </div>
 

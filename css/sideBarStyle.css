@@ -418,7 +418,7 @@ li img {
     padding-right: 10%;
 }
 
-.mobileNav.offcanvas-footer button {
+.mobileNav.offcanvas-footer a {
     width: -webkit-fill-available;
 }
 
