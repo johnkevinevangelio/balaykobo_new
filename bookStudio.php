@@ -232,7 +232,7 @@ input.invalid {
 
             <div class="card-cont">
                 <div class="card-title booking-title-text">Booking Form</div>
-                <div class="booking-subtitle"> Daylight Home + Studio ҉　Creative Stage and Communal Space for Creatives <br/>
+                <div class="booking-subtitle"> Daylight Home + Studio  &nbsp;҉　Creative Stage and Communal Space for Creatives <br/>
                       Shoots • Workshops • Intimate Events
                 </div>
                 <form id="gform" class="form-card" action="https://docs.google.com/forms/d/e/1FAIpQLSe2vrqDjcUu-kzTLqgKG4OTGEr5GMyPhSApRcDHwl5UTddoGQ/formResponse">
