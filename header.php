@@ -72,6 +72,9 @@
                 #navMain {
                     filter: invert(0);
                 }
+                .mobile-nav-menu {
+                    filter: invert(0);
+                }
                 #navMain.menu-bg:hover {
                     backdrop-filter: blur(15px);
                     background-color: rgba(62, 53, 44, 0.5) !important;
@@ -80,6 +83,9 @@
         <?php elseif(is_front_page()) : ?>
             <style>
                 #navMain {
+                    filter: invert(0);
+                }
+                .mobile-nav-menu {
                     filter: invert(0);
                 }
                 #navMain.menu-bg:hover {
@@ -92,6 +98,9 @@
                 #navMain {
                     filter: invert(0);
                 }
+                .mobile-nav-menu {
+                    filter: invert(0);
+                }
                 #navMain.menu-bg:hover {
                     backdrop-filter: blur(15px);
                     background-color: rgba(62, 53, 44, 0.5) !important;
@@ -100,6 +109,9 @@
         <?php elseif($myTitle == 'Book a Studio') : ?>
             <style>
                 #navMain {
+                    filter: invert(0);
+                }
+                .mobile-nav-menu {
                     filter: invert(0);
                 }
                 #navMain.menu-bg:hover {
@@ -121,6 +133,9 @@
                 }
                 #navMain.menu-bg:hover {
                     background-color: rgba(0, 0, 0);
+                }
+                .mobile-nav-menu {
+                    filter: invert(100%);
                 }
                 /* .navbar {
                     display: none;

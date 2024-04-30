@@ -354,7 +354,7 @@ li img {
 }
 
 .diff-blend {
-    mix-blend-mode: exclusion !important;
+    /* mix-blend-mode: exclusion !important; */
 }
 
 .mobile-logo {
@@ -364,7 +364,6 @@ li img {
   
 /* Customize the color of the navbar */
 .navbar-bg {
-    backdrop-filter: blur(15px);
     background-color: rgba(62, 53, 44, 0.5) !important;
     
 }
