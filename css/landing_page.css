@@ -118,6 +118,22 @@
     background-position: center;
     padding-bottom: calc(10rem - 4.5rem);
 }
+
+@media screen and (min-width:1200px) {
+  .carousel-control-prev {
+    left: -7%;
+  }
+  .carousel-control-next {
+    right: -7%;
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+}
+
 .video-size {
   object-fit: cover !important;
   width: 100%;
