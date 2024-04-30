@@ -214,6 +214,17 @@ input.invalid {
   font-weight: bold;
   margin-bottom: 10px;
 }
+.submitButtonContainer {
+  display: flex;
+  justify-content: end;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 800px) {
+.submitButtonContainer {
+  justify-content: center;
+}
+}
 </style>
 <div class="container-fluid px-1 py-5 mx-auto mt-5 booking-form">
     <div class="row d-flex justify-content-center">
@@ -503,8 +514,8 @@ input.invalid {
                             Thank you!
                         </div>
 
-                        <div style="overflow:auto;">
-                            <div style="float:right;">
+                        <div>
+                            <div class="submitButtonContainer">
                                 <input type="submit" name="" class="button submitBtn" value="Submit">  
                             </div>
                         </div>
