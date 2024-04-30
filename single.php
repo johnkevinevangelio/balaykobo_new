@@ -68,6 +68,7 @@ $test = get_the_tags($postid);
                 font-style: normal;
                 font-weight: 400;
                 line-height: 115.2%; /* 16.128px */
+                margin-right: 20px;
             }
             .singleBookBtn2Style {
                 width: 228px;
@@ -89,6 +90,12 @@ $test = get_the_tags($postid);
                 font-family: Oxygen Mono;
                 font-size: 14px;
             }
+            @media screen and (max-width:787px) {
+                .singleBookBtn1Style {
+                    margin-right: 0px;
+                    margin-bottom: 20px;
+                }
+            }
         </style>
         <div class="bookStudio text-center mt-5" id="bookStudioId">
             <div>
@@ -105,7 +112,7 @@ $test = get_the_tags($postid);
                 <div class="row">
                     <div class="col-12 text-center align-self-center singleBookContent">
                         <div class="mt-4">
-                            <a class="btn btn-outline-secondary me-2 singleBookBtn1Style" style="">
+                            <a class="btn btn-outline-secondary singleBookBtn1Style" style="">
                                 <div class="btnText"> Call our booking manager </div>
                             </a>
                             <a class="btn btn-outline-secondary singleBookBtn2Style" style="">
