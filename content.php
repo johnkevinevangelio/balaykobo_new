@@ -1,5 +1,5 @@
 <div class="col-md-6">
-    <div class="position-relative">
+    <div class="position-relative portfolio-image-cont">
         <?php if(has_post_thumbnail()) : ?>
             <img 
                 id="img-<?php the_ID(); ?>"
