@@ -112,6 +112,9 @@
                 #navMain {
                     filter: invert(100%);
                 }
+                #navMain:hover {
+                    background-color: rgba(0, 0, 0);
+                }
                 #navMain.menu-bg {
                     backdrop-filter: blur(2px);
                     background-color: rgba(0, 0, 0, 0.5);
