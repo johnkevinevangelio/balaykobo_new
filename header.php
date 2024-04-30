@@ -72,11 +72,19 @@
                 #navMain {
                     filter: invert(0);
                 }
+                #navMain.menu-bg:hover {
+                    backdrop-filter: blur(15px);
+                    background-color: rgba(62, 53, 44, 0.5) !important;
+                }
             </style>
         <?php elseif(is_front_page()) : ?>
             <style>
                 #navMain {
                     filter: invert(0);
+                }
+                #navMain.menu-bg:hover {
+                    backdrop-filter: blur(15px);
+                    background-color: rgba(62, 53, 44, 0.5) !important;
                 }
             </style>
         <?php elseif($myTitle == 'About') : ?>
@@ -84,17 +92,32 @@
                 #navMain {
                     filter: invert(0);
                 }
+                #navMain.menu-bg:hover {
+                    backdrop-filter: blur(15px);
+                    background-color: rgba(62, 53, 44, 0.5) !important;
+                }
             </style>
         <?php elseif($myTitle == 'Book a Studio') : ?>
             <style>
                 #navMain {
                     filter: invert(0);
                 }
+                #navMain.menu-bg:hover {
+                    backdrop-filter: blur(15px);
+                    background-color: rgba(62, 53, 44, 0.5) !important;
+                }
             </style>      
         <?php else : ?>
             <style>
                 #navMain {
                     filter: invert(100%);
+                }
+                #navMain.menu-bg {
+                    backdrop-filter: blur(2px);
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+                #navMain.menu-bg:hover {
+                    background-color: rgba(0, 0, 0);
                 }
                 /* .navbar {
                     display: none;

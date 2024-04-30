@@ -36,7 +36,8 @@
 } */
 
 #navMain.menu-bg {
-    background-color: rgba(242, 242, 230, 0.20);
+
+    /* background-color: rgba(242, 242, 230, 0.20); */
 }
 
 /* #navMain.permanent-bg {
@@ -363,7 +364,9 @@ li img {
   
 /* Customize the color of the navbar */
 .navbar-bg {
-    background-color: rgba(242, 242, 230, 0.15) !important;
+    backdrop-filter: blur(15px);
+    background-color: rgba(62, 53, 44, 0.5) !important;
+    
 }
 
 .mobileNav.navbar-nav {
