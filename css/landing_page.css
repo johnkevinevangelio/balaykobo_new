@@ -121,10 +121,10 @@
 
 @media screen and (min-width:1200px) {
   .carousel-control-prev {
-    left: -7%;
+    left: -5%;
   }
   .carousel-control-next {
-    right: -7%;
+    right: -5%;
   }
 }
 
