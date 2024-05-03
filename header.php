@@ -118,7 +118,20 @@
                     backdrop-filter: blur(15px);
                     background-color: rgba(62, 53, 44, 0.5) !important;
                 }
-            </style>      
+            </style>
+        <?php elseif(has_tag( 'gallery' ) ) : ?>
+            <style>
+                #navMain {
+                    filter: invert(0);
+                }
+                .mobile-nav-menu {
+                    filter: invert(0);
+                }
+                #navMain.menu-bg:hover {
+                    backdrop-filter: blur(15px);
+                    background-color: rgba(62, 53, 44, 0.5) !important;
+                }
+            </style> 
         <?php else : ?>
             <style>
                 #navMain {
