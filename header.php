@@ -134,7 +134,13 @@
             </style> 
         <?php else : ?>
             <style>
-                #navMain > * {
+                .landing-title {
+                    filter: invert(100%);
+                }
+                #navMain li {
+                    filter: invert(100%);
+                }
+                #navMain .nav-book-now-btn {
                     filter: invert(100%);
                 }
                 #navMain:hover {
