@@ -134,25 +134,26 @@
             </style> 
         <?php else : ?>
             <style>
-                #navMain {
+                #navMain > * {
                     filter: invert(100%);
                 }
                 #navMain:hover {
-                    background-color: rgba(0, 0, 0);
+                    filter: invert(0);
+                    backdrop-filter: blur(2px);
+                    background-color: rgba(255, 255, 255, 0.3);
                 }
-                #navMain.menu-bg {
+                /* #navMain.menu-bg {
                     backdrop-filter: blur(2px);
                     background-color: rgba(0, 0, 0, 0.5);
-                }
+                } */
                 #navMain.menu-bg:hover {
-                    background-color: rgba(0, 0, 0);
+                    filter: invert(0);
+                    backdrop-filter: blur(2px);
+                    background-color: rgba(255, 255, 255, 0.2);
                 }
                 .mobile-nav-menu {
                     filter: invert(100%);
                 }
-                /* .navbar {
-                    display: none;
-                } */
             </style>
         <?php endif; ?>
     </head>

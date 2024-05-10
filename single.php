@@ -112,10 +112,10 @@ $test = get_the_tags($postid);
                 <div class="row">
                     <div class="col-12 text-center align-self-center singleBookContent">
                         <div class="mt-4">
-                            <a class="btn btn-outline-secondary singleBookBtn1Style" style="">
+                            <a href="<?php echo get_permalink( get_page_by_title( 'Book a Studio' ) ); ?>" class="btn btn-outline-secondary singleBookBtn1Style" style="">
                                 <div class="btnText"> Call our booking manager </div>
                             </a>
-                            <a class="btn btn-outline-secondary singleBookBtn2Style" style="">
+                            <a href="<?php echo get_permalink( get_page_by_title( 'Book a Studio' ) ); ?>" class="btn btn-outline-secondary singleBookBtn2Style" style="">
                                 <div class="btnText"> Reserve through form </div>
                             </a>
                         </div>
