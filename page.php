@@ -47,6 +47,7 @@
                     
                     ?>
                 </div>
+
             <?php elseif($myTitle == 'Book a Studio') : ?>
                 <style>
                     .bookStudio {
