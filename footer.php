@@ -94,7 +94,7 @@
                         <ul style="list-style-type: none; text-align: start">
                             <li class="footerTitle mb-2">Information</li>
                             <li class="footerSub"><a href="<?php echo get_permalink( get_page_by_title( 'About' ) ); ?>">ABOUT US</a></li>
-                            <li class="footerSub"><a href="<?php echo get_permalink( get_page_by_title( 'About' ) ); ?>">CONTACT US</a></li>
+                            <li class="footerSub"><a href="<?php echo get_permalink( get_page_by_title( 'ContactPage' ) ); ?>">CONTACT US</a></li>
                             <li class="footerSub"><a href="<?php echo get_permalink( get_page_by_title( 'Studios' ) ); ?>">EXPLORE STUDIOS</a></li>
                             <li class="footerSub"><a href="<?php echo get_permalink( get_page_by_title( 'Book a Studio' ) ); ?>">BOOK NOW</a></li>
                             <li class="footerSub"><a href="<?php echo get_permalink( get_page_by_title( 'FAQ' ) ); ?>">FAQ</a></li>
