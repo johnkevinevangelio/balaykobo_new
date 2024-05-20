@@ -31,8 +31,8 @@
         <link href="<?php bloginfo('template_url'); ?>/css/gallery.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/contact.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/portfolio.css" rel="stylesheet" />
-        
-        <link href="<?php bloginfo('template_url'); ?>/css/contactPage.css" rel="stylesheet" />
+
+        <link href="<?php bloginfo('template_url'); ?>/css/contactpage.css" rel="stylesheet" />
 
         <link href="<?php bloginfo('template_url'); ?>/css/single.css" rel="stylesheet" />
 
