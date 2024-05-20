@@ -22,6 +22,11 @@
   margin-top: 30px;
   margin-bottom: 60px;
 }
+
+.custom-control-input {
+  height: 20px;
+  width: 20px;
+}
 @media screen and (max-width:787px) {
   .card-cont {
     padding: 10px 10px;
@@ -156,7 +161,7 @@ input.invalid {
 	animation: dash-check 0.95s 0.35s ease-in-out forwards;
 }
 .checkbox-label {
-  margin-top: 5px;
+  margin-top: 8px;
 }
 @-webkit-keyframes dash { 
 	0% {
