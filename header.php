@@ -145,8 +145,8 @@
                 }
                 #navMain:hover {
                     filter: invert(0);
-                    backdrop-filter: blur(2px);
-                    background-color: rgba(255, 255, 255, 0.3);
+                    backdrop-filter: blur(15px);
+                    background-color: rgba(255, 255, 255, 0.5);
                 }
                 /* #navMain.menu-bg {
                     backdrop-filter: blur(2px);
@@ -154,8 +154,8 @@
                 } */
                 #navMain.menu-bg:hover {
                     filter: invert(0);
-                    backdrop-filter: blur(2px);
-                    background-color: rgba(255, 255, 255, 0.2);
+                    backdrop-filter: blur(15px);
+                    background-color: rgba(255, 255, 255, 0.5);
                 }
                 .mobile-nav-menu {
                     filter: invert(100%);
