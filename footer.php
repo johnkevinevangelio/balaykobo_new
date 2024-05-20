@@ -66,6 +66,24 @@
                     padding-bottom: 5px;
                     text-decoration: none;
                 }
+                .footerAddress {
+                    color: #F2F2E6;
+                    font-family: "Oxygen Mono";
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 115.2%; /* 18.432px */
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+                .footerEmail {
+                    color: #F2F2E6;
+                    font-family: "Oxygen Mono";
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 115.2%; /* 18.432px */
+                }
                 @media screen and (max-width: 787px) {
                     .footerStyle {
                         padding-left: 20px;
@@ -73,8 +91,8 @@
                 }
             </style>
             <div class="footerStyle container-fluid">
-                <div class="d-flex footerContentContainer">
-                    <div class="footerContent">
+                <div class="d-flex flex-wrap footerContentContainer">
+                    <div class="footerContent p-2">
                         <div class="footerTitle mb-2">Follow Us</div>
                         <div class="d-flex">
                             <a href="https://www.instagram.com/balay.kobo/" target="_blank"><i class="bi bi-facebook"></i></a>
@@ -82,15 +100,8 @@
                             <a href="https://www.instagram.com/balay.kobo/" target="_blank"><i class="bi bi-linkedin"></i></a>
                             <a href="https://www.instagram.com/balay.kobo/" target="_blank"><i class="bi bi-tiktok"></i></a>
                         </div>
-                        <!-- <ul style="list-style-type: none;">
-                            <li class="footerTitle">Follow Us</li>
-                            <li class="footerSub"><a href="https://www.instagram.com/balay.kobo/" target="_blank">FACEBOOK</a></li>
-                            <li class="footerSub"><a href="https://www.instagram.com/balay.kobo/" target="_blank">INSTAGRAM</a></li>
-                            <li class="footerSub"><a href="https://www.instagram.com/balay.kobo/" target="_blank">LINKEDIN</a></li>
-                            <li class="footerSub"><a href="https://www.instagram.com/balay.kobo/" target="_blank">TIKTOK</a></li>
-                        </ul> -->
                     </div>
-                    <div class="footerContent">
+                    <div class="footerContent p-2">
                         <ul style="list-style-type: none; text-align: start">
                             <li class="footerTitle mb-2">Information</li>
                             <li class="footerSub"><a href="<?php echo get_permalink( get_page_by_title( 'About' ) ); ?>">ABOUT US</a></li>
@@ -99,6 +110,10 @@
                             <li class="footerSub"><a href="<?php echo get_permalink( get_page_by_title( 'Book a Studio' ) ); ?>">BOOK NOW</a></li>
                             <li class="footerSub"><a href="<?php echo get_permalink( get_page_by_title( 'FAQ' ) ); ?>">FAQ</a></li>
                         </ul>
+                    </div>
+                    <div class="footerContent ms-md-auto p-2 align-self-center">
+                        <div class="footerAddress">66 Mahogany Road, Pilar Village</div>
+                        <div class="footerEmail">balay.kobo@gmail.com</div>
                     </div>
                 </div>
                 <div class="d-flex justify-content-end">
