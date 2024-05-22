@@ -228,12 +228,19 @@
 .aboutContent9 {
     height: 50vh;
 }
+.aboutContent10Wrapper {
+    /* display: flex !important;
+    justify-content: center;
+    align-items: center; */
+    background-color: #D9BE89;
+}
 .aboutContent10 {
     height: 50vh;
-    background-color: #D9BE89;
+    /* background-color: #D9BE89; */
     padding-left: 18%;
     padding-right: 18%;
-    padding-top: 10%;
+    padding-top: 7%;
+
 }
 @media screen and (max-width: 767px) {
     .aboutContent10 {
