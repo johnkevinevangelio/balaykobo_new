@@ -274,12 +274,15 @@
 
         <div class="spinner-wrapper">
             <div class="d-flex justify-content-center loadingLogo">
-                <div class="loadingLogo1">
+                <div class="loadingLogoNew">
+                    <img src="https://balaykobo.com/wp-content/uploads/2024/05/Balay-Kobo-Horizontal-Logo-White.png">
+                </div>
+                <!-- <div class="loadingLogo1">
                     <img src="<?php bloginfo('template_url'); ?>/assets/loadingLogo1.png">
                 </div>
                 <div class="loadingLogo2">
                     <img src="<?php bloginfo('template_url'); ?>/assets/loadingLogo2.png">
-                </div>
+                </div> -->
             </div>
             <div class="spinner-border visually-hidden" role="status">
                 <span class="visually-hidden">Loading...</span>

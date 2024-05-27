@@ -33,7 +33,7 @@
 <div class="coming_soon_container">
 
     <div class="coming_soon_text">
-        Coming Soon
+        Lifestyle photography services coming soon
     </div>
 
 </div>

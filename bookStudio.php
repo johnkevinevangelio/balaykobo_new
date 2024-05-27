@@ -1,10 +1,10 @@
 <style>
 .booking-title-text {
-  font-size: 28px;
+  font-size: 24px;
 }
 .booking-subtitle {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 }
 
 .card{
@@ -462,15 +462,12 @@ input.invalid {
 
                         <div class="card">
                             <div class="card-title">
-                              <div class="d-flex justify-content-start"><label>Duration<span class="text-danger"> *</span></label></div>
+                              <div class="d-flex justify-content-start"><label>Duration (Minimum of 4 hour booking)<span class="text-danger"> *</span></label></div>
                             </div>
                             <div>
                                 <div class="form-group col-sm-12 flex-column d-flex">   
                                   <!-- <input id="duration" type="text" name="duration" data-duration="01:00:00" data-duration-max="04:00:00" data-duration-min="01:00:00" class="html-duration-picker" oninput="this.className = ''" placeholder=""> -->
                                   <select id="durationSelect" name="entry.736432796" class="input">
-                                    <option value="1 hour">1 hour</option>
-                                    <option value="2 hours">2 hours</option>
-                                    <option value="3 hours">3 hours</option>
                                     <option value="4 hours">4 hours</option>
                                     <option value="5 hours">5 hours</option>
                                     <option value="6 hours">6 hours</option>
@@ -509,7 +506,7 @@ input.invalid {
                         </div>
 
                         <div class="booking-subtitle">
-                            Please expect our response within 24 hours. We are transitioning from our soft opening period. 
+                            Please expect our response within 24 hours. 
                             <br/>
                             <br/>
                             You may email us at info.balaykobo@gmail.com or contact 09176761202 for urgent concerns.

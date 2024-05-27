@@ -113,7 +113,7 @@
                     </div>
                     <div class="footerContent ms-md-auto p-2 align-self-center">
                         <div class="footerAddress">66 Mahogany Road, Pilar Village</div>
-                        <div class="footerEmail">balay.kobo@gmail.com</div>
+                        <div class="footerEmail">info.balaykobo@gmail.com</div>
                     </div>
                 </div>
                 <div class="d-flex justify-content-end">
@@ -128,7 +128,7 @@
                     <div class="modal-img-cont">
                         <img src="" id="modalImage" alt="Modal Image">
                     </div>
-                    <div class="modal-desc mt-2 d-flex">
+                    <div id="modal-desc-cont" class="modal-desc mt-2 d-flex">
                         <span id="imageDescription"></span>
                     </div>
                 </div>
