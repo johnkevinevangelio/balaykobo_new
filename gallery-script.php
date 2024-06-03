@@ -5,6 +5,10 @@
 	const imgDescription = document.getElementById('imageDescription')
 	const filterLinks = document.querySelectorAll('.filter-link')
 	const modalDialog = document.getElementById('modalDialog');
+	const modalDescription = document.getElementById('modal-desc-cont');
+
+
+	modalDescription.classList.remove('hidden');
 
     thumbnails.forEach(thumbnail => {
 			thumbnail.addEventListener('click', () => {
@@ -15,8 +19,12 @@
 					modalDialog.className = 'modal-dialog'
 				}
 				modalImage.setAttribute('src', imageUrl);
-				if (!description) return
+				if (!description) {
+					modalDescription.classList.add('hidden');
+				} else {
 					imageDescription.textContent = description;
+				}
+					
 			});
     });
 

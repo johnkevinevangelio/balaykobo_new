@@ -112,7 +112,7 @@
                         </ul>
                     </div>
                     <div class="footerContent ms-md-auto p-2 align-self-center">
-                        <div class="footerAddress">66 Mahogany Road, Pilar Village</div>
+                        <div class="footerAddress">66 MAHOGANY ROAD, PILAR VILLAGE, LAS PIÑAS CITY</div>
                         <div class="footerEmail">info.balaykobo@gmail.com</div>
                     </div>
                 </div>

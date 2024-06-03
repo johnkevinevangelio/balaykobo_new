@@ -9,8 +9,8 @@
 
 .card{
     padding: 30px 40px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: none !important;
     box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
 }
@@ -509,7 +509,10 @@ input.invalid {
                             Please expect our response within 24 hours. 
                             <br/>
                             <br/>
-                            You may email us at info.balaykobo@gmail.com or contact 09176761202 for urgent concerns.
+                            You may email us at info.balaykobo@gmail.com 
+                            <br/>
+                            <br/>
+                            or contact 09176761202 for urgent concerns.
                             <br/>
                             <br/>
                             <br/>
