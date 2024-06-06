@@ -95,10 +95,10 @@
                     <div class="footerContent p-2">
                         <div class="footerTitle mb-2">Follow Us</div>
                         <div class="d-flex">
-                            <a href="https://www.instagram.com/balay.kobo/" target="_blank"><i class="bi bi-facebook"></i></a>
-                            <a href="https://www.instagram.com/balay.kobo/" target="_blank"><i class="bi bi-instagram"></i></a>
-                            <a href="https://www.instagram.com/balay.kobo/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                            <a href="https://www.instagram.com/balay.kobo/" target="_blank"><i class="bi bi-tiktok"></i></a>
+                            <a href="https://www.facebook.com/balaykobo.artstudio" target="_blank"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com/balay.kobo/ " target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/balay-kobo/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.tiktok.com/@balay.kobo" target="_blank"><i class="bi bi-tiktok"></i></a>
                         </div>
                     </div>
                     <div class="footerContent p-2">
