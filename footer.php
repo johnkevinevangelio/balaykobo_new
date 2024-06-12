@@ -218,11 +218,13 @@
                 }
                 console.info(performance.navigation.type);
                 const spinnerWrapperEl = document.querySelector('.spinner-wrapper');
+                const bodyId = document.getElementById('page-top');
                 // performance.navigation.type == performance.navigation.TYPE_RELOAD && document.querySelector('.masthead')
                 if (document.querySelector('.masthead')) {
                     if (spinnerWrapperEl) {
                         setTimeout(() => {
                             spinnerWrapperEl.style.opacity = '0';
+                            bodyId.style.overflowX = 'scroll';
                             spinnerWrapperEl.style.display = 'none';
                         }, 3000)
                     }

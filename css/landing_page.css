@@ -344,7 +344,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
-
+}
+#page-top {
+  overflow-x: hidden;
 }
 .loadingLogoNew img {
   width: 250px;
