@@ -194,7 +194,8 @@
             }
             document.addEventListener("DOMContentLoaded", function() {
                 const spinnerWrapperEl = document.querySelector('.spinner-wrapper');
-                const bodyId = document.getElementById('page-top');
+                const bodyId = document.getElementById('page-top'); 
+                bodyId.style.overflowY = 'hidden';
                 if (document.querySelector('.masthead')) {
                     if (spinnerWrapperEl) {
                         setTimeout(() => {
