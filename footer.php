@@ -158,6 +158,30 @@
         <script src="<?php bloginfo('template_url'); ?>/css/slick/slick.js" type="text/javascript" charset="utf-8"></script>
         <?php include 'singlePage-script.php'; ?>
         <script>
+            window.onload = function() {
+                //check for Navigation Timing API support
+                // if (window.performance) {
+                //     console.info("window.performance works fine on this browser");
+                // }
+                // console.info(performance.navigation.type);
+                const spinnerWrapperEl = document.querySelector('.spinner-wrapper');
+                const bodyId = document.getElementById('page-top');
+                // performance.navigation.type == performance.navigation.TYPE_RELOAD && document.querySelector('.masthead')
+                if (spinnerWrapperEl) {
+                    setTimeout(() => {
+                        spinnerWrapperEl.style.opacity = '0';
+                        bodyId.style.overflowY = 'scroll';
+                        spinnerWrapperEl.style.display = 'none';
+                    }, 2000)
+                }
+                // if (spinnerWrapperEl) {
+
+                // } else {
+                //     spinnerWrapperEl.style.opacity = '0';
+                //     bodyId.style.overflowY = 'scroll';
+                //     spinnerWrapperEl.style.display = 'none';
+                // }
+            }
             let currentIndex = 0
             function changeImage (excerpt, id) {
                 if (excerpt.length) {
@@ -211,30 +235,7 @@
                 //     document.getElementById('indicator').innerHTML = currSlide + '/' + totalItems
                 // })
             });
-            window.onload = function() {
-                //check for Navigation Timing API support
-                if (window.performance) {
-                    console.info("window.performance works fine on this browser");
-                }
-                console.info(performance.navigation.type);
-                const spinnerWrapperEl = document.querySelector('.spinner-wrapper');
-                const bodyId = document.getElementById('page-top');
-                // performance.navigation.type == performance.navigation.TYPE_RELOAD && document.querySelector('.masthead')
-                if (document.querySelector('.masthead')) {
-                    if (spinnerWrapperEl) {
-                        setTimeout(() => {
-                            spinnerWrapperEl.style.opacity = '0';
-                            bodyId.style.overflowY = 'scroll';
-                            spinnerWrapperEl.style.display = 'none';
-                        }, 3000)
-                    }
-                } else {
-                    if (spinnerWrapperEl) {
-                        bodyId.style.overflowY = 'scroll';
-                        spinnerWrapperEl.style.display = 'none';
-                    }
-                }
-            }
+
         </script>
     </body>
 </html>
