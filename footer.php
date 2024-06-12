@@ -230,6 +230,7 @@
                     }
                 } else {
                     if (spinnerWrapperEl) {
+                        bodyId.style.overflowY = 'scroll';
                         spinnerWrapperEl.style.display = 'none';
                     }
                 }
