@@ -167,6 +167,9 @@
                 const spinnerWrapperEl = document.querySelector('.spinner-wrapper');
                 const bodyId = document.getElementById('page-top');
                 // performance.navigation.type == performance.navigation.TYPE_RELOAD && document.querySelector('.masthead')
+                // if (bodyId) {
+                //     bodyId.style.overflowY = 'scroll';
+                // }
                 if (spinnerWrapperEl) {
                     spinnerWrapperEl.style.opacity = '0';
                     bodyId.style.overflowY = 'scroll';

@@ -85,31 +85,31 @@
 
 .landing-img-1 {
     /* background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.5) 100%), url(../assets/landing_page/new_landing_1.jpg); */
-    background: url(../assets/landing_page/slide-1.jfif);
+    background: url('https://balaykobo.com/wp-content/uploads/2024/06/slide-1.png');
 }
 .landing-img-1-5 {
   /* background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.5) 100%), url(../assets/landing_page/new_landing_1.jpg); */
-  background: url(../assets/landing_page/slide-2.jfif);
+  background: url('https://balaykobo.com/wp-content/uploads/2024/06/slide-2.png');
 }
 .landing-img-2 {
     /* background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.5) 100%), url(../assets/landing_page/new_landing_2.jpg); */
-    background: url(../assets/landing_page/new_landing_2.jpg);
+    background: url('https://balaykobo.com/wp-content/uploads/2024/06/new_landing_2-scaled.jpg');
 }
 .landing-img-3 {
     /* background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.5) 100%), url(../assets/landing_page/new_landing_3.jpg); */
-    background: url(../assets/landing_page/new_landing_3.jpg);
+    background: url('https://balaykobo.com/wp-content/uploads/2024/06/new_landing_3-scaled.jpg');
 }
 .landing-img-4 {
     /* background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.5) 100%), url(../assets/landing_page/new_landing_4.jpg); */
-    background: url(../assets/landing_page/new_landing_4.jpg);
+    background: url('https://balaykobo.com/wp-content/uploads/2024/06/new_landing_4-scaled.jpg');
 }
 .landing-img-5 {
     /* background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.5) 100%), url(../assets/landing_page/new_landing_5.jpg); */
-    background: url(../assets/landing_page/new_landing_5.jpg);
+    background: url('https://balaykobo.com/wp-content/uploads/2024/06/new_landing_5-scaled.jpg');
 }
 .landing-img-6 {
   /* background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.5) 100%), url(../assets/landing_page/new_landing_5.jpg); */
-  background: url(../assets/landing_page/new_landing_6.jpg);
+  background: url('https://balaykobo.com/wp-content/uploads/2024/06/new_landing_6.jpg');
 }
 .carousel-image {
     height: 100vh;
@@ -339,13 +339,47 @@
   justify-content: center;
   align-items: center;
   transition: all 0.5s;
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.875) 0%, rgba(0, 0, 0, 1) 100%), url(../assets/loadingBackground.jpg); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
 }
 
+/* @keyframes blackout {
+  0% {
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+  100% {
+    display: none;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+} */
 #page-top {
   overflow: hidden;
 }
