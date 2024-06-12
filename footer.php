@@ -164,17 +164,17 @@
                 //     console.info("window.performance works fine on this browser");
                 // }
                 // console.info(performance.navigation.type);
-                const spinnerWrapperEl = document.querySelector('.spinner-wrapper');
+                // const spinnerWrapperEl = document.querySelector('.spinner-wrapper');
                 const bodyId = document.getElementById('page-top');
                 // performance.navigation.type == performance.navigation.TYPE_RELOAD && document.querySelector('.masthead')
-                // if (bodyId) {
-                //     bodyId.style.overflowY = 'scroll';
-                // }
-                if (spinnerWrapperEl) {
-                    spinnerWrapperEl.style.opacity = '0';
+                if (bodyId) {
                     bodyId.style.overflowY = 'scroll';
-                    spinnerWrapperEl.style.display = 'none';
                 }
+                // if (spinnerWrapperEl) {
+                //     spinnerWrapperEl.style.opacity = '0';
+                //     bodyId.style.overflowY = 'scroll';
+                //     spinnerWrapperEl.style.display = 'none';
+                // }
                 // if (spinnerWrapperEl) {
 
                 // } else {
