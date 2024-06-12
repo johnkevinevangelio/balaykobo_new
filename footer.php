@@ -168,11 +168,9 @@
                 const bodyId = document.getElementById('page-top');
                 // performance.navigation.type == performance.navigation.TYPE_RELOAD && document.querySelector('.masthead')
                 if (spinnerWrapperEl) {
-                    setTimeout(() => {
-                        spinnerWrapperEl.style.opacity = '0';
-                        bodyId.style.overflowY = 'scroll';
-                        spinnerWrapperEl.style.display = 'none';
-                    }, 2000)
+                    spinnerWrapperEl.style.opacity = '0';
+                    bodyId.style.overflowY = 'scroll';
+                    spinnerWrapperEl.style.display = 'none';
                 }
                 // if (spinnerWrapperEl) {
 
