@@ -203,6 +203,10 @@
                             spinnerWrapperEl.style.display = 'none';
                         }, 2000)
                     }
+                } else {
+                    spinnerWrapperEl.style.opacity = '0';
+                    bodyId.style.overflowY = 'scroll';
+                    spinnerWrapperEl.style.display = 'none';
                 }
                 
                 // window.addEventListener("scroll", function() {
