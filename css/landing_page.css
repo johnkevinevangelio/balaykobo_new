@@ -329,10 +329,23 @@
 }
 
 .spinner-wrapper {
-  animation: blackout 2s;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
 }
 
-@keyframes blackout {
+/* @keyframes blackout {
   0% {
     background-color: #000;
     position: fixed;
@@ -366,7 +379,7 @@
     background-size: cover;
     overflow-x: hidden;
   }
-}
+} */
 #page-top {
   overflow: hidden;
 }
