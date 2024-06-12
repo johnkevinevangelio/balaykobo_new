@@ -224,7 +224,7 @@
                     if (spinnerWrapperEl) {
                         setTimeout(() => {
                             spinnerWrapperEl.style.opacity = '0';
-                            bodyId.style.overflowX = 'scroll';
+                            bodyId.style.overflowY = 'scroll';
                             spinnerWrapperEl.style.display = 'none';
                         }, 3000)
                     }

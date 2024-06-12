@@ -345,9 +345,11 @@
   background-size: cover;
   overflow-x: hidden;
 }
+
 #page-top {
-  overflow-x: hidden;
+  overflow: hidden;
 }
+
 .loadingLogoNew img {
   width: 250px;
   transform: translate(-0.8vw, 50vh);
