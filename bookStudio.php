@@ -1,10 +1,16 @@
 <style>
 .booking-title-text {
-  font-size: 24px;
+  font-size: 36px;
+  font-family: "Spectral";
 }
 .booking-subtitle {
+  color: #000;
+  font-family: "Oxygen Mono";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 150.2%; /* 24.032px */
   text-align: center;
-  margin-bottom: 26px;
+  margin-bottom: 50px;
 }
 
 .card{
@@ -17,10 +23,11 @@
 
 
 .card-cont {
-  background-color: #eaedef;
-  padding: 30px 40px;
+  padding: 70px 70px;
   margin-top: 30px;
   margin-bottom: 60px;
+  background: rgba(255, 255, 255, 0.60);
+  backdrop-filter: blur(15px);
 }
 
 .custom-control-input {
@@ -216,7 +223,12 @@ input.invalid {
 	border-radius: 50%;
 }
 .card-title {
-  font-weight: bold;
+  /* Web/Web 28px/Regular */
+  font-family: Spectral;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 104%; /* 29.12px */
   margin-bottom: 10px;
 }
 .submitButtonContainer {
@@ -230,14 +242,27 @@ input.invalid {
   justify-content: center;
 }
 }
+
+
+.booking-bg {
+  z-index: -1;
+  background-image: url('https://balaykobo.com/wp-content/uploads/2024/06/booking-form-bg-scaled.jpeg');
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
 </style>
+<div class="booking-bg"></div>
 <div class="container-fluid px-1 py-5 mx-auto mt-5 booking-form">
     <div class="row d-flex justify-content-center">
         <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
 
             <div class="card-cont">
-                <div class="card-title booking-title-text">Booking Form</div>
-                <div class="booking-subtitle"> Daylight Home + Studio  &nbsp;҉　Creative Stage and Communal Space for Creatives <br/>
+                <div class="booking-title-text">Booking Form</div>
+                <div class="booking-subtitle"> Daylight Home + Studio  &nbsp;҉　Creative Stage and Communal Space <br/> for Creatives
                       Shoots • Workshops • Intimate Events
                 </div>
                 <form id="gform" class="form-card" action="https://docs.google.com/forms/d/e/1FAIpQLSe2vrqDjcUu-kzTLqgKG4OTGEr5GMyPhSApRcDHwl5UTddoGQ/formResponse">
@@ -436,7 +461,7 @@ input.invalid {
 
                         <div class="card">
                             <div class="card-title">
-                              <div class="d-flex justify-content-start"><label>Purpose of the shoot<span class="text-danger"> *</span></label></div>
+                              <div class="d-flex justify-content-start">Purpose of the shoot<span class="text-danger"> *</span></div>
                             </div>
                             <div>
                                 <div class="form-group col-sm-12 flex-column d-flex">   
@@ -448,7 +473,7 @@ input.invalid {
 
                         <div class="card">
                             <div class="card-title">
-                              <div class="d-flex justify-content-start"><label>Target Date<span class="text-danger"> *</span></label></div>
+                              <div class="d-flex justify-content-start">Target Date<span class="text-danger"> *</span></div>
                             </div>
                             <div class="row">
                                 <div class="col">
@@ -462,7 +487,7 @@ input.invalid {
 
                         <div class="card">
                             <div class="card-title">
-                              <div class="d-flex justify-content-start"><label>Duration (Minimum of 4 hour booking)<span class="text-danger"> *</span></label></div>
+                              <div class="d-flex justify-content-start">Duration (Minimum of 4 hour booking)<span class="text-danger"> *</span></div>
                             </div>
                             <div>
                                 <div class="form-group col-sm-12 flex-column d-flex">   
@@ -483,7 +508,7 @@ input.invalid {
 
                         <div class="card">
                             <div class="card-title">
-                              <div class="d-flex justify-content-start"><label>Headcount (team members/attendees)<span class="text-danger"> *</span></label></div>
+                              <div class="d-flex justify-content-start">Headcount (team members/attendees)<span class="text-danger"> *</span></div>
                             </div>
                             <div>
                                 <div class="form-group col-sm-12 flex-column d-flex durationTime">   
@@ -494,9 +519,9 @@ input.invalid {
 
 
 
-                        <div class="card">
+                        <div class="card mb-5">
                             <div class="card-title">
-                              <div class="d-flex justify-content-start"><label>Questions and/ clarifications<span class="text-danger"> *</span></label></div>
+                              <div class="d-flex justify-content-start">Questions and/ clarifications<span class="text-danger"> *</span></div>
                             </div>
                             <div>
                                 <div class="form-group col-sm-12 flex-column d-flex">   
@@ -505,12 +530,11 @@ input.invalid {
                             </div>
                         </div>
 
-                        <div class="booking-subtitle">
+                        <div class="booking-subtitle mt-5">
                             Please expect our response within 24 hours. 
                             <br/>
                             <br/>
-                            You may email us at info.balaykobo@gmail.com 
-                            <br/>
+                            You may email us at info.balaykobo@gmail.com
                             <br/>
                             or contact 09176761202 for urgent concerns.
                             <br/>
