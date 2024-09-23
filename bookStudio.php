@@ -9,8 +9,15 @@
   font-size: 16px;
   font-style: normal;
   line-height: 150.2%; /* 24.032px */
-  text-align: center;
+  text-align: left;
   margin-bottom: 50px;
+}
+.booking-subtitle-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Optional for vertical centering */
+  width: 80%; /* Adjust width as needed */
+  margin: 0 auto;
 }
 
 .card{
@@ -285,7 +292,7 @@ input.invalid {
                             <div class="row mt-3">
                                 <div class="d-flex justify-content-start"><label>Email address<span class="text-danger"> *</span></label></div>
                                 <div class="form-group col-sm-12 flex-column d-flex">   
-                                    <input type="text" name="entry.1198147897" class="input" oninput="this.className = ''" placeholder="">
+                                    <input type="text" name="entry.1198147897" class="required input" oninput="this.className = ''" placeholder="">
                                 </div>
                             </div>
                             <div class="row mt-3">
@@ -297,7 +304,7 @@ input.invalid {
                             <div class="row mt-3 mb-5">
                                 <div class="d-flex justify-content-start"><label>Instagram Handle<span class="text-danger"> *</span></label></div>
                                 <div class="form-group col-sm-12 flex-column d-flex">   
-                                    <input type="text" name="entry.1881684809" class="input" oninput="this.className = ''" placeholder="">
+                                    <input type="text" name="entry.1881684809" class="required input" oninput="this.className = ''" placeholder="">
                                 </div>
                             </div>
       
@@ -318,7 +325,7 @@ input.invalid {
                                       </label>
                                       <div class="checkbox-label d-flex justify-content-start gap-3">
                                         <div>
-                                          <input type="checkbox" name="entry.248573189" class="custom-control-input input" id="option1" value="Daylight Studio">
+                                          <input type="checkbox" name="entry.248573189" class="required custom-control-input input" id="option1" value="Daylight Studio">
                                         </div>
                                         <div>
                                           Daylight Studio
@@ -333,7 +340,7 @@ input.invalid {
                                       </label>
                                       <div class="checkbox-label d-flex justify-content-start gap-3">
                                         <div>
-                                          <input type="checkbox" name="entry.248573189" class="custom-control-input input" id="option2" value="Cyclorama Studio">
+                                          <input type="checkbox" name="entry.248573189" class="required custom-control-input input" id="option2" value="Cyclorama Studio">
                                         </div>
                                         <div>
                                           Cyclorama Studio
@@ -348,7 +355,7 @@ input.invalid {
                                       </label>
                                       <div class="checkbox-label d-flex justify-content-start gap-3">
                                         <div>
-                                          <input type="checkbox" name="entry.248573189" class="custom-control-input input" id="option3" value="Kitchen Studio">
+                                          <input type="checkbox" name="entry.248573189" class="required custom-control-input input" id="option3" value="Kitchen Studio">
                                         </div>
                                         <div>
                                           Kitchen Studio
@@ -373,7 +380,7 @@ input.invalid {
                                       </label>
                                       <div class="checkbox-label d-flex justify-content-start gap-3">
                                         <div>
-                                          <input type="checkbox" name="entry.1962474743" class="custom-control-input input" id="uoioption1" value="Zen Garden">
+                                          <input type="checkbox" name="entry.1962474743" class="required custom-control-input input" id="uoioption1" value="Zen Garden">
                                         </div>
                                         <div>
                                           Zen Garden
@@ -388,7 +395,7 @@ input.invalid {
                                       </label>
                                       <div class="checkbox-label d-flex justify-content-start gap-3">
                                         <div>
-                                          <input type="checkbox" name="entry.1962474743" class="custom-control-input input" id="uoioption2" value="Sun Hall">
+                                          <input type="checkbox" name="entry.1962474743" class="required custom-control-input input" id="uoioption2" value="Sun Hall">
                                         </div>
                                         <div>
                                           Sun Hall
@@ -403,7 +410,7 @@ input.invalid {
                                       </label>
                                       <div class="checkbox-label d-flex justify-content-start gap-3">
                                         <div>
-                                          <input type="checkbox" name="entry.1962474743" class="custom-control-input input" id="uoioption3" value="Audio Room">
+                                          <input type="checkbox" name="entry.1962474743" class="required custom-control-input input" id="uoioption3" value="Audio Room">
                                         </div>
                                         <div>
                                           Audio Room
@@ -418,7 +425,7 @@ input.invalid {
                                       </label>
                                       <div class="checkbox-label d-flex justify-content-start gap-3">
                                         <div>
-                                          <input type="checkbox" name="entry.1962474743" class="custom-control-input input" id="uoioption4" value="Mezzanine">
+                                          <input type="checkbox" name="entry.1962474743" class="required custom-control-input input" id="uoioption4" value="Mezzanine">
                                         </div>
                                         <div>
                                           Mezzanine
@@ -433,7 +440,7 @@ input.invalid {
                                       </label>
                                       <div class="checkbox-label d-flex justify-content-start gap-3">
                                         <div>
-                                          <input type="checkbox" name="entry.1962474743" class="custom-control-input input" id="uoioption5" value="Guest Room">
+                                          <input type="checkbox" name="entry.1962474743" class="required custom-control-input input" id="uoioption5" value="Guest Room">
                                         </div>
                                         <div>
                                           Guest Room
@@ -448,7 +455,7 @@ input.invalid {
                                       </label>
                                       <div class="checkbox-label d-flex justify-content-start gap-3">
                                         <div>
-                                          <input type="checkbox" name="entry.1962474743" class="custom-control-input input" id="uoioption6" value="Penthouse">
+                                          <input type="checkbox" name="entry.1962474743" class="required custom-control-input input" id="uoioption6" value="Penthouse">
                                         </div>
                                         <div>
                                           Penthouse
@@ -465,7 +472,7 @@ input.invalid {
                             </div>
                             <div>
                                 <div class="form-group col-sm-12 flex-column d-flex">   
-                                    <input type="text" name="entry.711602103" class="input" oninput="this.className = ''" placeholder="">
+                                    <input type="text" name="entry.711602103" class="required input" oninput="this.className = ''" placeholder="">
                                 </div>
                             </div>
                         </div>
@@ -479,7 +486,7 @@ input.invalid {
                                 <div class="col">
                                   <!-- <div class="d-flex justify-content-start"><label>Date</label></div> -->
                                   <div class="form-group col-sm-12 flex-column d-flex">   
-                                      <input type="datetime-local" name="entry.283111418" class="input" oninput="this.className = ''" placeholder="">
+                                      <input type="datetime-local" name="entry.283111418" class="required input" oninput="this.className = ''" placeholder="">
                                   </div>
                                 </div>
                             </div>
@@ -492,7 +499,7 @@ input.invalid {
                             <div>
                                 <div class="form-group col-sm-12 flex-column d-flex">   
                                   <!-- <input id="duration" type="text" name="duration" data-duration="01:00:00" data-duration-max="04:00:00" data-duration-min="01:00:00" class="html-duration-picker" oninput="this.className = ''" placeholder=""> -->
-                                  <select id="durationSelect" name="entry.736432796" class="input">
+                                  <select id="durationSelect" name="entry.736432796" class="required input">
                                     <option value="4 hours">4 hours</option>
                                     <option value="5 hours">5 hours</option>
                                     <option value="6 hours">6 hours</option>
@@ -512,7 +519,7 @@ input.invalid {
                             </div>
                             <div>
                                 <div class="form-group col-sm-12 flex-column d-flex durationTime">   
-                                    <input type="text" class="input" name="entry.1563353137" oninput="this.className = ''" placeholder="">
+                                    <input type="text" class="required input" name="entry.1563353137" oninput="this.className = ''" placeholder="">
                                 </div>
                             </div>
                         </div>
@@ -521,7 +528,7 @@ input.invalid {
 
                         <div class="card mb-5">
                             <div class="card-title">
-                              <div class="d-flex justify-content-start">Questions and/ clarifications<span class="text-danger"> *</span></div>
+                              <div class="d-flex justify-content-start">Questions and/ clarifications</div>
                             </div>
                             <div>
                                 <div class="form-group col-sm-12 flex-column d-flex">   
@@ -529,20 +536,20 @@ input.invalid {
                                 </div>
                             </div>
                         </div>
-
-                        <div class="booking-subtitle mt-5">
-                            Please expect our response within 24 hours. 
-                            <br/>
-                            <br/>
-                            You may email us at info.balaykobo@gmail.com
-                            <br/>
-                            or contact 09176761202 for urgent concerns.
-                            <br/>
-                            <br/>
-                            <br/>
-                            Thank you!
+                        <div class="booking-subtitle-cont">
+                          <div class="booking-subtitle mt-5">
+                              Please expect our response within 24 hours. 
+                              <br/>
+                              <br/>
+                              You may email us at info.balaykobo@gmail.com
+                              <br/>
+                              or contact 09176761202 for urgent concerns.
+                              <br/>
+                              <br/>
+                              <br/>
+                              Thank you!
+                          </div>
                         </div>
-
                         <div>
                             <div class="submitButtonContainer">
                                 <input type="submit" name="" class="button submitBtn" value="Submit">  
@@ -574,8 +581,8 @@ input.invalid {
                   <line class="path line" fill="none" stroke="#db3646" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="34.4" y1="37.9" x2="95.8" y2="92.3" />
                   <line class="path line" fill="none" stroke="#db3646" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="95.8" y1="38" X2="34.4" y2="92.2" /> 
                 </svg> 
-                <h4 class="text-danger mt-3">Invalid email!</h4> 
-                <p class="mt-3">This email is already registered, please login.</p>
+                <h4 class="text-danger mt-3">Fill out required field!</h4> 
+                <!-- <p class="mt-3">This email is already registered, please login.</p> -->
                 <button type="button" class="btn btn-sm mt-3 btn-danger" data-bs-dismiss="modal">Ok</button> 
               </div> 
             </div> 
@@ -610,29 +617,54 @@ input.invalid {
 document.getElementById('gform').addEventListener('submit', function(event) {
   event.preventDefault();
   var extraData = {};
+  let myModal
   var formData = new FormData(this);
-
-  fetch(this.action, {
-    method: 'POST',
-    body: formData,
-    credentials: 'include'
-  })
-  .then(function(response) {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    // alert('Form Submitted. Thanks.');
-  })
-  .catch(function(error) {
-    // alert('Form Submitted. Thanks.');
-    let myModal = new bootstrap.Modal(document.getElementById('statusSuccessModal'), {});
-    myModal.show();
-    document.getElementById("gform").reset();
-    window.location.href = "https://balaykobo.com";
-  });
+  if (validateForm()) {
+    fetch(this.action, {
+      method: 'POST',
+      body: formData,
+      credentials: 'include'
+    })
+    .then(function(response) {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      // alert('Form Submitted. Thanks.');
+    })
+    .catch(function(error) {
+      // alert('Form Submitted. Thanks.');
+      myModal = new bootstrap.Modal(document.getElementById('statusSuccessModal'), {});
+      myModal.show();
+      document.getElementById("gform").reset();
+      window.location.href = "https://balaykobo.com";
+    });
+  } else {
+      myModal = new bootstrap.Modal(document.getElementById('statusErrorsModal'), {});
+      myModal.show();
+  }
 });
-
-
+var currentTab = 0;
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByClassName("required");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false:
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  // if (valid) {
+  //   document.getElementsByClassName("step")[currentTab].className += " finish";
+  // }
+  return valid; // return the valid status
+}
 </script>
 <script>
 
@@ -685,54 +717,54 @@ function showTab(n) {
   fixStepIndicator(n)
 }
 
-function nextPrev(n) {
-  // This function will figure out which tab to display
-  var x = document.getElementsByClassName("tab");
-  // Exit the function if any field in the current tab is invalid:
-  if (n == 1 && !validateForm()) return false;
-  // Hide the current tab:
-  x[currentTab].style.display = "none";
-  // Increase or decrease the current tab by 1:
-  currentTab = currentTab + n;
-  // if you have reached the end of the form... :
-  if (currentTab >= x.length) {
-    //...the form gets submitted:
-    document.getElementById("regForm").submit();
-    return false;
-  }
-  // Otherwise, display the correct tab:
-  showTab(currentTab);
-}
+// function nextPrev(n) {
+//   // This function will figure out which tab to display
+//   var x = document.getElementsByClassName("tab");
+//   // Exit the function if any field in the current tab is invalid:
+//   if (n == 1 && !validateForm()) return false;
+//   // Hide the current tab:
+//   x[currentTab].style.display = "none";
+//   // Increase or decrease the current tab by 1:
+//   currentTab = currentTab + n;
+//   // if you have reached the end of the form... :
+//   if (currentTab >= x.length) {
+//     //...the form gets submitted:
+//     document.getElementById("regForm").submit();
+//     return false;
+//   }
+//   // Otherwise, display the correct tab:
+//   showTab(currentTab);
+// }
 
-function validateForm() {
-  // This function deals with validation of the form fields
-  var x, y, i, valid = true;
-  x = document.getElementsByClassName("tab");
-  y = x[currentTab].getElementsByClassName("required");
-  // A loop that checks every input field in the current tab:
-  for (i = 0; i < y.length; i++) {
-    // If a field is empty...
-    if (y[i].value == "") {
-      // add an "invalid" class to the field:
-      y[i].className += " invalid";
-      // and set the current valid status to false:
-      valid = false;
-    }
-  }
-  // If the valid status is true, mark the step as finished and valid:
-  if (valid) {
-    document.getElementsByClassName("step")[currentTab].className += " finish";
-  }
-  return valid; // return the valid status
-}
+// function validateForm() {
+//   // This function deals with validation of the form fields
+//   var x, y, i, valid = true;
+//   x = document.getElementsByClassName("tab");
+//   y = x[currentTab].getElementsByClassName("required");
+//   // A loop that checks every input field in the current tab:
+//   for (i = 0; i < y.length; i++) {
+//     // If a field is empty...
+//     if (y[i].value == "") {
+//       // add an "invalid" class to the field:
+//       y[i].className += " invalid";
+//       // and set the current valid status to false:
+//       valid = false;
+//     }
+//   }
+//   // If the valid status is true, mark the step as finished and valid:
+//   if (valid) {
+//     document.getElementsByClassName("step")[currentTab].className += " finish";
+//   }
+//   return valid; // return the valid status
+// }
 
-function fixStepIndicator(n) {
-  // This function removes the "active" class of all steps...
-  var i, x = document.getElementsByClassName("step");
-  for (i = 0; i < x.length; i++) {
-    x[i].className = x[i].className.replace(" active", "");
-  }
-  //... and adds the "active" class to the current step:
-  x[n].className += " active";
-}
+// function fixStepIndicator(n) {
+//   // This function removes the "active" class of all steps...
+//   var i, x = document.getElementsByClassName("step");
+//   for (i = 0; i < x.length; i++) {
+//     x[i].className = x[i].className.replace(" active", "");
+//   }
+//   //... and adds the "active" class to the current step:
+//   x[n].className += " active";
+// }
 </script>
