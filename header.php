@@ -42,6 +42,7 @@
         <link href="<?php bloginfo('template_url'); ?>/css/studios.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/bookForm.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/faq.css" rel="stylesheet" />
+        <link rel="preload">
         <?php wp_head(); ?>
         <style>
             #page-top {

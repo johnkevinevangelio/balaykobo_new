@@ -22,3 +22,8 @@
   }
 
   add_action('init','balaykobo_menus');
+
+  function enqueue_background_preload_script() {
+    wp_enqueue_script('background-preload', get_template_directory_uri() . '/js/preload_scripts.js', array(), '1.0', true);
+  }
+add_action('wp_enqueue_scripts', 'enqueue_background_preload_script');
