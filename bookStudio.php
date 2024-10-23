@@ -280,31 +280,31 @@ input.invalid {
                             <div class="row">
                                 <div class="d-flex justify-content-start"><label>Name<span class="text-danger"> *</span></label></div>
                                 <div class="form-group col-sm-12 flex-column d-flex">   
-                                    <input type="text" name="entry.532332563" class="required input" oninput="this.className = ''" placeholder="">
+                                    <input type="text" name="entry.532332563" class="required input" oninput="validateFormIndividual(this)" placeholder="">
                                 </div>
                             </div>
                             <div class="row mt-3">
                                 <div class="d-flex justify-content-start"><label>Affiliation/Company<span class="text-danger"> *</span></label></div>
                                 <div class="form-group col-sm-12 flex-column d-flex">   
-                                    <input type="text" name="entry.156465969" class="required input" oninput="this.className = ''" placeholder="">
+                                    <input type="text" name="entry.156465969" class="required input" oninput="validateFormIndividual(this)"" placeholder="">
                                 </div>
                             </div>
                             <div class="row mt-3">
                                 <div class="d-flex justify-content-start"><label>Email address<span class="text-danger"> *</span></label></div>
                                 <div class="form-group col-sm-12 flex-column d-flex">   
-                                    <input type="text" name="entry.1198147897" class="required input" oninput="this.className = ''" placeholder="">
+                                    <input type="text" name="entry.1198147897" class="required input" oninput="validateFormIndividual(this)" placeholder="">
                                 </div>
                             </div>
                             <div class="row mt-3">
                                 <div class="d-flex justify-content-start"><label>Mobile number<span class="text-danger"> *</span></label></div>
                                 <div class="form-group col-sm-12 flex-column d-flex">   
-                                    <input type="text" name="entry.413029487" class="required input" oninput="this.className = ''" placeholder="">
+                                    <input type="text" name="entry.413029487" class="required input" oninput="validateFormIndividual(this)" placeholder="">
                                 </div>
                             </div>
                             <div class="row mt-3 mb-5">
                                 <div class="d-flex justify-content-start"><label>Instagram Handle<span class="text-danger"> *</span></label></div>
                                 <div class="form-group col-sm-12 flex-column d-flex">   
-                                    <input type="text" name="entry.1881684809" class="required input" oninput="this.className = ''" placeholder="">
+                                    <input type="text" name="entry.1881684809" class="required input" oninput="validateFormIndividual(this)" placeholder="">
                                 </div>
                             </div>
       
@@ -472,7 +472,7 @@ input.invalid {
                             </div>
                             <div>
                                 <div class="form-group col-sm-12 flex-column d-flex">   
-                                    <input type="text" name="entry.711602103" class="required input" oninput="this.className = ''" placeholder="">
+                                    <input type="text" name="entry.711602103" class="required input" oninput="validateFormIndividual(this)" placeholder="">
                                 </div>
                             </div>
                         </div>
@@ -486,7 +486,7 @@ input.invalid {
                                 <div class="col">
                                   <!-- <div class="d-flex justify-content-start"><label>Date</label></div> -->
                                   <div class="form-group col-sm-12 flex-column d-flex">   
-                                      <input type="datetime-local" name="entry.283111418" class="required input" oninput="this.className = ''" placeholder="">
+                                      <input type="datetime-local" name="entry.283111418" class="required input" oninput="validateFormIndividual(this)" placeholder="">
                                   </div>
                                 </div>
                             </div>
@@ -519,7 +519,7 @@ input.invalid {
                             </div>
                             <div>
                                 <div class="form-group col-sm-12 flex-column d-flex durationTime">   
-                                    <input type="text" class="required input" name="entry.1563353137" oninput="this.className = ''" placeholder="">
+                                    <input type="text" class="required input" name="entry.1563353137" oninput="validateFormIndividual(this)" placeholder="">
                                 </div>
                             </div>
                         </div>
@@ -532,7 +532,7 @@ input.invalid {
                             </div>
                             <div>
                                 <div class="form-group col-sm-12 flex-column d-flex">   
-                                    <textarea class="input" name="entry.336176798" rows="4" oninput="this.className = ''" placeholder=""></textarea>
+                                    <textarea class="input" name="entry.336176798" rows="4" oninput="validateFormIndividual(this)" placeholder=""></textarea>
                                 </div>
                             </div>
                         </div>
@@ -639,22 +639,42 @@ document.getElementById('gform').addEventListener('submit', function(event) {
       window.location.href = "https://balaykobo.com";
     });
   } else {
-      myModal = new bootstrap.Modal(document.getElementById('statusErrorsModal'), {});
-      myModal.show();
+      // myModal = new bootstrap.Modal(document.getElementById('statusErrorsModal'), {});
+      // myModal.show();
   }
 });
 var currentTab = 0;
+function validateFormIndividual(val) {
+  if (val.value == "" || val.value == null || val.value == undefined) {
+    val.className += "invalid";
+  } else {
+    val.className = '';
+  }
+}
 function validateForm() {
   // This function deals with validation of the form fields
   var x, y, i, valid = true;
+
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByClassName("required");
   // A loop that checks every input field in the current tab:
   for (i = 0; i < y.length; i++) {
+    // y[i].addEventListener('input', function() {
+    //   console.log('noo');
+    //   if (this.value == "") {
+    //     this.classList.add("invalid");
+    //   } else {
+    //     this.classList.remove("invalid");
+    //   }
+    // });
+    // if (y[i].value == "") {
+    //   y[i].classList.add("invalid");
+    //   valid = false;
+    // } 
     // If a field is empty...
     if (y[i].value == "") {
       // add an "invalid" class to the field:
-      y[i].className += " invalid";
+      y[i].className += "invalid";
       // and set the current valid status to false:
       valid = false;
     }
