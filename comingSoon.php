@@ -33,7 +33,7 @@
 <div class="coming_soon_container">
 
     <div class="coming_soon_text">
-        Lifestyle photography services coming soon
+        Kobo Journal coming soon
     </div>
 
 </div>
