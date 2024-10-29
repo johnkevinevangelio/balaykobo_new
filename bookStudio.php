@@ -572,6 +572,23 @@ input.invalid {
           <button type="button" class="btn btn-success m-1" data-bs-toggle="modal" data-bs-target="#statusSuccessModal">Success Modal</button>
           <button type="button" class="btn btn-danger m-1" data-bs-toggle="modal" data-bs-target="#statusErrorsModal">Error Modal</button> 
         </div> -->
+        <div class="modal modalFade" id="confirmationModal" tabindex="-1" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="confirmationModalLabel">Confirm Booking</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Are you sure you want to submit this booking request?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" id="confirmSubmitBtn">Confirm</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="modal modalFade" id="statusErrorsModal" tabindex="-1" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false"> 
           <div class="modal-dialog modal-dialog-centered modal-sm" role="document"> 
             <div class="modal-content"> 
@@ -619,28 +636,34 @@ document.getElementById('gform').addEventListener('submit', function(event) {
   var extraData = {};
   let myModal
   var formData = new FormData(this);
+  validateForm();
   if (validateForm()) {
-    fetch(this.action, {
-      method: 'POST',
-      body: formData,
-      credentials: 'include'
-    })
-    .then(function(response) {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      // alert('Form Submitted. Thanks.');
-    })
-    .catch(function(error) {
-      // alert('Form Submitted. Thanks.');
-      myModal = new bootstrap.Modal(document.getElementById('statusSuccessModal'), {});
-      myModal.show();
-      document.getElementById("gform").reset();
-      window.location.href = "https://balaykobo.com";
+    myModal = new bootstrap.Modal(document.getElementById('confirmationModal'), {});
+    myModal.show();
+    document.getElementById('confirmSubmitBtn').addEventListener('click', function() {
+      fetch(this.action, {
+        method: 'POST',
+        body: formData,
+        credentials: 'include'
+      })
+      .then(function(response) {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        // alert('Form Submitted. Thanks.');
+      })
+      .catch(function(error) {
+        // alert('Form Submitted. Thanks.');
+        myModal = new bootstrap.Modal(document.getElementById('statusSuccessModal'), {});
+        myModal.show();
+        document.getElementById("gform").reset();
+        window.location.href = "https://balaykobo.com";
+      });
     });
+
   } else {
-      // myModal = new bootstrap.Modal(document.getElementById('statusErrorsModal'), {});
-      // myModal.show();
+      myModal = new bootstrap.Modal(document.getElementById('statusErrorsModal'), {});
+      myModal.show();
   }
 });
 var currentTab = 0;
@@ -658,25 +681,25 @@ function validateForm() {
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByClassName("required");
   // A loop that checks every input field in the current tab:
+  // for (i = 0; i < y.length; i++) {
+
+  //   if (y[i].value == "" || y[i].value == null || y[i].value == undefined) {
+  //     console.log(y[i].value);
+  //     // add an "invalid" class to the field:
+  //     y[i].className += "invalid";
+  //     // and set the current valid status to false:
+  //     valid = false;
+  //   }
+  //   console.log(y[i].value);
+  // }
   for (i = 0; i < y.length; i++) {
-    // y[i].addEventListener('input', function() {
-    //   console.log('noo');
-    //   if (this.value == "") {
-    //     this.classList.add("invalid");
-    //   } else {
-    //     this.classList.remove("invalid");
-    //   }
-    // });
-    // if (y[i].value == "") {
-    //   y[i].classList.add("invalid");
-    //   valid = false;
-    // } 
-    // If a field is empty...
-    if (y[i].value == "") {
-      // add an "invalid" class to the field:
-      y[i].className += "invalid";
-      // and set the current valid status to false:
+    // Check if the element is a checkbox
+      // For other input types, check for empty values as before
+    if (y[i].value == "" || y[i].value == null || y[i].value == undefined) {
+      y[i].className += " invalid";
       valid = false;
+    } else {
+      y[i].className = y[i].className.replace(" invalid", "");
     }
   }
   // If the valid status is true, mark the step as finished and valid:
