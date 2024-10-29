@@ -615,7 +615,7 @@ input.invalid {
                 </svg> 
                 <h4 class="text-success mt-3">Thank you</h4> 
                 <p class="mt-3">Your response has been successfully submitted</p>
-                <button type="button" class="btn btn-sm mt-3 btn-success" data-bs-dismiss="modal">Ok</button> 
+                <button id="postSubmitBtn" type="button" class="btn btn-sm mt-3 btn-success" data-bs-dismiss="modal">Ok</button> 
               </div> 
             </div> 
           </div> 
@@ -656,8 +656,10 @@ document.getElementById('gform').addEventListener('submit', function(event) {
         // alert('Form Submitted. Thanks.');
         myModal = new bootstrap.Modal(document.getElementById('statusSuccessModal'), {});
         myModal.show();
-        document.getElementById("gform").reset();
-        window.location.href = "https://balaykobo.com";
+        document.getElementById('postSubmitBtn').addEventListener('click', function() {
+          document.getElementById("gform").reset();
+          window.location.href = "https://balaykobo.com";
+        });
       });
     });
 
