@@ -636,17 +636,19 @@ document.getElementById('gform').addEventListener('submit', function(event) {
   var extraData = {};
   let myModal
   var formData = new FormData(this);
+  const action = 'https://docs.google.com/forms/d/e/1FAIpQLSe2vrqDjcUu-kzTLqgKG4OTGEr5GMyPhSApRcDHwl5UTddoGQ/formResponse';
   validateForm();
   if (validateForm()) {
     myModal = new bootstrap.Modal(document.getElementById('confirmationModal'), {});
     myModal.show();
     document.getElementById('confirmSubmitBtn').addEventListener('click', function() {
-      fetch(this.action, {
+      fetch(action, {
         method: 'POST',
         body: formData,
         credentials: 'include'
       })
       .then(function(response) {
+        console.log('response', response);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
