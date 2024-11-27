@@ -632,8 +632,6 @@ input.invalid {
         </div>
       </div>
     </div>
-
-    <button id="testModal" type="button">Test Modal </button>
 </div>
 
 
