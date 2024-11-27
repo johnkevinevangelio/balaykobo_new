@@ -161,6 +161,11 @@
         margin-bottom: 20px;
     }
 }
+@media screen and (max-width: 1471px) {
+    .aboutContentButton1Style {
+        margin-bottom: 20px;
+    }
+}
 @media screen and (max-width: 1500px) {
     .aboutContent4 {
         padding-left: auto;

@@ -33,7 +33,7 @@
 <div class="coming_soon_container">
 
     <div class="coming_soon_text">
-        Kobo Journal coming soon
+        Kōbō Journal coming soon
     </div>
 
 </div>
