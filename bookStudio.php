@@ -260,6 +260,9 @@ input.invalid {
   background-position: center;
   background-size: cover;
 }
+.modal-header, .modal-footer {
+  border: none; /* Remove the default borders */
+}
 
 </style>
 <div class="booking-bg"></div>
@@ -574,17 +577,18 @@ input.invalid {
         </div> -->
         <div class="modal modalFade" id="confirmationModal" tabindex="-1" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false">
           <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="confirmationModalLabel">Confirm Booking</h5>
+            <div class="modal-content" style="border-radius: 0;">
+              <div class="modal-header text-center flex-column">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="" style="margin-bottom: 0px; margin-top: 5%; font-family: Spectral; font-size: 32px" id="confirmationModalLabel">Confirm Booking</h5>
+                <hr class="w-50 mx-auto" style="margin-bottom: 0px">
               </div>
-              <div class="modal-body">
+              <div class="text-center flex-column" style="margin-left: 10%; margin-right: 10%; font-family: Oxygen Mono; font-size: 16px">
                 Are you sure you want to submit this booking request?
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary" id="confirmSubmitBtn">Confirm</button>
+              <div class="modal-footer flex-column mt-3">
+                <button type="button" class="btn btn-secondary w-50 mb-2" data-bs-dismiss="modal" style="font-family: Oxygen Mono; font-size: 14px; background-color: white; color: black">Cancel</button>
+                <button type="button" class="btn btn-primary w-50 mb-3" id="confirmSubmitBtn" style="font-family: Oxygen Mono; font-size: 14px; background-color: #04AA6D">Confirm</button>
               </div>
             </div>
           </div>
@@ -606,16 +610,22 @@ input.invalid {
           </div> 
         </div>
         <div class="modal modalFade" id="statusSuccessModal" tabindex="-1" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false"> 
-          <div class="modal-dialog modal-dialog-centered modal-sm" role="document"> 
-            <div class="modal-content"> 
+          <div class="modal-dialog modal-dialog-centered" role="document"> 
+            <div class="modal-content" style="border-radius: 0;"> 
               <div class="modal-body text-center p-lg-4"> 
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                <svg width="30" height="30" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
                   <circle class="path circle" fill="none" stroke="#198754" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
                   <polyline class="path check" fill="none" stroke="#198754" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 " /> 
                 </svg> 
-                <h4 class="text-success mt-3">Thank you</h4> 
-                <p class="mt-3">Your response has been successfully submitted</p>
-                <button id="postSubmitBtn" type="button" class="btn btn-sm mt-3 btn-success" data-bs-dismiss="modal">Ok</button> 
+                <h4 class="mt-3" style="margin-bottom: 0px; margin-top: 5%; font-family: Spectral; font-size: 32px">Thank you</h4>
+                <hr class="mx-auto" style="margin-bottom: 0px; width: 70%;">
+                <div class="text-center flex-column mt-3" style="margin-left: 10%; margin-right: 10%; font-family: Oxygen Mono; font-size: 16px">
+                  Your response has been successfully submitted
+                </div>
+                <div class="modal-footer flex-column mt-3">
+                  <button type="button" class="btn btn-secondary mb-2" id="postSubmitBtn" data-bs-dismiss="modal" style="width: 60%; font-family: Oxygen Mono; font-size: 14px; background-color: white; color: black">Return to homepage</button>
+                  <button type="button" class="btn btn-primary mb-3" id="submitAnotherForm" data-bs-dismiss="modal" style="width: 60%; font-family: Oxygen Mono; font-size: 14px; background-color: #557689">Submit another form</button>
+                </div>
               </div> 
             </div> 
           </div> 
@@ -623,6 +633,7 @@ input.invalid {
       </div>
     </div>
 
+    <button id="testModal" type="button">Test Modal </button>
 </div>
 
 
@@ -630,6 +641,12 @@ input.invalid {
 
 
 <script>
+
+document.getElementById('testModal').addEventListener('click', function() {
+  let myModal = new bootstrap.Modal(document.getElementById('statusSuccessModal'), {});
+  myModal.show();
+})
+
 
 document.getElementById('gform').addEventListener('submit', function(event) {
   event.preventDefault();
@@ -661,6 +678,10 @@ document.getElementById('gform').addEventListener('submit', function(event) {
         document.getElementById('postSubmitBtn').addEventListener('click', function() {
           document.getElementById("gform").reset();
           window.location.href = "https://balaykobo.com";
+        });
+        document.getElementById('submitAnotherForm').addEventListener('click', function() {
+          document.getElementById("gform").reset();
+          window.location.href = "https://balaykobo.com/bookingform/";
         });
       });
     });
