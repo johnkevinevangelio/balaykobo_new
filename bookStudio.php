@@ -219,7 +219,7 @@ line-height: 150.2%; /* 24.032px */
       </div>
     </div>
     <div class="col">
-      <form id="gform" class="form-card" action="https://docs.google.com/forms/d/e/1FAIpQLSe2vrqDjcUu-kzTLqgKG4OTGEr5GMyPhSApRcDHwl5UTddoGQ/formResponse">
+      <form id="gform" class="form-card">
         <section class="form-section">
             <div class="form-section-title mb-5">
                 Step 01: Input your information
@@ -508,14 +508,14 @@ line-height: 150.2%; /* 24.032px */
             <div class="col-sm-6"> 
             </div>
             <div class="col-sm-6 text-end">
-              <input type="submit" name="" class="button submitBtn" value="Submit">
+              <input id="submitBtn" type="submit" name="" class="button submitBtn" value="Submit">
             </div>
           </div>
         </section>
       </form>
     </div>
   </div>
-
+  <!-- <input id="testModal" type="hidden" name="" class="button submitBtn" value="Hidden Button"> -->
   <div class="container mt-5">
     <div class="row">
       <!-- <div class="col-12 text-center">
@@ -586,14 +586,14 @@ line-height: 150.2%; /* 24.032px */
 
 
 <script>
-  document.getElementById('testModal').addEventListener('click', function() {
-    console.log('test');
-    let myModal = new bootstrap.Modal(document.getElementById('statusSuccessModal'), {});
-    myModal.show();
-  })
+// document.getElementById('testModal').addEventListener('click', function() {
+//   console.log('test');
+//   let myModal = new bootstrap.Modal(document.getElementById('statusSuccessModal'), {});
+//   myModal.show();
+// });
 
 
-  document.getElementById('gform').addEventListener('submit', function(event) {
+document.getElementById('gform').addEventListener('submit', function(event) {
   event.preventDefault();
   var extraData = {};
   let myModal
