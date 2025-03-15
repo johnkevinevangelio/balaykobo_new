@@ -51,8 +51,9 @@
             <?php elseif($myTitle == 'Book a Studio') : ?>
                 <style>
                     .bookStudio {
+                        background: #EBE9DA; 
                         /* background-image: url('https://balaykobo.com/wp-content/uploads/2024/06/booking-form-bg-scaled.jpeg'); */
-                        font-family: 'Oxygen Mono';
+                        /* font-family: 'Oxygen Mono'; */
                         /* height: 75vh; */
                     } 
                 </style>

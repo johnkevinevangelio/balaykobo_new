@@ -43,6 +43,13 @@
         <link href="<?php bloginfo('template_url'); ?>/css/bookForm.css" rel="stylesheet" />
         <link href="<?php bloginfo('template_url'); ?>/css/faq.css" rel="stylesheet" />
         <link rel="preload">
+        
+        <!------ Book Studio ---------->
+        <link href="https://fonts.cdnfonts.com/css/helvetica-neue-5" rel="stylesheet">
+        <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+        <!------ Include the above in your HEAD tag ---------->
         <?php wp_head(); ?>
         <style>
             #page-top {
@@ -97,19 +104,6 @@
                 }
             </style>
         <?php elseif($myTitle == 'About') : ?>
-            <style>
-                #navMain {
-                    filter: invert(0);
-                }
-                .mobile-nav-menu {
-                    filter: invert(0);
-                }
-                #navMain.menu-bg:hover {
-                    backdrop-filter: blur(15px);
-                    background-color: rgba(62, 53, 44, 0.5) !important;
-                }
-            </style>
-        <?php elseif($myTitle == 'Book a Studio') : ?>
             <style>
                 #navMain {
                     filter: invert(0);
